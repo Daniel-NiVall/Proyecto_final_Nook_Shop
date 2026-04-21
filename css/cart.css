@@ -1,0 +1,889 @@
+/*
+----------------------------------------
+cart.css
+- intro
+- empty
+- cart list
+    - cart product
+        - sizes
+        - colors
+        - price
+        - units
+        - delete button
+- payment
+- modal
+----------------------------------------
+*/
+
+/*-------- Intro -------- */
+/* Descripcion: Estilos del encabezado introductorio de la pagina carrito.
+ * Estructura:
+ *          - Intro (contenedor principal)
+ *          - Intro-span (titulo corto)
+ *          - Intro-p (texto descriptivo)
+ */
+.Intro {
+    width: 90%;
+    margin: 0 auto 3rem;
+    padding: 8.25rem 1.5rem 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    text-align: center;
+}
+
+.Intro-span {
+    font-family: var(--font-family-headers);
+    font-size: clamp(var(--font-s-24), 3vw, var(--font-s-32));
+    font-weight: var(--font-w-700);
+    color: var(--color-black);
+    hyphens: none;
+}
+
+.Intro-p {
+    line-height: 1.45em;
+
+    color: var(--color-black);
+    font-family: var(--font-family-content);
+    font-size: clamp(var(--font-s-16), 3vw, var(--font-s-18));
+    hyphens: none;
+}
+/*-------- /Intro -------- */
+
+/*-------- Empty -------- */
+/* Descripcion: Estado vacio del carrito cuando no hay productos guardados.
+ * Estructura:
+ *          - Empty (contenedor principal)
+ *          - Empty-span / Empty-p (mensaje)
+ *          - Empty-a (cta para volver a tienda)
+ *          - Icon-arrow (icono animado dentro del cta)
+ */
+.Empty {
+    width: 90%;
+    margin: 7vh auto 30vh;
+    padding: 1.4rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.Empty-span {
+    margin: 0 0 1rem;
+
+    font-family: var(--font-family-headers);
+    font-size: clamp(var(--font-s-18), 3vw, var(--font-s-24));
+    color: var(--color-black);
+}
+
+.Empty-p {
+    margin: 0 0 2rem;
+
+    line-height: 1.45em;
+    color: var(--color-dark-grey);
+}
+
+.Empty-a {
+    width: fit-content;
+    padding: .5rem 1rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: start;
+    gap: .5rem;
+
+    background-color: var(--color-primary);
+    border-radius: 100vh;
+
+    font-weight: var(--font-w-600);
+    color: var(--color-black);
+
+    transition: background-color .2s linear, color .2s linear;
+}
+
+.Empty-a:active {
+    background-color: var(--color-primary-hover);
+    color: var(--color-white);
+}
+
+.Icon-arrow {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.Empty-a:active .Icon-arrow {
+    /* Pseudoselector: al pulsar el enlace se activa animacion de rebote del icono */
+    animation: rebound .5s linear both;
+}
+
+/* El siguiente @media aplica estilos solo en dispositivos con hover real y puntero preciso (desktop)
+       Esto evita que en mobile al pulsar el boton se quede en estado hover */
+@media (hover: hover) and (pointer: fine) {
+    .Empty-a:hover {
+        background-color: var(--color-primary-hover);
+        color: var(--color-white);
+    }
+
+    .Empty-a:hover .Icon-arrow {
+        /* Solo en dispositivos con hover real para evitar estados inconsistentes en tactiles */
+        animation: rebound .5s linear both;
+    }
+}
+
+@keyframes rebound {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(.5rem);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+/*-------- /Empty -------- */
+
+/*-------- Cart List -------- */
+/* Descripcion: Layout principal del carrito con listado de productos + panel de pago.
+ * Estructura:
+ *          - Cart (grid principal)
+ *          - Cart-ul (columna de productos)
+ *          - Product (item individual)
+ *          - Product.isDeleted (estado de ocultacion tras eliminar)
+ */
+
+.Cart {
+    margin: 0 0 2rem;
+    min-height: 50vh;
+
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.Cart-ul {
+    width: 100%;
+    margin: auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: start;
+
+    border-right: 1px solid var(--color-black);
+}
+
+.Product {
+    width: max-content;
+    margin: 0 0 2rem;
+
+    display: block;
+}
+
+.Product.isDeleted {
+    /* Modificador de estado: colapsa visualmente el producto eliminado */
+    height: 0;
+    overflow: hidden;
+}
+/*-------- /Cart List -------- */
+
+/*-------- Cart Product -------- */
+/* Descripcion: Estructura interna de cada tarjeta de producto en carrito.
+ * Estructura:
+ *          - Wrapper-outer / Wrapper-inner (envoltorios para animaciones y desplazamientos)
+ *          - Product-content (contenido principal de la card)
+ *          - Product-img / Product-info / Product-name
+ */
+.Wrapper-outer {
+    width: max-content;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    gap: 0;
+
+    transition: gap .5s ease;
+}
+
+.Wrapper-inner {
+    width: max-content;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    gap: 0;
+
+    background-color: var(--color-white);
+    /* transition: gap .5s ease; */
+}
+
+.Product-content {
+    width: var(--cart-base-width);
+    padding: .5rem 2rem .5rem 1rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+
+    box-sizing: border-box;
+    border: 1px solid var(--color-grey);
+    border-radius: .5rem;
+}
+
+.Product-img {
+    width: clamp(6rem, 15vw, 9rem);
+    min-width: 6rem;
+    height: auto;
+
+    object-fit: contain;
+}
+
+.Product-info {
+    padding: 1rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+    justify-content: start;
+    gap: 1rem;
+}
+
+.Product-name {
+    font-size: clamp(var(--font-s-16), 2vw, var(--font-s-20));
+    font-weight: var(--font-w-600);
+}
+/*-------- /Cart Product -------- */
+
+/*-------- Sizes -------- */
+/* Descripcion: Estilos para talla/tamano seleccionado en el producto del carrito.
+ * Estructura:
+ *          - Sizes / Sizes-span / Sizes-ul
+ *          - Size
+ *          - Size-button.isSelected (estado activo)
+ */
+.Sizes {
+    display: flex;
+    gap: 1rem;
+}
+
+.Sizes-span {
+    align-items: center;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    font-size: var(--font-s-16);
+    font-weight: var(--font-w-400);
+}
+
+.Sizes-ul {
+    display: flex;
+    gap: .5rem;
+}
+
+.Size {
+    display: flex;
+    gap: .5rem;
+
+    color: var(--color-dark-grey);
+    font-size: var(--font-s-16);
+    font-weight: var(--font-w-300);
+}
+
+.Size:not(:last-child)::after {
+    /* Pseudoselector: separador visual entre tallas, excepto en la ultima */
+    content: "|";
+}
+
+.Size-button.isSelected {
+    /* Modificador de estado para destacar la talla activa */
+    color: var(--color-black);
+    font-weight: var(--font-w-700);
+}
+/*-------- /Sizes -------- */
+
+/*-------- Colors -------- */
+/* Descripcion: Estilos del selector de colores de producto en carrito.
+ * Estructura:
+ *          - Product-colors / Colors-ul
+ *          - Color / Color-button
+ *          - Color-button.isSelected (estado activo)
+ */
+.Product-colors {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+
+    font-size: var(--font-s-16);
+    font-weight: var(--font-w-400);
+}
+
+.Colors-ul {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: start;
+    gap: .5rem;
+}
+
+.Color {
+    width: 1rem;
+    height: 1rem;
+}
+
+.Color-button {
+    width: 1rem;
+    height: 1rem;
+    padding: 0;
+
+    display: block;
+    overflow: hidden;
+
+    border: none;
+    border-radius: 100vh;
+    cursor: pointer;
+}
+
+.Color-button.isSelected {
+    /* Estado seleccionado: usa outline para no alterar dimensiones del punto de color */
+    outline: 1px solid var(--color-black);
+    outline-offset: 2px;
+}
+
+.Color:focus-visible {
+    /* Estado de accesibilidad para navegacion por teclado */
+    outline: 2px solid var(--color-black);
+    outline-offset: 2px;
+}
+/*-------- /Colors -------- */
+
+/*-------- Price -------- */
+/* Descripcion: Presentacion del precio, rebaja y moneda del producto.
+ * Estructura:
+ *          - Price
+ *          - Price-sale / Price-img / Price-original
+ *          - Price-original.hasSale (estado rebajado)
+ */
+.Price {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: start;
+    gap: .5rem;
+}
+
+.Price-sale {
+    font-size: var(--font-s-16);
+    font-weight: var(--font-w-700);
+
+    color: var(--color-green);
+}
+
+.Price-img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.Price-original {
+    font-size: var(--font-s-16);
+    font-weight: var(--font-w-700);
+}
+
+.Price-original.hasSale {
+    /* Modificador: reduce peso visual del precio original cuando hay oferta */
+    font-size: var(--font-s-12);
+    text-decoration: line-through;
+
+    color: var(--color-red);
+}
+/*-------- /Price -------- */
+
+/*-------- Units -------- */
+/* Descripcion: Controles para sumar/restar unidades del producto.
+ * Estructura:
+ *          - Product-units (contenedor de controles)
+ *          - Product-add / Product-remove
+ *          - Add-icon / Remove-icon
+ */
+.Product-units {
+    padding: .5rem 0 .5rem 1rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: margin .5s ease;
+}
+
+.Product-add,
+.Product-remove {
+    width: 100%;
+    padding: .5rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-primary);
+    border-radius: .5rem;
+
+    transform: scale(1);
+    transition: transform .5s ease, background-color .2s linear, color .2s linear;
+}
+
+.Add-icon,
+.Remove-icon {
+    width: 1.5rem;
+}
+/*-------- /Units -------- */
+
+/*-------- Delete Button -------- */
+/* Descripcion: Boton lateral para eliminar un producto del carrito.
+ * Estructura:
+ *          - Product-buttons (slot lateral)
+ *          - Product-button (accion eliminar)
+ *          - Delete-icon
+ *          - Estados hover/active para transiciones de entrada
+ */
+
+.Product-buttons {
+    width: 3rem;
+    overflow: hidden;
+
+    position: relative;
+
+    transition: width .5s ease;
+}
+
+.Product-button {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    color: var(--color-white);
+    background-color: var(--color-red);
+    border-radius: .5rem;
+
+    transform: translateX(-100%) scale(1);
+    transition: transform .3s ease;
+
+    pointer-events: none;
+}
+
+.Delete-icon {
+    min-width: 1.5rem;
+    max-width: 1.5rem;
+}
+
+.Product-add:active,
+.Product-remove:active {
+    /* Feedback tactil/raton al pulsar botones de unidades */
+    background-color: var(--color-primary-hover);
+    color: var(--color-white);
+    transform: scale(.9);
+}
+
+/* El siguiente @media aplica estilos solo en dispositivos con hover real y puntero preciso (desktop)
+       Esto evita que en mobile al pulsar el boton se quede en estado hover */
+@media (hover: hover) and (pointer: fine) {
+
+
+    .Product-add:hover,
+    .Product-remove:hover {
+        /* Hover solo en puntero fino para evitar comportamientos "pegados" en touch */
+        background-color: var(--color-primary-hover);
+        color: var(--color-white);
+        transform: scale(.9);
+    }
+}
+
+.Product:hover .Wrapper-outer {
+    /* Al pasar por la card se abre espacio para revelar el boton eliminar */
+    gap: 1rem;
+}
+
+.Product:hover .Product-button {
+    /* Revela el boton de borrar desplazandolo desde fuera del contenedor */
+    transform: translateX(0) scale(1);
+    pointer-events: auto;
+}
+
+.Product-buttons:hover .Product-button {
+    /* Segundo estado hover para reforzar feedback visual de la accion */
+    transform: translateX(0) scale(.9);
+}
+
+.Product:hover .Product-units {
+    margin: 0;
+}
+/*-------- /Delete Button -------- */
+
+/*-------- Payment -------- */
+/* Descripcion: Panel de resumen y ctas de compra del carrito.
+ * Estructura:
+ *          - Payment (contenedor sticky)
+ *          - Subtotal / Subtotal-title / Subtotal-quantity / Quantity-span / Quantity-img
+ *          - Payment-ctas
+ *          - Payment-button / Payment-a (acciones)
+ */
+.Payment {
+    max-width: 22rem;
+    height: fit-content;
+    margin: 2rem;
+    padding: 1rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+    justify-content: center;
+    gap: 2rem;
+
+    position: sticky;
+    top: 4rem;
+}
+
+.Subtotal {
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: var(--font-family-content);
+    font-size: clamp(var(--font-s-18), 3vw, var(--font-s-20));
+    color: var(--color-black);
+}
+
+.Subtotal-title {
+    font-weight: var(--font-w-400);
+}
+
+.Subtotal-quantity {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    font-weight: var(--font-w-600);
+}
+
+.Quantity-span {
+    font-weight: 800;
+}
+
+.Quantity-img {
+    width: 1.5rem;
+}
+
+.Payment-ctas {
+    width: min-content;
+    margin: auto;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: 1.5rem;
+
+}
+
+.Payment-button,
+.Payment-a {
+    width: 100%;
+    padding: .5rem 2rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 100vh;
+    white-space: nowrap;
+
+    hyphens: none;
+
+    color: var(--color-black);
+}
+
+.Payment-button {
+    background-color: var(--color-primary);
+    transition: background-color .2s linear, color .2s linear;
+}
+
+.Payment-a {
+    border: 2px solid var(--color-primary-hover);
+    transition: background-color .2s linear, color .2s linear;
+}
+
+.Payment-button:active {
+    background-color: var(--color-primary-hover);
+    color: var(--color-white);
+}
+
+.Payment-a:active {
+    background-color: var(--color-primary-hover);
+    color: var(--color-white);
+}
+
+/* El siguiente @media aplica estilos solo en dispositivos con hover real y puntero preciso (desktop)
+       Esto evita que en mobile al pulsar el boton se quede en estado hover */
+@media (hover: hover) and (pointer: fine) {
+    .Payment-button:hover {
+        background-color: var(--color-primary-hover);
+        color: var(--color-white);
+    }
+
+    .Payment-a:hover {
+        background-color: var(--color-primary-hover);
+        color: var(--color-white);
+    }
+}
+/*-------- /Payment -------- */
+
+
+
+/*-------- Modal -------- */
+/* Descripcion: Ventana emergente de confirmacion tras finalizar la compra.
+ * Estructura:
+ *          - Modal (overlay)
+ *          - Modal-wrapper
+ *          - Transaction / Transaction-span / Transaction-button / Transaction-close
+ *          - Modal.isVisible (estado abierto)
+ */
+.Modal {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: var(--color-black-alpha);
+
+    opacity: 0;
+    pointer-events: none;
+}
+
+.Modal-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.Transaction {
+    height: fit-content;
+    padding: 6rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+
+    position: relative;
+
+    background-color: var(--color-white);
+    border-radius: 2rem;
+}
+
+.Transaction-span{
+    text-align: center;
+    font-family: var(--font-family-content);
+    font-weight: var(--font-w-500);
+    font-size: var(--font-s-18);
+
+    hyphens: none;
+}
+
+.Transaction-button {
+    padding: .2rem;
+
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+
+    border-radius: .5rem;
+
+    background-color: var(--color-primary);
+
+    transition: background-color .2s linear, color .2s linear;
+}
+
+.Transaction-close {
+    width: 1.5rem;
+}
+
+.Transaction-button:hover{
+    background-color: var(--color-primary-hover);
+    color: var(--color-white)
+}
+
+.Modal.isVisible {
+    /* Modificador de estado: habilita visibilidad e interaccion del modal */
+    opacity: 1;
+    pointer-events: auto;
+}
+/*-------- /Modal -------- */
+
+/*-------- Responsive -------- */
+/* Descripcion: Ajustes adaptativos para tablet y mobile.
+ * Estructura:
+ *          - @media (max-width: 850px): apila layout y simplifica interacciones
+ *          - @media (max-width: 500px): compacta cards, controles y modal
+ */
+@media(max-width: 850px) {
+    .Cart {
+        grid-template-columns: 1fr;
+    }
+
+    .Cart-ul {
+        width: 80%;
+        margin: 0 auto;
+        padding: 1rem 0;
+
+        border-right: 0;
+        border-top: 1px solid var(--color-black);
+    }
+
+    .Cart-li:not(:last-child) {
+        padding-bottom: 2rem;
+        border-bottom: 1px solid var(--color-black);
+    }
+
+    .Payment {
+        /* max-width: 100%; */
+        margin: auto;
+        position: static;
+        order: -1;
+    }
+
+    .Wrapper-inner {
+        flex-flow: column nowrap;
+    }
+
+    .Wrapper-outer {
+        gap: 1rem;
+    }
+
+    .Product-button {
+        transform: translateX(0) scale(1);
+        pointer-events: auto;
+    }
+
+    .Product-units {
+        margin: 0;
+        padding: 1rem 0;
+
+        flex-flow: row nowrap;
+        gap: 20%;
+    }
+
+    .Units {
+        margin: .5rem 0;
+        order: 0;
+    }
+
+    .Product-add {
+        order: 1;
+    }
+
+    .Product-remove {
+        order: -1;
+    }
+}
+
+@media(max-width: 500px) {
+
+    .Cart-li,
+    .Product,
+    .Product-content,
+    .Wrapper-outer,
+    .Wrapper-inner {
+        min-width: 14rem;
+        max-width: 100%;
+    }
+
+    .Product-content {
+        padding: .5rem 2rem;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Product-info {
+        width: 100%;
+    }
+
+    .Product-name {
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+    .Sizes,
+    .Colors {
+        align-items: start;
+    }
+
+    .Price {
+        justify-content: center;
+    }
+
+    .Wrapper-outer {
+        flex-flow: column nowrap;
+    }
+
+    .Product-buttons {
+        width: 100%;
+    }
+
+    .Product-button {
+        width: 100%;
+        height: 3rem;
+
+        position: static;
+    }
+
+    .Payment-ctas {
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Transaction{
+        width: 100%;
+        border-radius: 0;
+    }
+}
+/*-------- /Responsive -------- */

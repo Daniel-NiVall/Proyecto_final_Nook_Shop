@@ -1,0 +1,527 @@
+﻿/*
+----------------------------------------
+favourites.css
+- intro
+- empty
+- favourites list
+    - favourite product
+        - sizes
+        - colors
+        - price
+        - delete button
+----------------------------------------
+*/
+
+/*-------- Intro -------- */
+/* Descripcion: Estilos del bloque introductorio de la pagina de favoritos.
+ * Estructura:
+ *          - Intro (contenedor principal)
+ *          - Intro-span (titulo)
+ *          - Intro-p (descripcion)
+ */
+.Intro {
+
+    width: 90%;
+    margin: 0 auto 3rem;
+    padding: 8.25rem 1.5rem 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    text-align: center;
+}
+
+.Intro-span {
+    font-family: var(--font-family-headers);
+    font-size: clamp(var(--font-s-24), 3vw, var(--font-s-32));
+    font-weight: var(--font-w-700);
+    color: var(--color-black);
+    hyphens: none;
+}
+
+.Intro-p {
+    line-height: 1.45em;
+
+    color: var(--color-black);
+    font-family: var(--font-family-content);
+    font-size: clamp(var(--font-s-16), 3vw, var(--font-s-18));
+    hyphens: none;
+}
+/*-------- /Intro -------- */
+
+/*-------- Empty -------- */
+/* Descripcion: Estado vacio cuando no existen productos en favoritos.
+ * Estructura:
+ *          - Empty (contenedor principal)
+ *          - Empty-span / Empty-p (mensaje)
+ *          - Empty-a (cta)
+ *          - Icon-arrow (icono con animacion)
+ */
+
+.Empty {
+    width: 90%;
+    margin: 7vh auto 30vh;
+    padding: 1.4rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.Empty-span {
+    margin: 0 0 1rem;
+
+    font-family: var(--font-family-headers);
+    font-size: clamp(var(--font-s-18), 3vw, var(--font-s-24));
+    color: var(--color-black);
+}
+
+.Empty-p {
+    margin: 0 0 2rem;
+
+    line-height: 1.45em;
+    color: var(--color-dark-grey);
+}
+
+.Empty-a {
+    width: fit-content;
+    padding: .5rem 1rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: start;
+    gap: .5rem;
+
+    background-color: var(--color-primary);
+    border-radius: 100vh;
+
+    font-weight: var(--font-w-600);
+    color: var(--color-black);
+
+    transition: background-color .2s linear, color .2s linear;
+}
+
+.Empty-a:active {
+    background-color: var(--color-primary-hover);
+    color: var(--color-white);
+}
+
+.Icon-arrow {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.Empty-a:active .Icon-arrow {
+    /* Pseudoselector: al pulsar el enlace se anima la flecha */
+    animation: rebound .5s linear both;
+}
+
+/* El siguiente @media aplica estilos solo en dispositivos con hover real y puntero preciso (desktop)
+       Esto evita que en mobile al pulsar el boton se quede en estado hover */
+@media (hover: hover) and (pointer: fine) {
+    .Empty-a:hover {
+        background-color: var(--color-primary-hover);
+        color: var(--color-white);
+    }
+
+    .Empty-a:hover .Icon-arrow {
+        /* Hover solo en dispositivos con puntero fino */
+        animation: rebound .5s linear both;
+    }
+}
+
+@keyframes rebound {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(.5rem); }
+    100% { transform: translateX(0); }
+}
+/*-------- /Empty -------- */
+
+/*-------- Favourites List -------- */
+/* Descripcion: Listado principal de productos favoritos.
+ * Estructura:
+ *          - Favourites (contenedor del listado)
+ *          - Favourites-ul (lista)
+ *          - Favourite (item)
+ *          - Favourite.isDeleted (estado de ocultacion)
+ */
+.Favourites{
+    margin: 0 0 2rem;
+}
+
+.Favourites-ul {
+    width: 100%;
+    margin: auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+}
+
+.Favourite {
+    width: max-content;
+    margin: 0 0 2rem;
+
+    display: block;
+}
+
+.Favourite.isDeleted {
+    /* Modificador de estado: colapsa el item tras eliminarlo */
+    height: 0;
+    overflow: hidden;
+}
+/*-------- /Favourites List -------- */
+
+/*-------- Favourite Product -------- */
+/* Descripcion: Estructura visual de cada card de producto favorito.
+ * Estructura:
+ *          - Favourite-wrapper (envoltorio card + boton eliminar)
+ *          - Favourite-a (card clicable)
+ *          - Favourite-img
+ *          - Favourite-info / Favourite-name
+ */
+
+.Favourite-wrapper {
+    width: max-content;
+    max-width: 35rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    gap: 0;
+
+    transition: gap .5s ease;
+}
+
+/* El siguiente @media evita que al pulsar el boton el mobile se quede en estado hover */
+/* Espacio entre la card y el boton de eliminar */
+@media (hover: hover) and (pointer: fine) {
+    .Favourite:hover .Favourite-wrapper {
+        /* Interaccion desktop: separa card y boton oculto en hover */
+        gap: 1rem;
+    }
+}
+
+/*  la variable --favourite-base-width permite que todas las cards tengan el ancho de la mas grande
+    se hace con JavaScript */
+.Favourite-a {
+    width: var(--favourite-base-width);
+    padding: .5rem 2rem .5rem 1rem;
+
+    border: 1px solid var(--color-grey);
+    border-radius: .5rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+
+    background-color: var(--color-white);
+}
+
+.Favourite-img {
+    width: clamp(6rem, 15vw, 9rem);
+    min-width: 6rem;
+    height: auto;
+
+    object-fit: contain;
+}
+
+.Favourite-info {
+    padding: 1rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+    justify-content: start;
+    gap: 1rem;
+}
+
+.Favourite-name{
+    font-size: clamp(var(--font-s-16), 2vw, var(--font-s-20));
+    font-weight: var(--font-w-600);
+}
+/*-------- /Favourite Product -------- */
+
+/*-------- Sizes -------- */
+/* Descripcion: Informacion de tallas/tamanos del producto favorito.
+ * Estructura:
+ *          - Sizes / Sizes-span / Sizes-ul
+ *          - Size
+ */
+.Sizes {
+    display: flex;
+    gap: 1rem;
+}
+
+.Sizes-span {
+    align-items: center;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    font-size: var(--font-s-16);
+    font-weight: var(--font-w-400);
+}
+
+.Sizes-ul {
+    display: flex;
+    gap: .5rem;
+}
+
+.Size {
+    display: flex;
+    gap: .5rem;
+
+    color: var(--color-dark-grey);
+    font-size: var(--font-s-16);
+    font-weight: var(--font-w-300);
+}
+
+.Size:not(:last-child)::after {
+    /* Pseudoselector: añade separador visual entre tallas */
+    content: "|";
+}
+/*-------- /Sizes -------- */
+
+/*-------- Colors -------- */
+/* Descripcion: Visualizacion de colores disponibles para el producto.
+ * Estructura:
+ *          - Product-colors / Colors-ul
+ *          - Color (muestra de color)
+ */
+.Product-colors {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+
+    font-size: var(--font-s-16);
+    font-weight: var(--font-w-400);
+}
+
+.Colors-ul {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: start;
+    gap: .5rem;
+}
+
+.Color {
+    width: 1rem;
+    height: 1rem;
+    padding: 0;
+
+    display: block;
+    overflow: hidden;
+
+    border: none;
+    border-radius: 100vh;
+    cursor: pointer;
+}
+/*-------- /Colors -------- */
+
+
+/*-------- Price -------- */
+/* Descripcion: Presentacion de precio original, precio rebajado e icono de moneda.
+ * Estructura:
+ *          - Price
+ *          - Price-sale / Price-img / Price-original
+ *          - Price-original.hasSale (estado rebajado)
+ */
+.Price {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: start;
+    gap: .5rem;
+}
+
+.Price-sale {
+    font-size: var(--font-s-16);
+    font-weight: var(--font-w-700);
+
+    color: var(--color-green);
+}
+
+.Price-img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.Price-original{
+    font-size: var(--font-s-16);
+    font-weight: var(--font-w-700);
+}
+
+.Price-original.hasSale {
+    /* Modificador: estiliza el precio original cuando existe descuento */
+    font-size: var(--font-s-12);
+    text-decoration: line-through;
+
+    color: var(--color-red);
+}
+/*-------- /Price -------- */
+
+/*-------- Delete Button -------- */
+/* Descripcion: Control para eliminar productos de favoritos.
+ * Estructura:
+ *          - Favourite-buttons (slot lateral)
+ *          - Favourite-button (accion eliminar)
+ *          - Delete-icon
+ *          - Estados hover/active para desktop y touch
+ */
+
+/* En desktop el boton aparece de detras de la card al hacer hover a la card */
+.Favourite-buttons {
+    width: 3rem;
+    overflow: hidden;
+
+    position: relative;
+
+    transition: width .5s ease;
+}
+
+.Favourite-button {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    background-color: var(--color-red);
+    border-radius: .5rem;
+    color: var(--color-white);
+
+    transform: translateX(-100%) scale(1);
+    transition: transform .3s ease;
+
+    pointer-events: none;
+}
+
+.Favourite-button:active {
+    /* Estado activo: confirma visualmente la pulsacion */
+    transform: translateX(0) scale(.9);
+    pointer-events: auto;
+}
+
+/* El siguiente @media aplica estilos solo en dispositivos con hover real y puntero preciso (desktop)
+   Esto evita que en mobile al pulsar el boton se quede en estado hover */
+@media (hover: hover) and (pointer: fine) {
+    .Favourite:hover .Favourite-button {
+        /* Revela el boton de eliminar al pasar por la card */
+        transform: translateX(0) scale(1);
+        pointer-events: auto;
+    }
+
+    .Favourite-buttons:hover .Favourite-button {
+        /* Hover secundario sobre el area del boton */
+        transform: scale(.9);
+    }
+}
+
+.Delete-icon {
+    max-width: 1.5rem;
+    min-width: 1.5rem;
+}
+/*-------- /Delete Button -------- */
+
+/*-------- Responsive -------- */
+/* Descripcion: Ajustes responsivos para tablet y mobile.
+ * Estructura:
+ *          - @media (max-width: 850px): reorganiza card y boton eliminar
+ *          - @media (max-width: 500px): compacta card y ajusta textos
+ */
+@media(max-width: 850px) {
+    .Favourite:not(:last-child)::after {
+        /* Separador entre elementos en layout vertical */
+        background-color: var(--color-grey);
+        content: "";
+        display: block;
+        height: 1px;
+        margin: 1rem 0 0 0;
+        width: 100%;
+    }
+
+    .Favourite-wrapper {
+        flex-flow: column nowrap;
+        gap: 1rem;
+    }
+
+    .Favourite-buttons {
+        height: 2.5rem;
+        width: 100%;
+    }
+
+    .Favourite-button {
+        transform: translateX(0) scale(1);
+        pointer-events: auto;
+    }
+
+    .Favourite-button {
+        padding: .5rem;
+    }
+    /* El siguiente @media aplica estilos solo en dispositivos con hover real y puntero preciso (desktop)
+       Esto evita que en mobile al pulsar el boton se quede en estado hover */
+    @media (hover: hover) and (pointer: fine) {
+        .Favourite:hover .Favourite-buttons {
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width: 500px) {
+
+    .Favourite,
+    .Favourite-wrapper,
+    .Favourite-a {
+        min-width: 14rem;
+        max-width: 100%;
+    }
+
+    .Favourite-a{
+        padding: .5rem 2rem;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Favourite-info {
+        width: 100%;
+    }
+
+    .Favourite-name {
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+    .Sizes,
+    .Colors {
+        align-items: start;
+        /* flex-flow: column nowrap; */
+    }
+
+    .Price{
+        justify-content: center;
+    }
+}
+/*-------- /Responsive -------- */

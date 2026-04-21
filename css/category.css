@@ -1,0 +1,185 @@
+/*
+----------------------------------------
+category.css
+- breadcrumb
+- intro
+- grid
+----------------------------------------
+*/
+
+main{
+    margin: 0 3rem;
+}
+
+/*-------- Breadcrumb -------- */
+/* Descripcion: Estilos de la ruta de navegacion de la categoria.
+ * Estructura:
+ *          - Breadcrumb (contenedor principal)
+ *          - Breadcrumb-h1 (enlace/titulo de la categoria actual)
+ */
+.Breadcrumb{
+    width: 100%;
+    margin: 0 0 3rem;
+    padding: 8.25rem 0 0;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    hyphens: none;
+}
+
+.Breadcrumb-h1{
+    display: flex;
+    gap: 1rem;
+
+    font-size: var(--font-s-14);
+    font-size: clamp(var(--font-s-14), 2vw, var(--font-s-18));
+    color: var(--color-black);
+}
+
+.Breadcrumb-h1:hover{
+    /* Pseudoclase: refuerza que el breadcrumb es interactivo */
+    text-decoration: underline;
+}
+/*-------- /Breadcrumb -------- */
+
+/*-------- Intro -------- */
+/* Descripcion: Cabecera de la categoria con imagen, texto y estado vacio/alerta.
+ * Estructura:
+ *          - Intro (contenedor principal)
+ *          - Intro-img (imagen de la categoria)
+ *          - Intro-p (texto descriptivo)
+ *          - Default (variante cuando no hay contenido)
+ *          - Intro-alert (mensaje + cta)
+ *          - Intro-a / Icon-arrow (boton de volver/reintentar)
+ */
+
+.Intro{
+    width: 100%;
+    max-width: 100rem;
+    min-height: 10rem;
+    margin: 0 auto 3rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.Intro-img{
+    width: auto;
+    height: clamp(6rem, 15vw, 8rem);
+
+    object-fit: contain;
+}
+.Intro-p{
+    text-align: center;
+
+    font-family: var(--font-family-headers);
+    font-size: clamp(var(--font-s-18), 2vw, var(--font-s-24));
+    font-weight: var(--font-w-500);
+    line-height: 1.5rem;
+    hyphens: none;
+}
+
+.Default{
+    /* Modificador de estado: centra el contenido cuando la categoria no tiene resultados */
+    height: 40vh;
+
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.Intro-alert{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+.Intro-a{
+    width: fit-content;
+    padding: .5rem 1rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: .5rem;
+
+    background-color: var(--color-primary);
+    border-radius: 100vh;
+
+    font-weight: var(--font-w-600);
+    color: var(--color-black);
+
+    transition: background-color .2s linear, color .2s linear;
+}
+
+.Icon-arrow{
+    width: 1.5rem;
+
+    /* Transicion ligera para acompanar el movimiento de la flecha */
+    transition: .2s linear
+}
+
+.Intro-a:hover{
+    background-color: var(--color-primary-hover);
+    color: var(--color-white);
+}
+
+.Intro-a:hover .Icon-arrow{
+    /* Pseudoselector combinado: anima la flecha solo al interactuar con el enlace */
+    animation: rebound .5s linear both;
+}
+
+@keyframes rebound {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(.5rem); }
+    100% { transform: translateX(0); }
+}
+/*-------- /Intro -------- */
+
+
+/*-------- Grid -------- */
+/* Descripcion: Rejilla flexible donde se renderizan las cards de productos.
+ * Estructura:
+ *          - Grid-ul (contenedor de lista)
+ */
+
+.Grid-ul{
+    width: fit-content;
+    max-width: 100rem;
+    margin: 0 auto 5rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    row-gap: 2rem;
+    column-gap: 1rem;
+}
+/*-------- /Grid -------- */
+
+/*-------- Responsive -------- */
+/* Descripcion: Ajustes adaptativos para pantallas pequenas.
+ * Estructura:
+ *          - @media (max-width: 750px): reduce margenes y apila el intro
+ */
+
+@media(max-width: 750px){
+    main{
+        margin: 0 1rem;
+    }
+    .Grid-ul{
+        margin: 0 0 2rem;
+    }
+    .Intro{
+        flex-flow: column nowrap;
+    }
+}
+/*-------- /Responsive -------- */

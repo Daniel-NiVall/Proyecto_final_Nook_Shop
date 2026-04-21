@@ -1,0 +1,281 @@
+/*
+----------------------------------------
+footer.css
+- footer
+- nav
+- images
+- socials
+----------------------------------------
+*/
+
+/*-------- Footer -------- */
+/* Descripcion: Estilos del pie de pagina global del sitio.
+ * Estructura:
+ *          - Footer (contenedor principal)
+ *          - Footer-nav (bloque de navegacion)
+ *          - Footer-images (bloque visual)
+ *          - Footer-socials (bloque de redes)
+ */
+.Footer{
+    width: 100%;
+    min-height: 300px;
+    padding: 5rem 3rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: start;
+
+    column-gap: 10%;
+    row-gap: 2rem;
+
+    background-color: var(--color-primary);
+}
+
+/*-------- /Footer -------- */
+
+/*-------- Footer Nav -------- */
+/* Descripcion: Navegacion interna del footer con enlaces de categorias y pagina informativa.
+ * Estructura:
+ *          - Footer-nav
+ *          - Footer-span (titulares de columna)
+ *          - Footer-ul / Footer-li
+ *          - Footer-a (enlaces)
+ */
+
+.Footer-nav,
+.Footer-socials{
+    order: 0;
+}
+
+.Footer-span{
+    margin: 0 0 1rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: start;
+    gap: .5rem;
+
+    font-family: var(--font-family-content);
+    font-size: clamp(var(--font-s-16), 1vw, var(--font-s-20));
+    color: var(--color-black);
+    text-align: center;
+}
+
+.Footer-span:not(:last-child)::after{
+    /* Pseudoelemento: separador visual bajo cada titulo de columna */
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-black);
+}
+
+.Footer-ul{
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+
+    gap: 1rem;
+}
+.Footer-li{
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.Footer-a{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--font-family-content);
+    font-size: clamp(var(--font-s-16), 1vw, var(--font-s-20));
+    color: var(--color-dark-grey);
+    text-align: center;
+
+    transition: color .5s ease;
+}
+
+.Footer-a::after{
+    /* Pseudoelemento: subrayado animado para enlaces del footer */
+    content: "";
+    height: 1px;
+    width: 100%;
+
+    display: block;
+    transform: scaleX(0);
+    transform-origin: left;
+
+    background-color: var(--color-black); 
+}
+
+.Footer-a:hover{
+    color: var(--color-black);
+}
+
+.Footer-a:hover::after{
+    /* Reutiliza la animacion para reforzar el hover del enlace */
+    animation: underline .7s linear both;
+}
+
+.Footer-a:focus::after{
+    /* Estado accesible para teclado */
+    transform: scaleX(1);
+}
+
+
+
+@keyframes underline {
+    0% { transform: scaleX(0); transform-origin: left; }
+    45% { transform: scaleX(1); transform-origin: left; }
+    50% { transform: scaleX(1); transform-origin: right; }
+    65% { transform: scaleX(0); transform-origin: right; }
+    100% { transform: scaleX(1); transform-origin: right; }
+}
+
+/*-------- /Footer Nav -------- */
+
+
+/*-------- Footer Images -------- */
+/* Descripcion: Bloque central con imagenes decorativas y copyright.
+ * Estructura:
+ *          - Footer-images
+ *          - Footer-villagers
+ *          - Footer-img / Villager
+ *          - Footer-copyright
+ *          - Footer-logo / Logo / Logo-img
+ */
+
+
+
+.Footer-images{
+    order: 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+}
+
+.Footer-villagers{
+    width: fit-content;
+    min-width: fit-content;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10vw;
+}
+
+.Footer-img,
+.Villager{
+    width: clamp(4rem, 15vw, 6rem);
+    height: auto;
+}
+
+.Footer-copyright{
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.Footer-logo,
+.Logo{
+    text-align: center;
+}
+
+.Logo-img{
+    /* Se deja el ancho controlado por el contenedor para mantener proporciones del logo */
+    height: auto;
+}
+
+/*-------- /Footer Images -------- */
+
+/*-------- Footer Socials -------- */
+/* Descripcion: Enlaces a redes sociales con subrayado animado.
+ * Estructura:
+ *          - Social / Social-wrapper
+ *          - Social-a
+ *          - Footer-icon
+ */
+
+.Social,
+.Social-wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.Social-wrapper::after{
+    /* Pseudoelemento: linea animada debajo del enlace social */
+    content: "";
+    height: 1px;
+    width: 100%;
+
+    display: block;
+    transform: scaleX(0);
+    transform-origin: left;
+
+    background-color: var(--color-black);
+}
+.Social-a{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+
+    color: var(--color-dark-grey);
+    font-size: clamp(var(--font-s-16), 1vw, var(--font-s-20));
+}
+
+.Footer-icon{
+    width: 1.5rem;
+    width: clamp(1.5rem, 2vw, 2rem);
+}
+
+.Social-a:hover{
+    /* Cambio de color en hover para destacar el enlace externo */
+    color: var(--color-black);
+}
+
+.Social-wrapper:hover::after{
+    /* Reutiliza la misma animacion que la navegacion del footer */
+    animation: underline .7s linear both;
+}
+
+.Social-wrapper:focus::after{
+    /* Estado accesible para teclado */
+    transform: scaleX(1);
+}
+
+/*-------- /Footer Socials -------- */
+
+/*-------- Responsive -------- */
+/* Descripcion: Ajuste responsivo del orden del footer en pantallas mas estrechas.
+ * Estructura:
+ *          - @media (max-width: 1030px): reordena la columna de imagenes
+ */
+
+@media(max-width: 1030px){
+    .Footer-images{
+        order: 1;
+    }
+}
+
+/*-------- /Responsive -------- */

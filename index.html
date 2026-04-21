@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- 
+    Descripción: este archivo HTML contiene la página principal del sitio web.
+    Estructura general:
+    - Header / menú: Logo, navegacion y enlaces a favoritos y carrito
+    - Introduccion: Sección con imagenes introductorias sobre la web
+    - Colaboraciones: Sección de las colaboraciones existentes
+    - Populares: Carrusel de los productos más populares
+    - Novedades: Carrusel de los porductos nuevos
+    - Footer: pie de pagina
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+
+    <!--SE CARGA INICIALMENTE LOS CSS CON PRELOAD Y CUANDO TERMINAN SE CONVIERTEN A STYLESHEET -->
+    <!-- ESTO ACELERA LA CARGA Y EVITA BLOQUEOS DE RENDER -->
+    <link rel="preload" href="css/menu.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="css/menu.css">
+    </noscript>
+
+    <link rel="preload" href="css/card.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="css/card.css">
+    </noscript>
+
+    <link rel="preload" href="css/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="css/footer.css">
+    </noscript>
+
+    <link rel="preload" href="css/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="css/index.css">
+    </noscript>
+
+    <!-- REDUCE EL WATERFALL DE IMPORTS -->
+    <link rel="modulepreload" href="js/storage.js">
+    <link rel="modulepreload" href="js/menu.js">
+    <script type="module" src="js/index.js"></script>
+
+    <link rel="shortcut icon" href="assets/iconos/Nook_shop_favicon.webp" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+            rel="stylesheet">
+    </noscript>
+
+
+    <!-- Primary Meta Tags -->
+<title>Nook Shop</title>
+<meta name="title" content="Nook Shop">
+<meta name="description" content="Descubre Nook Shop, tu tienda inspirada en Animal Crossing: muebles, ropa, fósiles, arte y música para diseñar tu isla con estilo único.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://127.0.0.1:5500/Proyecto%20final/Animal%20Crossing%20Shop/index.html">
+    <meta property="og:title" content="Nook Shop">
+    <meta property="og:description"
+        content="Descubre Nook Shop, tu tienda inspirada en Animal Crossing: muebles, ropa, fósiles, arte y música para diseñar tu isla con estilo único.">
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png">
+
+    <!-- X (Twitter) -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://127.0.0.1:5500/Proyecto%20final/Animal%20Crossing%20Shop/index.html">
+    <meta property="twitter:title" content="Nook Shop">
+    <meta property="twitter:description"
+        content="Descubre Nook Shop, tu tienda inspirada en Animal Crossing: muebles, ropa, fósiles, arte y música para diseñar tu isla con estilo único.">
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png">
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+</head>
+
+
+<body>
+    <!-- 
+    HEADER 
+    - contiene el logo, la navegacion, los enlaces a favoritos y carrito y el boton del menu (oculto cuando la ventana es mayor de 850px)
+    - cuando la ventana es menor de 850px se oculta la navegacion y aparece el boton de menu
+    -->
+    <header class="Header">
+        <h1 class="Header-h1 Logo">
+            <a href="./index.html" title="Nook Shop" class="Logo-a">
+                <picture class="Logo-picture">
+                    <img loading="lazy" src="assets/iconos/Nook_shop_logo.webp" alt="Nook shop logo" class="Logo-img">
+                </picture>
+            </a>
+        </h1>
+        <!-- NAVEGACIÓN DEL HEADER -->
+        <nav class="Header-nav Nav">
+            <ul class="Nav-ul">
+
+                <li class="Nav-li">
+                    <a href="./category.html?id=mobiliario" title="Mobiliario" class="Nav-a">
+                        Mobiliario
+                    </a>
+                </li>
+
+                <li class="Nav-li">
+                    <a href="./category.html?id=ropa" title="Ropa" class="Nav-a">
+                        Ropa
+                    </a>
+                </li>
+
+                <li class="Nav-li">
+                    <a href="./category.html?id=fosiles" title="Fósiles" class="Nav-a">
+                        Fósiles
+                    </a>
+                </li>
+
+                <!-- HEADER dropdown -->
+                <li class="Nav-li Nav-li--dropdown">
+                    <button class="Nav-button" title="Desplegable menú arte">
+                        Arte
+                    </button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="Nav-svg"
+                        aria-hidden="true" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                    </svg>
+                    <ul class="Nav-subul">
+
+                        <li class="Nav-subli">
+                            <a href="./category.html?id=cuadros" title="Cuadros" class="Nav-a">
+                                Cuadros
+                            </a>
+                        </li>
+
+                        <li class="Nav-subli">
+                            <a href="./category.html?id=esculturas" title="Esculturas" class="Nav-a">
+                                Esculturas
+                            </a>
+                        </li>
+
+                        <li class="Nav-subli">
+                            <a href="./category.html?id=musica" title="Música" class="Nav-a">
+                                Música
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="Nav-li">
+                    <a href="./about.html" title="Sobre nosotros" class="Nav-a">
+                        Sobre nosotros
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- ENLACES DE CARRITO Y FAVORITOS -->
+        <div class="Header-buttons">
+            <a href="./favourites.html" title="Favoritos" class="Header-a Button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="Button-svg"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                </svg>
+                <span class="Button-span Button-span--fav"></span>
+            </a>
+
+            <a href="./cart.html" title="Carrito" class="Header-a Button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="Button-svg"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg>
+                <span class="Button-span Button-span--cart"></span>
+            </a>
+        </div>
+
+        <!-- BOTÓN MENU PARA MOBILE -->
+        <button class="Header-button Button Button-menu" title="Abrir menú" aria-label="Abrir menú">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="Button-svg"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+        </button>
+    </header>
+
+    <!-- 
+    MENU PARA MOBILE 
+    - contiene una navegacion simplificada y los enlaces de favoritos y carrito
+    -->
+    <div class="Menu">
+        <button class="Menu-button Button Button-close" title="Cerrar menú" aria-label="Cerrar menú">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="Button-svg"
+                viewBox="0 0 16 16">
+                <path
+                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+            </svg>
+        </button>
+
+        <nav class="Menu-nav MenuNav">
+            <ul class="MenuNav-ul">
+                <li class="MenuNav-li">
+                    <a href="./category.html?id=mobiliario" title="Mobiliario" class="MenuNav-a">
+                        Mobiliario
+                    </a>
+                </li>
+                <li class="MenuNav-li">
+                    <a href="./category.html?id=ropa" title="Ropa" class="MenuNav-a">
+                        Ropa
+                    </a>
+                </li>
+                <li class="MenuNav-li">
+                    <a href="./category.html?id=fosiles" title="Fósiles" class="MenuNav-a">
+                        Fósiles
+                    </a>
+                </li>
+                <li class="MenuNav-li">
+                    <a href="./category.html?id=cuadros" title="Cuadros" class="MenuNav-a">
+                        Cuadros
+                    </a>
+                </li>
+                <li class="MenuNav-li">
+                    <a href="./category.html?id=esculturas" title="Esculturas" class="MenuNav-a">
+                        Esculturas
+                    </a>
+                </li>
+                <li class="MenuNav-li">
+                    <a href="./category.html?id=musica" title="Música" class="MenuNav-a">
+                        Música
+                    </a>
+                </li>
+                <li class="MenuNav-li">
+                    <a href="./about.html" title="Sobre nosotros" class="MenuNav-a">
+                        Sobre nosotros
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="Menu-buttons">
+            <a href="./favourites.html" title="Favoritos" class="Menu-a Button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="Menu-svg Button-svg" viewBox="0 0 16 16">
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                </svg>
+                <span class="Button-span Button-span--fav"></span>
+            </a>
+
+            <a href="./cart.html" title="Carrito" class="Menu-a Button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="Button-svg"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg>
+                <span class="Button-span Button-span--cart">
+                </span>
+            </a>
+        </div>
+    </div>
+
+    <!-- 
+    INTRO 
+    - conjunto de imagenes con texto a modo de introduccion de la web 
+    -->
+    <div class="Intro">
+        <div class="Gallery">
+            <p class="Gallery-p Gallery-p--furniture">
+                <span class="Gallery-span">Diseña espacios únicos. Todos los elementos de decoración en la palma de tu
+                    mano.</span>
+                <span class="Gallery-span">Selecciona tus muebles favoritos y decora tu isla con tu propio
+                    estilo. Tú imagina tu espacio, nosotros te acercamos los productos para hacerlo
+                    realidad.</span>
+            </p>
+            <div class="Gallery-images">
+                <div class="Gallery-bg Bg Bg-furniture1"></div>
+                <div class="Gallery-bg Bg Bg-furniture2"></div>
+            </div>
+        </div>
+        <div class="Gallery">
+            <p class="Gallery-p Gallery-p--clothes">
+                <span class="Gallery-span">Expresa tu estilo con prendas únicas para cada momento en la isla. Descubre
+                    ropa y accesorios en la palma de tu mano, combina tus favoritos y
+                    crea looks que hablen de ti.</span>
+                <span class="Gallery-span">Renueva tu armario con piezas que encajan con tu personalidad y tu ritmo de
+                    juego. Tú imagina tu outfit, nosotros te acercamos los productos para hacerlo
+                    realidad.</span>
+            </p>
+            <div class="Gallery-images">
+                <div class="Gallery-bg Bg Bg-clothes1"></div>
+                <div class="Gallery-bg Bg Bg-clothes2"></div>
+            </div>
+        </div>
+        <!-- 
+        BOTON HACIA COLLABS
+        - esta visible durante toda la intro, al pulsarlo navega hasta la seccion de colaboraciones
+        -->
+        <a href="#Collabs" class="Intro-a">
+            Ver los productos
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="Icon-arrow"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4" />
+            </svg>
+        </a>
+
+    </div>
+
+    <!-- MAIN -->
+    <main class="Main">
+        <!-- 
+        COLLABORATIONS
+        - enlaces hacia las colaboraciones con la tiendas de mobiliario, la de ropa y el museo
+        -->
+        <div class="Collabs" id="Collabs">
+            <h2 class="Collabs-h2">Visita nuestras colaboraciones</h2>
+            <div class="Collabs-wrapper">
+                <a href="./category.html?id=mobiliario" title="Colaboración Tom Nook"
+                    class="Collabs-a Collab Collab--nook">
+                    <div class="Collab-gallery Collab-gallery--multiple">
+                        <picture class="Collab-picture">
+                            <img loading="lazy" src="assets/iconos/nendo.webp" alt="Nendo-icon" class="Collab-img">
+                        </picture>
+                        <picture class="Collab-picture">
+                            <img loading="lazy" src="assets/iconos/tendo.webp" alt="Tendo-icon" class="Collab-img">
+                        </picture>
+                    </div>
+                    <span class="Collab-span">
+                        Tom Nook
+                    </span>
+                </a>
+
+                <a href="./category.html?id=ropa" title="Colaboración Hermanas Maanitas"
+                    class="Collabs-a Collab Collab--sisters">
+                    <div class="Collab-gallery Collab-gallery--multiple">
+                        <picture class="Collab-picture">
+                            <img loading="lazy" src="assets/iconos/mili-manitas.webp" alt="Mili-icon"
+                                class="Collab-img">
+                        </picture>
+                        <picture class="Collab-picture">
+                            <img loading="lazy" src="assets/iconos/pili-manitas.webp" alt="Pili-icon"
+                                class="Collab-img">
+                        </picture>
+                        <picture class="Collab-picture">
+                            <img loading="lazy" src="assets/iconos/tili-manitas.webp" alt="Tili-icon"
+                                class="Collab-img">
+                        </picture>
+                    </div>
+                    <span class="Collab-span">
+                        Las hermanas manitas
+                    </span>
+                </a>
+
+                <a href="./category.html?id=museo" title="Colaboración Museo" class="Collabs-a Collab Collab--museum">
+                    <div class="Collab-gallery Collab-gallery--individual">
+                        <picture class="Collab-picture">
+                            <img loading="lazy" src="assets/iconos/socrates-museo.webp" alt="Socrates-icon"
+                                class="Collab-img">
+                        </picture>
+                    </div>
+                    <span class="Collab-span">
+                        El museo
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <!-- CARRUSELES DE PRODUCTOS POPULARES Y NUEVOS -->
+        <!-- LOS PRODUCTOS SE AÑADEN AL SEACTION-INNER MEDIANTE FETCH -->
+        <section class="Section Section--popular Popular">
+            <h2 class="Section-h2">Los más populares</h2>
+            <div class="Section-carrousel Section-carrousel--popular">
+                <!-- 
+                BOTONES CARRUSEL
+                - botones de avance y retroceso del carrusel
+                -->
+                <button class="Section-button Section-button--next Popular-next" title="Siguiente productos populares"
+                    aria-label="Siguiente productos populares">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="Section-svg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </button>
+                <button class="Section-button Section-button--prev Popular-prev" title="Anterior productos populares"
+                    aria-label="Anterior productos populares">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="Section-svg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                    </svg>
+                </button>
+                <div class="Section-outer Section-outer--popular">
+                    <!-- PRODUCTOS INTRODUCIDOS CON JAVASCRIPT -->
+                    <ul class="Section-inner Section-inner--popular">
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="Section Section--new New">
+            <h2 class="Section-h2">Las últimas novedades</h2>
+            <div class="Section-carrousel Section-carrousel--new">
+                <!-- 
+                BOTONES CARRUSEL
+                - botones de avance y retroceso del carrusel
+                -->
+                <button class="Section-button Section-button--next New-next" title="Siguiente productos nuevos" aria-label="Siguiente productos nuevos">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="Section-svg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </button>
+                <button class="Section-button Section-button--prev New-prev" title="Anterior productos nuevos" aria-label="Anterior productos nuevos">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="Section-svg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                    </svg>
+                </button>
+                <div class="Section-outer Section-outer--new">
+                    <!-- PRODUCTOS INTRODUCIDOS CON JAVASCRIPT -->
+                    <ul class="Section-inner Section-inner--new">
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 
+    FOOTER 
+    - contiene navegación, imagenes + copyright, enlaces externos (LinkedIn y Github)
+    -->
+    <footer class="Footer">
+        <nav class="Footer-nav">
+            <span class="Footer-span">¿Qué estas buscando?</span>
+            <ul class="Footer-ul">
+                <li class="Footer-li">
+                    <a title="Mobiliario" href="./category.html?id=mobiliario" class="Footer-a">
+                        Mobiliario
+                    </a>
+                </li>
+                <li class="Footer-li">
+                    <a title="Ropa" href="./category.html?id=ropa" class="Footer-a">
+                        Ropa
+                    </a>
+                </li>
+                <li class="Footer-li">
+                    <a title="Fósiles" href="./category.html?id=fosiles" class="Footer-a">
+                        Fósiles
+                    </a>
+                </li>
+                <li class="Footer-li">
+                    <a title="Cuadros" href="./category.html?id=cuadros" class="Footer-a">
+                        Cuadros
+                    </a>
+                </li>
+                <li class="Footer-li">
+                    <a title="Esculturas" href="./category.html?id=esculturas" class="Footer-a">
+                        Esculturas
+                    </a>
+                </li>
+                <li class="Footer-li">
+                    <a title="Música" href="./category.html?id=musica" class="Footer-a">
+                        Música
+                    </a>
+                </li>
+                <li class="Footer-li">
+                    <a title="Sobre nosotros" href="./about.html" class="Footer-a">
+                        Sobre nosotros
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="Footer-images">
+            <div class="Footer-villagers">
+                <img loading="lazy" decoding="async" src="assets/images/villager_4.webp"
+                    alt="Personaje de Animal Crossing" class="Footer-img Villager">
+                <img loading="lazy" decoding="async" src="assets/images/88px-Mabel_aF_2.webp"
+                    alt="Personaje de Animal Crossing" class="Footer-img Villager">
+            </div>
+            <div class="Footer-copyright">
+                <a href="./index.html" title="Nook Shop" class="Footer-logo Logo">
+                    <img loading="lazy" decoding="async" src="assets/iconos/Nook_shop_logo.webp" alt="Logo Nook Shop"
+                        class="Logo-img">
+                </a>
+                <span class="Footer-span">
+                    © 2026 Nook Shop · All rights reserved | Nook Shop
+                </span>
+            </div>
+        </div>
+        <div class="Footer-socials">
+            <span class="Footer-span">Dónde puedes encontrarnos</span>
+            <ul class="Footer-ul">
+                <li class="Footer-li">
+                    <div class="Social-wrapper Social">
+                        <a href="https://github.com/Daniel-NiVall" title="GitHub" rel="noreferrer noopener"
+                            target="_blank" class="Social-a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="Footer-icon" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </li>
+                <li class="Footer-li">
+                    <div class="Social-wrapper Social">
+                        <a href="https://www.linkedin.com/in/daniel-niceto-98340b158" title="LinkedIn"
+                            rel="noreferrer noopener" target="_blank" class="Social-a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="Footer-icon" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                            </svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

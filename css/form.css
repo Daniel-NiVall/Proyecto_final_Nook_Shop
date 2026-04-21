@@ -1,0 +1,177 @@
+/*
+----------------------------------------
+form.css
+- form
+----------------------------------------
+*/
+
+/*-------- Form -------- */
+/* Descripcion: Estilos base del formulario de compra reutilizado en el carrito.
+ * Estructura:
+ *          - Form (contenedor principal)
+ *          - Form.isVisible (estado abierto/cerrado)
+ *          - Form-fieldset (bloques de informacion)
+ *          - Form-title / Form-span / Form-button / Icon-dropdown
+ *          - Form-content (contenido desplegable)
+ *          - Form-wrapper y variantes
+ *          - Form-label / Form-input / Form-submit
+ */
+.Form{
+    gap: 1rem;
+
+    flex-flow: column nowrap;
+    align-items: start;
+    justify-content: start;
+
+    display: none;
+}
+
+.Form.isVisible{
+    /* Modificador de estado: muestra el formulario completo */
+    display: flex;
+}
+
+.Form-fieldset{
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+    justify-content: start;
+    gap: .5rem;
+}
+
+.Form-fieldset:after{
+    /* Pseudoelemento: separador visual entre bloques del formulario */
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-black);
+}
+
+.Form-title{
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Form-span{
+    font-weight: 800;
+}
+
+.Form-button{
+    padding: .2rem;
+    background: transparent;
+    border-radius: .5rem;
+    
+}
+
+.Icon-dropdown{
+    width: 1.5rem;
+
+    /* Transicion del icono para acompañar el despliegue del bloque */
+    transition: transform .5s ease;
+}
+
+.Icon-dropdown.isVisible{
+    /* Modificador de estado: rota la flecha cuando el contenido esta abierto */
+    transform: rotate(180deg);
+}
+
+.Form-button:hover{
+    /* Feedback visual del boton desplegable */
+    background-color: var(--color-primary-hover);
+    color: var(--color-white);
+}
+
+.Form-content{
+    width: 100%;
+    padding: 0 1rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+    justify-content: start;
+    gap: .5rem;
+
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height .5s ease, opacity .1s ease;
+}
+
+.Form-content.isVisible{
+    /* Estado visible: expande el bloque y lo hace completamente opaco */
+    margin: 0 0 1rem;
+    max-height: 40rem;
+    opacity: 1;
+}
+
+.Form-wrapper{
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: start;
+    gap: .2rem;
+}
+
+.Form-wrapper--row{
+    /* Variante horizontal: se usa para checkbox + label */
+    gap: 1rem;
+
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.Form-wrapper--span{
+    /* Variante: separacion extra para campos que ocupan todo el ancho */
+    gap: .5rem;
+}
+
+.Form-label{
+    font-family: var(--font-family-content);
+    font-weight: var(--font-w-500);
+    font-size: var(--font-s-16);
+}
+
+.Form-input,
+.Form-input--text{
+    padding: .5rem;
+    border: 1px solid var(--color-black);
+    border-radius: .5rem;
+}
+
+.Form-input.isEmpty{
+    /* Estado de validacion: marca el input cuando falta completar un campo */
+    border: 1px solid var(--color-red);
+}
+
+.Form-input--checkbox{
+    /* Acento visual del checkbox alineado con la paleta del proyecto */
+    accent-color: var(--color-primary);
+}
+
+.Form-input[placeholder]{
+    /* Selector de atributo: suaviza el color del placeholder */
+    color: var(--color-dark-grey);
+}
+
+.Form-submit{
+    width: 100%;
+    padding: .5rem;
+
+    border-radius: 100vh;
+    background-color: var(--color-primary);
+}
+
+.Form-submit:hover{
+    /* Hover solo visual: refuerza la accion principal del formulario */
+    background-color: var(--color-primary-hover);
+    color: var(--color-white);
+}
+/*-------- /Form -------- */

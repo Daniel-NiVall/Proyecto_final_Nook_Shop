@@ -1,0 +1,124 @@
+/*
+----------------------------------------
+menu.css
+- menu
+- buttons
+- nav
+----------------------------------------
+*/
+
+/*-------- Menu -------- */
+/* Descripcion: Estilos del menu lateral/mobile que se despliega desde el header.
+ * Estructura:
+ *          - Menu (contenedor overlay)
+ *          - Menu.isVisible (estado abierto)
+ *          - Button-close (boton de cierre)
+ *          - Menu-buttons (acciones auxiliares)
+ *          - MenuNav-ul / MenuNav-a (navegacion principal del menu)
+ */
+.Menu{
+    align-items: center;
+    background-color: var(--color-primary);
+    display: flex;
+    flex-flow: column nowrap;
+    height: 0;
+    justify-content: start;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    transition: height .5s ease;
+    width: 100%;
+    z-index: 4;
+}
+
+.Menu.isVisible{
+    /* Modificador de estado: expande el menu a pantalla completa */
+    height: 100vh;
+    pointer-events: all;
+}
+
+/*-------- /Menu -------- */
+
+/*-------- Menu Header Buttons -------- */
+/* Descripcion: Controles superiores del menu desplegable.
+ * Estructura:
+ *          - Button-close (cerrar menu)
+ *          - Menu-buttons (acciones de favoritos y carrito)
+ */
+
+.Button-close{
+    position: absolute;
+    right: 3rem;
+    top: 3rem;
+}
+
+.Menu-buttons{
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1.5rem;
+    justify-content: end;
+}
+
+/*-------- /Menu Header Buttons -------- */
+
+/*-------- Menu Navigation -------- */
+/* Descripcion: Navegacion principal del menu mobile.
+ * Estructura:
+ *          - MenuNav-ul (lista vertical)
+ *          - MenuNav-a (enlaces)
+ *          - MenuNav-a::after (subrayado animado)
+ */
+.MenuNav-ul{
+    align-items: start;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    justify-content: start;
+    margin: 20vh auto 5vh;
+    width: fit-content;
+}
+
+.MenuNav-a{
+    align-items: start;
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: var(--font-family-content);
+    font-size: clamp(var(--font-s-16), 2vw, var(--font-s-20));
+    font-weight: var(--font-w-400);
+    gap: .3rem;
+    justify-content: center;
+}
+
+.MenuNav-a::after{
+    /* Pseudoelemento: subrayado base que se anima en hover/focus */
+    content: "";
+    background-color: var(--color-black);
+    display: block;
+    height: 1px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: left ;
+}
+
+.MenuNav-a:hover.MenuNav-a::after{
+    /* Pseudoselector combinado: activa la animacion del subrayado */
+    animation: underline .7s linear both;
+}
+
+.MenuNav-a:focus.MenuNav-a::after{
+    /* Estado de foco visible para navegacion por teclado */
+    transform: scaleX(1);
+}
+
+@keyframes underline {
+    0% { transform: scaleX(0); transform-origin: left; }
+    45% { transform: scaleX(1); transform-origin: left; }
+    50% { transform: scaleX(1); transform-origin: right; }
+    65% { transform: scaleX(0); transform-origin: right; }
+    100% { transform: scaleX(1); transform-origin: right; }
+}
+
+/*-------- /Menu Navigation -------- */

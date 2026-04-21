@@ -1,0 +1,326 @@
+/*
+----------------------------------------
+header.css
+- header
+- logo
+- nav
+- dropdown
+- buttons
+----------------------------------------
+*/
+
+/*-------- Header -------- */
+/* Descripcion: Estilos del encabezado fijo del sitio.
+ * Estructura:
+ *          - Header (contenedor principal)
+ *          - Header.isVisible (estado de entrada/salida)
+ *          - Header-h1 / Header-a / Logo / Logo-img
+ *          - Nav (navegacion principal)
+ *          - Header-buttons (acciones de favoritos y carrito)
+ *          - Button-menu (menu mobile)
+ */
+
+.Header{
+    width: 100%;
+    height: 6.25rem;
+    margin: 0;
+    padding: 0 3rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    z-index: 3;
+
+    background-color: var(--color-primary);
+
+    /* line-height: 1 hace que en mobile el header no se estreche verticalmente */
+    line-height: 1;
+
+    transform: translateY(-6.25rem);
+    transition: transform .5s ease;
+}
+.Header.isVisible{
+    /* Modificador de estado: devuelve el header a la posicion visible */
+    transform: translateY(0);
+}
+
+/*-------- /Header -------- */
+
+/*-------- Logo -------- */
+/* Descripcion: Contenedor y dimensionado del logo del sitio.
+ * Estructura:
+ *          - Header-h1 / Header-a (contenedor enlazable)
+ *          - Logo (margen de separacion)
+ *          - Logo-img (imagen del logo)
+ */
+.Header-h1,
+.Header-a{
+    max-width: 12.5rem;
+}
+.Logo{
+    margin: 0 2rem 0 0;
+}
+
+.Logo-img{
+    width: clamp(9.375rem, 40vw, 12.5rem);
+    min-width: 9rem;
+    height: auto;
+}
+
+/*-------- /Logo -------- */
+
+/*-------- Navigation -------- */
+/* Descripcion: Navegacion principal del header con enlaces y dropdown.
+ * Estructura:
+ *          - Nav
+ *          - Nav-ul / Nav-li
+ *          - Nav-a / Nav-button / Nav-span
+ *          - Nav-subul (submenu desplegable)
+ *          - Nav-svg (icono de desplegable)
+ */
+.Nav{
+    width: 100%;
+    max-width: 50rem;
+    height: 100%;
+
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Nav-ul{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    /* gap: 2.5rem; */
+}
+
+.Nav-li{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: .5rem;
+
+    position: relative;
+}
+
+.Nav-li--dropdown:hover .Nav-subul,
+.Nav-li--dropdown:focus-within .Nav-subul{
+    /* Pseudoclases combinadas: muestran el submenu en hover o con foco por teclado */
+    height: 8.5rem;
+    padding: 1rem 2rem;
+
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
+.Nav-a,
+.Nav-span,
+.Nav-button{
+    width: max-content;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: start;
+    gap: .3rem;
+
+    font-family: var(--font-family-content);
+    font-size: clamp(var(--font-s-18), 2vw, var(--font-s-20));
+    font-weight: var(--font-w-500);
+    color: var(--color-black);
+}
+
+.Nav-a,
+.Nav-button{
+    /* Reutiliza fondo transparente para mantener la apariencia de enlace/boton limpio */
+    background-color: transparent;
+}
+
+.Nav-a::after,
+.Nav-button::after{
+    /* Pseudoelemento: subrayado animado para enlaces y botones de navegacion */
+    content: "";
+
+    width: 100%;
+    height: 1px;
+
+    display: block;
+    background-color: var(--color-black);
+
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.Nav-a:hover.Nav-a::after{
+    /* Pseudoselector combinado: activa la animacion del subrayado en hover */
+    animation: underline .7s linear both;
+}
+
+.Nav-a:focus.Nav-a::after{
+    /* Estado de foco visible mediante subrayado permanente */
+    transform: scaleX(1);
+}
+
+.Nav-a:focus-visible,
+.Nav-button:focus-visible,
+.Button:focus-visible{
+    /* Accesibilidad: contorno visible para navegacion por teclado */
+    outline: 2px solid var(--color-black);
+    outline-offset: 3px;
+}
+
+.Nav-svg{
+    width: 1rem;
+}
+
+@keyframes underline {
+    0% { transform: scaleX(0); transform-origin: left; }
+    45% { transform: scaleX(1); transform-origin: left; }
+    50% { transform: scaleX(1); transform-origin: right; }
+    65% { transform: scaleX(0); transform-origin: right; }
+    100% { transform: scaleX(1); transform-origin: right; }
+}
+
+/*-------- /Navigation -------- */
+
+/*-------- Dropdown -------- */
+/* Descripcion: Submenu desplegable de la navegacion principal.
+ * Estructura:
+ *          - Nav-subul (lista desplegable)
+ */
+.Nav-subul{
+    width: max-content;
+    height: 0;
+    padding: 0 2rem;
+    overflow: hidden;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+    gap: .8rem;
+
+    position: absolute;
+    top: 4rem;
+    left: 0;
+
+    background-color: var(--color-primary);
+    border-radius: 1rem;
+    opacity: 0;
+    pointer-events: none;
+
+    transition: height .3s linear, padding .3s linear, opacity .2s linear;
+}
+
+/*-------- /Dropdown -------- */
+
+/*-------- Header Buttons -------- */
+/* Descripcion: Acciones del header para favoritos, carrito y menu mobile.
+ * Estructura:
+ *          - Header-buttons
+ *          - Button
+ *          - Button-svg / Button-span / Button-span.hasItems
+ *          - Button-menu
+ */
+.Header-buttons{
+    margin: 0 0 0 2rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Button{
+    padding: .5rem;
+
+    position: relative;
+
+    border-radius: .5rem;
+
+    transition: background-color .2s linear, color .2s linear;
+}
+
+.Button:hover{
+    /* Estado hover comun para botones del header */
+    background-color: var(--color-primary-hover);
+}
+.Button:hover .Button-svg{
+    /* Cambia el icono al color de contraste al pasar el cursor */
+    fill: var(--color-white);
+}
+
+.Button-svg{
+    width: 1.5rem;
+    height: 1.5rem;
+
+    transition: .2s linear;
+}
+
+.Button-span{
+    font-family: var(--font-family-content);
+    font-size: var(--font-s-16);
+    font-weight: var(--font-w-600);
+}
+
+.Button-span.hasItems{
+    /* Modificador: burbuja de conteo cuando existen elementos en favoritos/carrito */
+    padding: .2rem .4rem;
+
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+
+    background-color: var(--color-tertiary);
+    border-radius: 100vh;
+    color: var(--color-black);
+
+    text-align: center;
+}
+
+.Button-menu{
+    /* Boton de menu oculto en desktop y usado solo en mobile */
+    display: none;
+
+    position: absolute;
+    right: 3vw;
+}
+
+/*-------- /Header Buttons -------- */
+
+/*-------- Responsive -------- */
+/* Descripcion: Ajustes responsivos del header para pantallas pequenas.
+ * Estructura:
+ *          - @media (max-width: 850px): centra header y oculta navegacion/acciones
+ */
+@media(max-width:850px){
+    .Header{
+        justify-content: center;
+    }
+
+    .Nav{
+        display: none;
+    }
+
+    .Header-buttons{
+        display: none;
+    }
+
+    .Button-menu{
+        display: block;
+    }
+}
+
+/*-------- /Responsive -------- */

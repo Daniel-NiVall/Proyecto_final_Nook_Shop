@@ -1,0 +1,4542 @@
+﻿[
+  {
+    "id": "pantalon-corto-multicolor",
+    "name": "Pantalón corto multicolor",
+    "price": 1100,
+    "category": "ropa",
+    "subcategory": "pantalones",
+    "sale": 20,
+    "popular": false,
+    "new": false,
+    "description": "La construcción prioriza libertad al caminar y una estética bien proporcionada. La textura visual añade personalidad y evita que el estilismo se vea plano. Se luce en rincones coloridos, ferias y eventos de barrio.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": "Verde",
+        "code": "#6a8a6d",
+        "src": "assets/clothes/bottoms/BottomsTexPantsHalfMulticolor0.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexPantsHalfMulticolor0_upscaled.webp"
+      },
+      {
+        "color": "Rojo",
+        "code": "#b8574d",
+        "src": "assets/clothes/bottoms/BottomsTexPantsHalfMulticolor1.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexPantsHalfMulticolor1_upscaled.webp"
+      },
+      {
+        "color": "Amarillo",
+        "code": "#d0b27f",
+        "src": "assets/clothes/bottoms/BottomsTexPantsHalfMulticolor3.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexPantsHalfMulticolor3_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "sudadera-mullida",
+      "camisa-anudada",
+      "sudadera-camiseta"
+    ]
+  },
+  {
+    "id": "pantalon-agujereado",
+    "name": "Pantalón agujereado",
+    "price": 1100,
+    "category": "ropa",
+    "subcategory": "pantalones",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Su forma aporta dinamismo y una lectura visual clara desde cualquier ángulo. Genera un balance atractivo entre funcionalidad y estilo. Encaja en ambientes creativos, zonas de ocio y tardes con amigos.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": "Celeste",
+        "code": "#5f7fa8",
+        "src": "assets/clothes/bottoms/BottomsTexPantsNormalDenimholes0.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexPantsNormalDenimholes0_upscaled.webp"
+      },
+      {
+        "color": "Blanco",
+        "code": "#c7cbce",
+        "src": "assets/clothes/bottoms/BottomsTexPantsNormalDenimholes2.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexPantsNormalDenimholes2_upscaled.webp"
+      },
+      {
+        "color": "Negro",
+        "code": "#42464b",
+        "src": "assets/clothes/bottoms/BottomsTexPantsNormalDenimholes3.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexPantsNormalDenimholes3_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "chaqueta-vaquera",
+      "camisa-de-franela",
+      "chaqueta-desteñida"
+    ]
+  },
+  {
+    "id": "pantalon-cargo",
+    "name": "Pantalón cargo",
+    "price": 770,
+    "category": "ropa",
+    "subcategory": "pantalones",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Su estructura ligera facilita un uso continuo con una caída natural y agradable. La terminación está pensada para mantener una imagen cuidada en uso real. Funciona muy bien en rutas por la plaza, mercados y zonas comerciales.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": "Verde bosque",
+        "code": "#8a9459",
+        "src": "assets/clothes/bottoms/BottomsTexPantsWideCargo0.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexPantsWideCargo0_upscaled.webp"
+      },
+      {
+        "color": "Azul marino",
+        "code": "#5f7fa8",
+        "src": "assets/clothes/bottoms/BottomsTexPantsWideCargo2.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexPantsWideCargo2_upscaled.webp"
+      },
+      {
+        "color": "Mostaza",
+        "code": "#d0b27f",
+        "src": "assets/clothes/bottoms/BottomsTexPantsWideCargo3.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexPantsWideCargo3_upscaled.webp"
+      }
+    ],
+    "collections": ["sudadera-camiseta", "camisa-madras", "chaqueta-rock"]
+  },
+  {
+    "id": "pantalo-bajo-vuelto",
+    "name": "Pantalón bajo vuelto",
+    "price": 1100,
+    "category": "ropa",
+    "subcategory": "pantalones",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "El planteamiento formal combina sencillez y carácter con un resultado muy combinable. Su presencia eleva conjuntos sencillos sin necesidad de accesorios excesivos. Queda especialmente bien en ambientes animados y luminosos.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": "Púrpura",
+        "code": "#8b6f92",
+        "src": "assets/clothes/bottoms/BottomsTexPantsWideSusomise1.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexPantsWideSusomise1_upscaled.webp"
+      },
+      {
+        "color": "Verde",
+        "code": "#709f97",
+        "src": "assets/clothes/bottoms/BottomsTexPantsWideSusomise2.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexPantsWideSusomise2_upscaled.webp"
+      },
+      {
+        "color": "Gris",
+        "code": "#6f7074",
+        "src": "assets/clothes/bottoms/BottomsTexPantsWideSusomise3.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexPantsWideSusomise3_upscaled.webp"
+      }
+    ],
+    "collections": ["sudadera-mostaza", "camisa-madras", "chaqueta-rock"]
+  },
+  {
+    "id": "falda-acampanada",
+    "name": "Falda acampanada",
+    "price": 1140,
+    "category": "ropa",
+    "subcategory": "falda",
+    "sale": 18,
+    "popular": false,
+    "new": false,
+    "description": "El volumen está controlado para mantener un acabado limpio y muy llevable. Aporta una sensación fresca que encaja bien en looks de diario. Da buen resultado en escenarios dinámicos donde prima la comodidad.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": "Rojo",
+        "code": "#b8574d",
+        "src": "assets/clothes/bottoms/BottomsTexSkirtAlineFlare0.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexSkirtAlineFlare0_upscaled.webp"
+      },
+      {
+        "color": "Negro",
+        "code": "#42464b",
+        "src": "assets/clothes/bottoms/BottomsTexSkirtAlineFlare1.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexSkirtAlineFlare1_upscaled.webp"
+      },
+      {
+        "color": "Rosa",
+        "code": "#e7b4cc",
+        "src": "assets/clothes/bottoms/BottomsTexSkirtAlineFlare2.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexSkirtAlineFlare2_upscaled.webp"
+      }
+    ],
+    "collections": ["camisa-anudada", "sudadera-mullida", "chaqueta-rock"]
+  },
+  {
+    "id": "falda-pelo",
+    "name": "Falda corta de pelo sintético",
+    "price": 1440,
+    "category": "ropa",
+    "subcategory": "falda",
+    "sale": 0,
+    "popular": true,
+    "new": false,
+    "description": "El diseño se siente práctico y actual, con una línea limpia que no recarga el conjunto. Refuerza un estilo cómodo con intención estética clara. Queda genial en terrazas, cafeterías y paseos de tarde.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": "Celeste",
+        "code": "#b9cfdf",
+        "src": "assets/clothes/bottoms/BottomsTexSkirtAlineFur0.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexSkirtAlineFur0_upscaled.webp"
+      },
+      {
+        "color": "Rosa",
+        "code": "#d7bdd8",
+        "src": "assets/clothes/bottoms/BottomsTexSkirtAlineFur1.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexSkirtAlineFur1_upscaled.webp"
+      },
+      {
+        "color": "Rojo",
+        "code": "#cf95ae",
+        "src": "assets/clothes/bottoms/BottomsTexSkirtAlineFur2.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexSkirtAlineFur2_upscaled.webp"
+      }
+    ],
+    "collections": ["sudadera-espacial", "camisa-anudada", "chaqueta-estampado-pitón"]
+  },
+  {
+    "id": "falda-marinera",
+    "name": "Falda marinera",
+    "price": 980,
+    "category": "ropa",
+    "subcategory": "falda",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "El volumen está controlado para mantener un acabado limpio y muy llevable. Suma carácter al atuendo sin robar protagonismo al resto de piezas. Funciona en espacios juveniles y encuentros al atardecer.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": "Azul amrino",
+        "code": "#5c5d90",
+        "src": "assets/clothes/bottoms/BottomsTexSkirtAlineSailor0.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexSkirtAlineSailor0_upscaled.webp"
+      },
+      {
+        "color": "Rojo",
+        "code": "#b8574d",
+        "src": "assets/clothes/bottoms/BottomsTexSkirtAlineSailor6.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexSkirtAlineSailor6_upscaled.webp"
+      },
+      {
+        "color": "Rosa",
+        "code": "#d7bdd8",
+        "src": "assets/clothes/bottoms/BottomsTexSkirtAlineSailor7.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexSkirtAlineSailor7_upscaled.webp"
+      }
+    ],
+    "collections": ["sudadera-camiseta", "camisa-de-franela", "chaqueta-vaquera"]
+  },
+  {
+    "id": "falda-petalos",
+    "name": "Falda pétalos",
+    "price": 1540,
+    "category": "ropa",
+    "subcategory": "falda",
+    "sale": 30,
+    "popular": true,
+    "new": true,
+    "description": "El corte acompaña bien el movimiento y mantiene una silueta cuidada durante todo el día. Se percibe equilibrada, práctica y visualmente atractiva. Se luce en rincones coloridos, ferias y eventos de barrio.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": "Moderno",
+        "code": "#5f7fa8",
+        "src": "assets/clothes/bottoms/BottomsTexSkirtAlineTutu0.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexSkirtAlineTutu0_upscaled.webp"
+      },
+      {
+        "color": "Tonos pastel",
+        "code": "#8b6f92",
+        "src": "assets/clothes/bottoms/BottomsTexSkirtAlineTutu1.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexSkirtAlineTutu1_upscaled.webp"
+      },
+      {
+        "color": "Arcoíris",
+        "code": "#b9cfdf",
+        "src": "assets/clothes/bottoms/BottomsTexSkirtAlineTutu2.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexSkirtAlineTutu2_upscaled.webp"
+      }
+    ],
+    "collections": ["camisa-madras", "sudadera-mostaza", "chaqueta-estampado-pitón"]
+  },
+  {
+    "id": "falda-chino",
+    "name": "Falda chino",
+    "price": 1560,
+    "category": "ropa",
+    "subcategory": "falda",
+    "sale": 0,
+    "popular": false,
+    "new": true,
+    "description": "La prenda se adapta con facilidad a distintos ritmos de uso sin perder forma. Ofrece una lectura visual ordenada y muy fácil de integrar. Se integra en planes cotidianos con una imagen fresca y natural.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": "Azul marino",
+        "code": "#5c5d90",
+        "src": "assets/clothes/bottoms/BottomsTexSkirtLongChino2.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexSkirtLongChino2_upscaled.webp"
+      },
+      {
+        "color": "Verde bosque",
+        "code": "#6a8a6d",
+        "src": "assets/clothes/bottoms/BottomsTexSkirtLongChino3.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexSkirtLongChino3_upscaled.webp"
+      },
+      {
+        "color": "Gris",
+        "code": "#5f7fa8",
+        "src": "assets/clothes/bottoms/BottomsTexSkirtLongChino4.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexSkirtLongChino4_upscaled.webp"
+      }
+    ],
+    "collections": ["camisa-anudada", "sudadera-espacial", "chaqueta-rock"]
+  },
+  {
+    "id": "falda-militar",
+    "name": "Falda militar",
+    "price": 1320,
+    "category": "ropa",
+    "subcategory": "falda",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "El corte acompaña bien el movimiento y mantiene una silueta cuidada durante todo el día. Favorece composiciones limpias con una estética muy adaptable. Se integra en planes cotidianos con una imagen fresca y natural.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": "Verde bosque",
+        "code": "#8a9459",
+        "src": "assets/clothes/bottoms/BottomsTexSkirtLongMaone0.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexSkirtLongMaone0_upscaled.webp"
+      },
+      {
+        "color": "Negro",
+        "code": "#42464b",
+        "src": "assets/clothes/bottoms/BottomsTexSkirtLongMaone1.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexSkirtLongMaone1_upscaled.webp"
+      },
+      {
+        "color": "Azul",
+        "code": "#5f7fa8",
+        "src": "assets/clothes/bottoms/BottomsTexSkirtLongMaone2.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexSkirtLongMaone2_upscaled.webp"
+      }
+    ],
+    "collections": ["camisa-de-franela", "sudadera-camiseta", "chaqueta-vaquera"]
+  },
+  {
+    "id": "falda-marinera-larga",
+    "name": "Falda marinera larga",
+    "price": 1560,
+    "category": "ropa",
+    "subcategory": "falda",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La confección equilibra soltura y ajuste para que el look se vea pulido sin rigidez. El acabado refuerza un aire desenfadado con un punto elegante. Se integra en planes cotidianos con una imagen fresca y natural.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": "Azul marino",
+        "code": "#5c5d90",
+        "src": "assets/clothes/bottoms/BottomsTexSkirtLongSailor0.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexSkirtLongSailor0_upscaled.webp"
+      },
+      {
+        "color": "Rojo",
+        "code": "#b8574d",
+        "src": "assets/clothes/bottoms/BottomsTexSkirtLongSailor6.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexSkirtLongSailor6_upscaled.webp"
+      },
+      {
+        "color": "Rosa",
+        "code": "#d7bdd8",
+        "src": "assets/clothes/bottoms/BottomsTexSkirtLongSailor7.webp",
+        "srcUpscaled": "assets/clothes/bottoms/BottomsTexSkirtLongSailor7_upscaled.webp"
+      }
+    ],
+    "collections": ["camisa-con-corbata", "sudadera-espacial", "chaqueta-estampado-pitón"]
+  },
+  {
+    "id": "falda-tirantes",
+    "name": "Falda con tirantes",
+    "price": 1600,
+    "category": "ropa",
+    "subcategory": "onepiece",
+    "sale": 0,
+    "popular": false,
+    "new": true,
+    "description": "El corte acompaña bien el movimiento y mantiene una silueta cuidada durante todo el día. El acabado refuerza un aire desenfadado con un punto elegante. Mantiene una imagen atractiva en contextos distendidos.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": "Rojo",
+        "code": "#b8574d",
+        "src": "assets/clothes/onepiece/TopsTexOnepieceAlineHSuspendersskirt0.webp",
+        "srcUpscaled": "assets/clothes/onepiece/TopsTexOnepieceAlineHSuspendersskirt0_upscaled.webp"
+      },
+      {
+        "color": "Rosa",
+        "code": "#d7bdd8",
+        "src": "assets/clothes/onepiece/TopsTexOnepieceAlineHSuspendersskirt2.webp",
+        "srcUpscaled": "assets/clothes/onepiece/TopsTexOnepieceAlineHSuspendersskirt2_upscaled.webp"
+      },
+      {
+        "color": "Gris",
+        "code": "#c7cbce",
+        "src": "assets/clothes/onepiece/TopsTexOnepieceAlineHSuspendersskirt4.webp",
+        "srcUpscaled": "assets/clothes/onepiece/TopsTexOnepieceAlineHSuspendersskirt4_upscaled.webp"
+      }
+    ],
+    "collections": ["camisa-anudada", "sudadera-mullida", "chaqueta-rock"]
+  },
+  {
+    "id": "vestido-rayas",
+    "name": "Vestido a rayas sin mangas",
+    "price": 1500,
+    "category": "ropa",
+    "subcategory": "onepiece",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "El volumen está controlado para mantener un acabado limpio y muy llevable. Aporta una sensación fresca que encaja bien en looks de diario. Queda genial en terrazas, cafeterías y paseos de tarde.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": "Rosa",
+        "code": "#d9aaa7",
+        "src": "assets/clothes/onepiece/TopsTexOnepieceAlineNHalterneckstripe0.webp",
+        "srcUpscaled": "assets/clothes/onepiece/TopsTexOnepieceAlineNHalterneckstripe0_upscaled.webp"
+      },
+      {
+        "color": "Verde",
+        "code": "#6a8a6d",
+        "src": "assets/clothes/onepiece/TopsTexOnepieceAlineNHalterneckstripe1.webp",
+        "srcUpscaled": "assets/clothes/onepiece/TopsTexOnepieceAlineNHalterneckstripe1_upscaled.webp"
+      },
+      {
+        "color": "Amarillo",
+        "code": "#d0b27f",
+        "src": "assets/clothes/onepiece/TopsTexOnepieceAlineNHalterneckstripe2.webp",
+        "srcUpscaled": "assets/clothes/onepiece/TopsTexOnepieceAlineNHalterneckstripe2_upscaled.webp"
+      }
+    ],
+    "collections": ["vestido-tirantes-encaje", "vestido-adorable", "atuendo-orihime"]
+  },
+  {
+    "id": "vestido-tirantes-encaje",
+    "name": "Vestido de tirantes encaje",
+    "price": 1520,
+    "category": "ropa",
+    "subcategory": "onepiece",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La prenda se adapta con facilidad a distintos ritmos de uso sin perder forma. Introduce un matiz distintivo que hace el conjunto más expresivo. Suma estilo en plazas centrales, bulevares y áreas peatonales.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": "Azul",
+        "code": "#bfd9da",
+        "src": "assets/clothes/onepiece/TopsTexOnepieceAlineNLace0.webp",
+        "srcUpscaled": "assets/clothes/onepiece/TopsTexOnepieceAlineNLace0_upscaled.webp"
+      },
+      {
+        "color": "Amarillo",
+        "code": "#d9d7b8",
+        "src": "assets/clothes/onepiece/TopsTexOnepieceAlineNLace1.webp",
+        "srcUpscaled": "assets/clothes/onepiece/TopsTexOnepieceAlineNLace1_upscaled.webp"
+      },
+      {
+        "color": "Rosa",
+        "code": "#d7bdd8",
+        "src": "assets/clothes/onepiece/TopsTexOnepieceAlineNLace2.webp",
+        "srcUpscaled": "assets/clothes/onepiece/TopsTexOnepieceAlineNLace2_upscaled.webp"
+      }
+    ],
+    "collections": ["vestido-rayas", "vestido-adorable", "atuendo-hikoboshi"]
+  },
+  {
+    "id": "vestido-adorable",
+    "name": "Vestido adorable",
+    "price": 2700,
+    "category": "ropa",
+    "subcategory": "onepiece",
+    "sale": 0,
+    "popular": false,
+    "new": true,
+    "description": "El diseño apuesta por una imagen contemporánea con un ajuste cómodo y versátil. Refuerza un estilo cómodo con intención estética clara. Queda genial en terrazas, cafeterías y paseos de tarde.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": "Blanco",
+        "code": "#b9cfdf",
+        "src": "assets/clothes/onepiece/TopsTexOnepieceBalloonHAngel0.webp",
+        "srcUpscaled": "assets/clothes/onepiece/TopsTexOnepieceBalloonHAngel0_upscaled.webp"
+      },
+      {
+        "color": "Púrpura",
+        "code": "#5c5d90",
+        "src": "assets/clothes/onepiece/TopsTexOnepieceBalloonHAngel1.webp",
+        "srcUpscaled": "assets/clothes/onepiece/TopsTexOnepieceBalloonHAngel1_upscaled.webp"
+      }
+    ],
+    "collections": ["vestido-rayas", "vestido-tirantes-encaje", "atuendo-orihime"]
+  },
+  {
+    "id": "atuendo-hikoboshi",
+    "name": "Atuendo de Hikoboshi",
+    "price": 2500,
+    "category": "ropa",
+    "subcategory": "onepiece",
+    "sale": 20,
+    "popular": false,
+    "new": true,
+    "description": "La confección equilibra soltura y ajuste para que el look se vea pulido sin rigidez. El acabado refuerza un aire desenfadado con un punto elegante. Se adapta a eventos casuales con una presencia equilibrada.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/clothes/onepiece/TopsTexOnepieceKimonoLWeavermen0.webp",
+        "srcUpscaled": "assets/clothes/onepiece/TopsTexOnepieceKimonoLWeavermen0_upscaled.webp"
+      }
+    ],
+    "collections": ["atuendo-orihime", "vestido-tirantes-encaje", "disfraz-animal"]
+  },
+  {
+    "id": "atuendo-orihime",
+    "name": "Atuendo de Orihime",
+    "price": 2500,
+    "category": "ropa",
+    "subcategory": "onepiece",
+    "sale": 0,
+    "popular": false,
+    "new": true,
+    "description": "El planteamiento formal combina sencillez y carácter con un resultado muy combinable. Refuerza un estilo cómodo con intención estética clara. Queda especialmente bien en ambientes animados y luminosos.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/clothes/onepiece/TopsTexOnepieceKimonoLWeaverwomen0.webp",
+        "srcUpscaled": "assets/clothes/onepiece/TopsTexOnepieceKimonoLWeaverwomen0_upscaled.webp"
+      }
+    ],
+    "collections": ["atuendo-hikoboshi", "vestido-adorable", "vestido-rayas"]
+  },
+  {
+    "id": "disfraz-animal",
+    "name": "Disfraz de animal",
+    "price": 1700,
+    "category": "ropa",
+    "subcategory": "onepiece",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "El planteamiento formal combina sencillez y carácter con un resultado muy combinable. Conecta bien con estilos informales y propuestas algo más elaboradas. Resulta ideal para reuniones informales, compras y salidas cortas.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": "Blanco",
+        "code": "#bfd9da",
+        "src": "assets/clothes/onepiece/TopsTexOnepieceOverallLHalloween2.webp",
+        "srcUpscaled": "assets/clothes/onepiece/TopsTexOnepieceOverallLHalloween2_upscaled.webp"
+      },
+      {
+        "color": "Rojo",
+        "code": "#b8574d",
+        "src": "assets/clothes/onepiece/TopsTexOnepieceOverallLHalloween4.webp",
+        "srcUpscaled": "assets/clothes/onepiece/TopsTexOnepieceOverallLHalloween4_upscaled.webp"
+      },
+      {
+        "color": "Negro",
+        "code": "#6a8a6d",
+        "src": "assets/clothes/onepiece/TopsTexOnepieceOverallLHalloween5.webp",
+        "srcUpscaled": "assets/clothes/onepiece/TopsTexOnepieceOverallLHalloween5_upscaled.webp"
+      }
+    ],
+    "collections": ["atuendo-hikoboshi", "atuendo-orihime", "vestido-adorable"]
+  },
+  {
+    "id": "sudadera-mullida",
+    "name": "Sudadera mullida",
+    "price": 1680,
+    "category": "ropa",
+    "subcategory": "top",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La prenda se adapta con facilidad a distintos ritmos de uso sin perder forma. Aporta profundidad al look y mejora su coherencia general. Funciona muy bien en rutas por la plaza, mercados y zonas comerciales.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": "Púrpura",
+        "code": "#d7bdd8",
+        "src": "assets/clothes/tops/TopsTexTopOuterLBlouson0.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopOuterLBlouson0_upscaled.webp"
+      },
+      {
+        "color": "Azul",
+        "code": "#b9cfdf",
+        "src": "assets/clothes/tops/TopsTexTopOuterLBlouson2.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopOuterLBlouson2_upscaled.webp"
+      },
+      {
+        "color": "Blanco",
+        "code": "#e8decb",
+        "src": "assets/clothes/tops/TopsTexTopOuterLBlouson3.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopOuterLBlouson3_upscaled.webp"
+      }
+    ],
+    "collections": ["pantalon-corto-multicolor", "falda-acampanada", "falda-chino"]
+  },
+  {
+    "id": "chaqueta-desteñida",
+    "name": "Chaqueta desteñida",
+    "price": 1680,
+    "category": "ropa",
+    "subcategory": "top",
+    "sale": 30,
+    "popular": false,
+    "new": false,
+    "description": "El diseño apuesta por una imagen contemporánea con un ajuste cómodo y versátil. Conecta bien con estilos informales y propuestas algo más elaboradas. Aporta coherencia visual en contextos sociales y espacios abiertos.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": "Azul",
+        "code": "#5f7fa8",
+        "src": "assets/clothes/tops/TopsTexTopOuterLChemical0.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopOuterLChemical0_upscaled.webp"
+      },
+      {
+        "color": "Negro",
+        "code": "#6f7074",
+        "src": "assets/clothes/tops/TopsTexTopOuterLChemical1.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopOuterLChemical1_upscaled.webp"
+      }
+    ],
+    "collections": ["pantalon-agujereado", "falda-marinera", "falda-militar"]
+  },
+  {
+    "id": "sudadera-mostaza",
+    "name": "Sudadera mostaza",
+    "price": 2000,
+    "category": "ropa",
+    "subcategory": "top",
+    "sale": 0,
+    "popular": true,
+    "new": true,
+    "description": "El diseño apuesta por una imagen contemporánea con un ajuste cómodo y versátil. Aporta una sensación fresca que encaja bien en looks de diario. Funciona en espacios juveniles y encuentros al atardecer.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/clothes/tops/TopsTexTopOuterLIkasweat0.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopOuterLIkasweat0_upscaled.webp"
+      }
+    ],
+    "collections": ["pantalon-cargo", "falda-pelo", "falda-marinera-larga"]
+  },
+  {
+    "id": "sudadera-camiseta",
+    "name": "Sudadera con camiseta",
+    "price": 1400,
+    "category": "ropa",
+    "subcategory": "top",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "El diseño apuesta por una imagen contemporánea con un ajuste cómodo y versátil. La textura visual añade personalidad y evita que el estilismo se vea plano. Mantiene una imagen atractiva en contextos distendidos.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": "Lima",
+        "code": "#8a9459",
+        "src": "assets/clothes/tops/TopsTexTopOuterLParkertshirt0.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopOuterLParkertshirt0_upscaled.webp"
+      },
+      {
+        "color": "Naranja",
+        "code": "#c78a5e",
+        "src": "assets/clothes/tops/TopsTexTopOuterLParkertshirt2.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopOuterLParkertshirt2_upscaled.webp"
+      },
+      {
+        "color": "Rosa",
+        "code": "#cf95ae",
+        "src": "assets/clothes/tops/TopsTexTopOuterLParkertshirt3.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopOuterLParkertshirt3_upscaled.webp"
+      }
+    ],
+    "collections": ["pantalo-bajo-vuelto", "falda-petalos", "falda-chino"]
+  },
+  {
+    "id": "sudadera-espacial",
+    "name": "Sudadera espacial",
+    "price": 1680,
+    "category": "ropa",
+    "subcategory": "top",
+    "sale": 0,
+    "popular": true,
+    "new": false,
+    "description": "Su estructura ligera facilita un uso continuo con una caída natural y agradable. Su presencia eleva conjuntos sencillos sin necesidad de accesorios excesivos. Se luce en rincones coloridos, ferias y eventos de barrio.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": "Azul",
+        "code": "#5c5d90",
+        "src": "assets/clothes/tops/TopsTexTopOuterLSpaceparker0.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopOuterLSpaceparker0_upscaled.webp"
+      },
+      {
+        "color": "Púrpura",
+        "code": "#5c5d90",
+        "src": "assets/clothes/tops/TopsTexTopOuterLSpaceparker1.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopOuterLSpaceparker1_upscaled.webp"
+      }
+    ],
+    "collections": ["pantalon-corto-multicolor", "falda-marinera-larga", "falda-acampanada"]
+  },
+  {
+    "id": "camisa-anudada",
+    "name": "Camisa anudada",
+    "price": 800,
+    "category": "ropa",
+    "subcategory": "top",
+    "sale": 30,
+    "popular": false,
+    "new": false,
+    "description": "El diseño se siente práctico y actual, con una línea limpia que no recarga el conjunto. El acabado refuerza un aire desenfadado con un punto elegante. Se integra en planes cotidianos con una imagen fresca y natural.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": "Rosa",
+        "code": "#b8574d",
+        "src": "assets/clothes/tops/TopsTexTopYshirtsHKnot1.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopYshirtsHKnot1_upscaled.webp"
+      },
+      {
+        "color": "Amarillo",
+        "code": "#d0b27f",
+        "src": "assets/clothes/tops/TopsTexTopYshirtsHKnot2.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopYshirtsHKnot2_upscaled.webp"
+      },
+      {
+        "color": "Gris",
+        "code": "#c7cbce",
+        "src": "assets/clothes/tops/TopsTexTopYshirtsHKnot3.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopYshirtsHKnot3_upscaled.webp"
+      }
+    ],
+    "collections": ["pantalon-agujereado", "falda-marinera", "falda-pelo"]
+  },
+  {
+    "id": "camisa-madras",
+    "name": "Camisa tartán de madrás",
+    "price": 1120,
+    "category": "ropa",
+    "subcategory": "top",
+    "sale": 0,
+    "popular": false,
+    "new": true,
+    "description": "La línea general transmite frescura y permite armar looks variados sin esfuerzo. El acabado refuerza un aire desenfadado con un punto elegante. Mantiene una imagen atractiva en contextos distendidos.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": "Rojo",
+        "code": "#c78a5e",
+        "src": "assets/clothes/tops/TopsTexTopYshirtsHMadras2.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopYshirtsHMadras2_upscaled.webp"
+      },
+      {
+        "color": "Rosa",
+        "code": "#5c5d90",
+        "src": "assets/clothes/tops/TopsTexTopYshirtsHMadras4.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopYshirtsHMadras4_upscaled.webp"
+      },
+      {
+        "color": "Gris",
+        "code": "#c78a5e",
+        "src": "assets/clothes/tops/TopsTexTopYshirtsHMadras5.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopYshirtsHMadras5_upscaled.webp"
+      }
+    ],
+    "collections": ["pantalon-cargo", "falda-petalos", "falda-chino"]
+  },
+  {
+    "id": "chaqueta-vaquera",
+    "name": "Chaqueta vaquera",
+    "price": 1400,
+    "category": "ropa",
+    "subcategory": "top",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La prenda se adapta con facilidad a distintos ritmos de uso sin perder forma. Refuerza un estilo cómodo con intención estética clara. Suma estilo en plazas centrales, bulevares y áreas peatonales.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": "Azul",
+        "code": "#5f7fa8",
+        "src": "assets/clothes/tops/TopsTexTopYshirtsLDenim0.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopYshirtsLDenim0_upscaled.webp"
+      },
+      {
+        "color": "Negro",
+        "code": "#42464b",
+        "src": "assets/clothes/tops/TopsTexTopYshirtsLDenim3.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopYshirtsLDenim3_upscaled.webp"
+      },
+      {
+        "color": "Blanco",
+        "code": "#c7cbce",
+        "src": "assets/clothes/tops/TopsTexTopYshirtsLDenim4.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopYshirtsLDenim4_upscaled.webp"
+      }
+    ],
+    "collections": ["pantalo-bajo-vuelto", "falda-militar", "falda-acampanada"]
+  },
+  {
+    "id": "camisa-de-franela",
+    "name": "Camisa de franela",
+    "price": 1200,
+    "category": "ropa",
+    "subcategory": "top",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La construcción prioriza libertad al caminar y una estética bien proporcionada. Favorece composiciones limpias con una estética muy adaptable. Encaja en celebraciones al aire libre y encuentros de fin de semana.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": "Rojo",
+        "code": "#b8574d",
+        "src": "assets/clothes/tops/TopsTexTopYshirtsLFlannel0.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopYshirtsLFlannel0_upscaled.webp"
+      },
+      {
+        "color": "Verde",
+        "code": "#3f6b49",
+        "src": "assets/clothes/tops/TopsTexTopYshirtsLFlannel1.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopYshirtsLFlannel1_upscaled.webp"
+      },
+      {
+        "color": "Azul",
+        "code": "#5f7fa8",
+        "src": "assets/clothes/tops/TopsTexTopYshirtsLFlannel2.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopYshirtsLFlannel2_upscaled.webp"
+      }
+    ],
+    "collections": ["pantalon-corto-multicolor", "falda-chino", "falda-marinera-larga"]
+  },
+  {
+    "id": "chaqueta-estampado-piton",
+    "name": "Chaqueta estampado pitón",
+    "price": 2400,
+    "category": "ropa",
+    "subcategory": "top",
+    "sale": 0,
+    "popular": true,
+    "new": false,
+    "description": "La confección equilibra soltura y ajuste para que el look se vea pulido sin rigidez. Su presencia eleva conjuntos sencillos sin necesidad de accesorios excesivos. Funciona muy bien en rutas por la plaza, mercados y zonas comerciales.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": "Marrón",
+        "code": "#7a6654",
+        "src": "assets/clothes/tops/TopsTexTopYshirtsLJacketpattern0.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopYshirtsLJacketpattern0_upscaled.webp"
+      },
+      {
+        "color": "Gris",
+        "code": "#6f7074",
+        "src": "assets/clothes/tops/TopsTexTopYshirtsLJacketpattern1.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopYshirtsLJacketpattern1_upscaled.webp"
+      }
+    ],
+    "collections": ["pantalon-agujereado", "falda-militar", "falda-pelo"]
+  },
+  {
+    "id": "camisa-con-corbata",
+    "name": "Camisa con corbata",
+    "price": 1040,
+    "category": "ropa",
+    "subcategory": "top",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La caída del tejido aporta movimiento natural y una presencia equilibrada. Ofrece una lectura visual ordenada y muy fácil de integrar. Da buen resultado en escenarios dinámicos donde prima la comodidad.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": "Corbata con rayas rojas",
+        "code": "#b8b7c8",
+        "src": "assets/clothes/tops/TopsTexTopYshirtsLNecktie0.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopYshirtsLNecktie0_upscaled.webp"
+      },
+      {
+        "color": "Corbata con rayas verdes",
+        "code": "#c7cbce",
+        "src": "assets/clothes/tops/TopsTexTopYshirtsLNecktie3.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopYshirtsLNecktie3_upscaled.webp"
+      },
+      {
+        "color": "Corbata con rayas grises",
+        "code": "#c7cbce",
+        "src": "assets/clothes/tops/TopsTexTopYshirtsLNecktie4.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopYshirtsLNecktie4_upscaled.webp"
+      }
+    ],
+    "collections": ["pantalon-cargo", "falda-marinera", "falda-petalos"]
+  },
+  {
+    "id": "chaqueta-rock",
+    "name": "Chaqueta rock",
+    "price": 1750,
+    "category": "ropa",
+    "subcategory": "top",
+    "sale": 10,
+    "popular": false,
+    "new": false,
+    "description": "Su estructura ligera facilita un uso continuo con una caída natural y agradable. Ofrece una lectura visual ordenada y muy fácil de integrar. Suma estilo en plazas centrales, bulevares y áreas peatonales.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": "Negro",
+        "code": "#42464b",
+        "src": "assets/clothes/tops/TopsTexTopYshirtsLRiders0.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopYshirtsLRiders0_upscaled.webp"
+      },
+      {
+        "color": "Rojo",
+        "code": "#b8574d",
+        "src": "assets/clothes/tops/TopsTexTopYshirtsLRiders3.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopYshirtsLRiders3_upscaled.webp"
+      },
+      {
+        "color": "Amarillo",
+        "code": "#8a9459",
+        "src": "assets/clothes/tops/TopsTexTopYshirtsLRiders5.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopYshirtsLRiders5_upscaled.webp"
+      }
+    ],
+    "collections": ["pantalo-bajo-vuelto", "falda-acampanada", "falda-marinera"]
+  },
+  {
+    "id": "camisa-chaleco",
+    "name": "Camisa con chaleco a rayas",
+    "price": 1800,
+    "category": "ropa",
+    "subcategory": "top",
+    "sale": 0,
+    "popular": false,
+    "new": true,
+    "description": "El patronaje genera una presencia coherente que funciona en contextos casuales y urbanos. Favorece composiciones limpias con una estética muy adaptable. Se integra en planes cotidianos con una imagen fresca y natural.",
+    "size": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      {
+        "color": "Rojo",
+        "code": "#cf95ae",
+        "src": "assets/clothes/tops/TopsTexTopYshirtsLUniformgilet0.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopYshirtsLUniformgilet0_upscaled.webp"
+      },
+      {
+        "color": "Verde",
+        "code": "#709f97",
+        "src": "assets/clothes/tops/TopsTexTopYshirtsLUniformgilet2.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopYshirtsLUniformgilet2_upscaled.webp"
+      },
+      {
+        "color": "Amarillo",
+        "code": "#d0b27f",
+        "src": "assets/clothes/tops/TopsTexTopYshirtsLUniformgilet3.webp",
+        "srcUpscaled": "assets/clothes/tops/TopsTexTopYshirtsLUniformgilet3_upscaled.webp"
+      }
+    ],
+    "collections": ["pantalon-corto-multicolor", "falda-chino", "falda-militar"]
+  },
+  {
+    "id": "cama-antigua",
+    "name": "Cama antigua",
+    "price": 28000,
+    "category": "mobiliario",
+    "subcategory": "cama",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Su volumen se integra con naturalidad y aporta serenidad al ambiente. Su presencia mejora la comodidad percibida del dormitorio. Encaja en suites, dormitorios acogedores y zonas de descanso privadas.",
+    "size": [
+      "2x2"
+    ],
+    "colors": [
+      {
+        "color": "Marrón",
+        "code": "#6b4423",
+        "src": "assets/furniture/beds/FtrAntiqueBedW_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/beds/FtrAntiqueBedW_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Natural",
+        "code": "#d4a574",
+        "src": "assets/furniture/beds/FtrAntiqueBedW_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/beds/FtrAntiqueBedW_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Negro",
+        "code": "#1a1a1a",
+        "src": "assets/furniture/beds/FtrAntiqueBedW_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/beds/FtrAntiqueBedW_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "silla-antigua",
+      "mesa-antigua"
+    ]
+  },
+  {
+    "id": "cama-cosmopolita",
+    "name": "Cama cosmopolita",
+    "price": 11000,
+    "category": "mobiliario",
+    "subcategory": "cama",
+    "sale": 0,
+    "popular": false,
+    "new": true,
+    "description": "Su volumen se integra con naturalidad y aporta serenidad al ambiente. Aporta una sensación acogedora ideal para rutinas de noche y relax. Se integra en dormitorios temáticos, apartamentos y cuartos familiares.",
+    "size": [
+      "2x1"
+    ],
+    "colors": [
+      {
+        "color": "Plateado",
+        "code": "#e3e7d1",
+        "src": "assets/furniture/beds/FtrCoolBedS_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/beds/FtrCoolBedS_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Negro",
+        "code": "#2a2a2a",
+        "src": "assets/furniture/beds/FtrCoolBedS_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/beds/FtrCoolBedS_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Blanco",
+        "code": "#c0c0c0",
+        "src": "assets/furniture/beds/FtrCoolBedS_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/beds/FtrCoolBedS_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "silla-cosmopolita",
+      "aparador-melamina",
+      "cama-melamina"
+    ]
+  },
+  {
+    "id": "cama-elegante",
+    "name": "Cama elegante",
+    "price": 54000,
+    "category": "mobiliario",
+    "subcategory": "cama",
+    "sale": 0,
+    "popular": true,
+    "new": false,
+    "description": "Presenta una base sólida y un perfil que transmite calma desde el primer vistazo. Aporta una sensación acogedora ideal para rutinas de noche y relax. Luce especialmente en espacios de descanso con iluminación cálida.",
+    "size": [
+      "2x2"
+    ],
+    "colors": [
+      {
+        "color": "Dorado",
+        "code": "#b8956a",
+        "src": "assets/furniture/beds/FtrElegantBedW_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/beds/FtrElegantBedW_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Plateado",
+        "code": "#a0a0a0",
+        "src": "assets/furniture/beds/FtrElegantBedW_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/beds/FtrElegantBedW_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Marrón",
+        "code": "#8b4513",
+        "src": "assets/furniture/beds/FtrElegantBedW_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/beds/FtrElegantBedW_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cama-melamina",
+      "aparador-melamina",
+      "mesa-aluminio"
+    ]
+  },
+  {
+    "id": "cama-melamina",
+    "name": "Cama de melamina",
+    "price": 25000,
+    "category": "mobiliario",
+    "subcategory": "cama",
+    "sale": 0,
+    "popular": true,
+    "new": true,
+    "description": "La pieza está resuelta para aportar comodidad sin perder carácter decorativo. Crea un punto focal sereno sin perder funcionalidad. Queda ideal en dormitorios principales, cuartos juveniles y habitaciones de invitados.",
+    "size": [
+      "2x2"
+    ],
+    "colors": [
+      {
+        "color": "Madera clara",
+        "code": "#d4a574",
+        "src": "assets/furniture/beds/FtrJapanesemodernBedW_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/beds/FtrJapanesemodernBedW_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Madera naranja",
+        "code": "#cd853f",
+        "src": "assets/furniture/beds/FtrJapanesemodernBedW_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/beds/FtrJapanesemodernBedW_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Madera oscura",
+        "code": "#8b6f47",
+        "src": "assets/furniture/beds/FtrJapanesemodernBedW_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/beds/FtrJapanesemodernBedW_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cama-cosmopolita",
+      "aparador-melamina",
+      "silla-cosmopolita"
+    ]
+  },
+  {
+    "id": "cama-dinastia",
+    "name": "Cama dinastía",
+    "price": 23000,
+    "category": "mobiliario",
+    "subcategory": "cama",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Su volumen se integra con naturalidad y aporta serenidad al ambiente. La lectura visual es cálida y favorece un ambiente íntimo y tranquilo. Se integra en dormitorios temáticos, apartamentos y cuartos familiares.",
+    "size": [
+      "2x2"
+    ],
+    "colors": [
+      {
+        "color": "Rojo",
+        "code": "#c41e3a",
+        "src": "assets/furniture/beds/FtrOrientalBedW_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/beds/FtrOrientalBedW_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Azul",
+        "code": "#0066cc",
+        "src": "assets/furniture/beds/FtrOrientalBedW_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/beds/FtrOrientalBedW_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Marron",
+        "code": "#8b6f47",
+        "src": "assets/furniture/beds/FtrOrientalBedW_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/beds/FtrOrientalBedW_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "mesa-dinastia",
+      "silla-cafe",
+      "mesa-cafe"
+    ]
+  },
+  {
+    "id": "cama-retales",
+    "name": "Cama de retales",
+    "price": 10000,
+    "category": "mobiliario",
+    "subcategory": "cama",
+    "sale": 0,
+    "popular": true,
+    "new": false,
+    "description": "La pieza está resuelta para aportar comodidad sin perder carácter decorativo. La lectura visual es cálida y favorece un ambiente íntimo y tranquilo. Aporta coherencia en cualquier dormitorio pensado para confort diario.",
+    "size": [
+      "2x2"
+    ],
+    "colors": [
+      {
+        "color": "Pastel",
+        "code": "#c4b5a0",
+        "src": "assets/furniture/beds/FtrPatchworkBedL_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/beds/FtrPatchworkBedL_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Alegre",
+        "code": "#d8bfd8",
+        "src": "assets/furniture/beds/FtrPatchworkBedL_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/beds/FtrPatchworkBedL_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Frío",
+        "code": "#889abb",
+        "src": "assets/furniture/beds/FtrPatchworkBedL_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/beds/FtrPatchworkBedL_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "silla-ranita",
+      "armario-cuqui",
+      "armario-pera"
+    ]
+  },
+  {
+    "id": "cama-ratan",
+    "name": "Cama de ratán",
+    "price": 7200,
+    "category": "mobiliario",
+    "subcategory": "cama",
+    "sale": 15,
+    "popular": false,
+    "new": false,
+    "description": "La pieza está resuelta para aportar comodidad sin perder carácter decorativo. Contribuye a un entorno reparador y bien organizado. Funciona muy bien en habitaciones amplias, áticos y estancias de relax.",
+    "size": [
+      "2x2"
+    ],
+    "colors": [
+      {
+        "color": "Marrón claro",
+        "code": "#a89073",
+        "src": "assets/furniture/beds/FtrRattanBedW_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/beds/FtrRattanBedW_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Marrón",
+        "code": "#8b7355",
+        "src": "assets/furniture/beds/FtrRattanBedW_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/beds/FtrRattanBedW_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Marrón",
+        "code": "#8b8b7a",
+        "src": "assets/furniture/beds/FtrRattanBedW_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/beds/FtrRattanBedW_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "armario-ratan"
+    ]
+  },
+  {
+    "id": "cama-madera",
+    "name": "Cama doble de madera",
+    "price": 3600,
+    "category": "mobiliario",
+    "subcategory": "cama",
+    "sale": 0,
+    "popular": true,
+    "new": false,
+    "description": "La forma combina funcionalidad diaria con una estética cuidada. Su presencia mejora la comodidad percibida del dormitorio. Encaja en suites, dormitorios acogedores y zonas de descanso privadas.",
+    "size": [
+      "2x2"
+    ],
+    "colors": [
+      {
+        "color": "Madera clara",
+        "code": "#d4a574",
+        "src": "assets/furniture/beds/FtrWoodenBedW_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/beds/FtrWoodenBedW_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Blanco",
+        "code": "#c41159",
+        "src": "assets/furniture/beds/FtrWoodenBedW_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/beds/FtrWoodenBedW_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Cereza",
+        "code": "#ffd700",
+        "src": "assets/furniture/beds/FtrWoodenBedW_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/beds/FtrWoodenBedW_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "silla-madera",
+      "mesa-madera",
+      "mesa-centro-madera",
+      "armario-madera"
+    ]
+  },
+  {
+    "id": "silla-aluminio",
+    "name": "Silla de aluminio",
+    "price": 700,
+    "category": "mobiliario",
+    "subcategory": "silla",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Presenta proporciones acertadas para sentarse con comodidad y buena postura. Refuerza un ambiente práctico con una imagen cuidada. Queda muy bien en mesas de comedor, cocinas y zonas de trabajo.",
+    "size": [
+      "1x1"
+    ],
+    "colors": [
+      {
+        "color": "Madera clara",
+        "code": "#d4a574",
+        "src": "assets/furniture/chairs/FtrAlumiwoodchair_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/chairs/FtrAlumiwoodchair_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Madera natural",
+        "code": "#cd853f",
+        "src": "assets/furniture/chairs/FtrAlumiwoodchair_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/chairs/FtrAlumiwoodchair_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Madera oscura",
+        "code": "#8b6f47",
+        "src": "assets/furniture/chairs/FtrAlumiwoodchair_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/chairs/FtrAlumiwoodchair_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "mesa-aluminio"
+    ]
+  },
+  {
+    "id": "silla-cafe",
+    "name": "Silla café años 50",
+    "price": 1600,
+    "category": "mobiliario",
+    "subcategory": "silla",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La estructura mantiene buena estabilidad y un apoyo cómodo para uso continuado. Contribuye a una atmósfera funcional sin perder estilo. Funciona en comedores, escritorios y rincones de lectura.",
+    "size": [
+      "1x1"
+    ],
+    "colors": [
+      {
+        "color": "Rojo",
+        "code": "#c41e3a",
+        "src": "assets/furniture/chairs/FtrAmeretroChairS_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/chairs/FtrAmeretroChairS_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Azul",
+        "code": "#0066cc",
+        "src": "assets/furniture/chairs/FtrAmeretroChairS_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/chairs/FtrAmeretroChairS_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Amarillo",
+        "code": "#ffd700",
+        "src": "assets/furniture/chairs/FtrAmeretroChairS_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/chairs/FtrAmeretroChairS_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "mesa-cafe"
+    ]
+  },
+  {
+    "id": "silla-antigua",
+    "name": "Silla antigua",
+    "price": 10000,
+    "category": "mobiliario",
+    "subcategory": "silla",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "El diseño equilibra ergonomía visual y funcionalidad en espacios de reunión. Contribuye a una atmósfera funcional sin perder estilo. Luce en terrazas cubiertas, cocinas amplias y espacios de reunión.",
+    "size": [
+      "1x1"
+    ],
+    "colors": [
+      {
+        "color": "Marron",
+        "code": "#8b6f47",
+        "src": "assets/furniture/chairs/FtrAntiqueChairS_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/chairs/FtrAntiqueChairS_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Natural",
+        "code": "#d4a574",
+        "src": "assets/furniture/chairs/FtrAntiqueChairS_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/chairs/FtrAntiqueChairS_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Negro",
+        "code": "#1a1a1a",
+        "src": "assets/furniture/chairs/FtrAntiqueChairS_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/chairs/FtrAntiqueChairS_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cama-antigua",
+      "mesa-antigua"
+    ]
+  },
+  {
+    "id": "silla-cosmopolita",
+    "name": "Silla cosmopolita",
+    "price": 3500,
+    "category": "mobiliario",
+    "subcategory": "silla",
+    "sale": 20,
+    "popular": false,
+    "new": false,
+    "description": "La construcción transmite firmeza y un estilo fácil de combinar. Contribuye a una atmósfera funcional sin perder estilo. Queda muy bien en mesas de comedor, cocinas y zonas de trabajo.",
+    "size": [
+      "1x1"
+    ],
+    "colors": [
+      {
+        "color": "PLateado",
+        "code": "#1a1a1a",
+        "src": "assets/furniture/chairs/FtrCoolChairS_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/chairs/FtrCoolChairS_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Negro",
+        "code": "#1a1a1a",
+        "src": "assets/furniture/chairs/FtrCoolChairS_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/chairs/FtrCoolChairS_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Blanco",
+        "code": "#d0d0d0",
+        "src": "assets/furniture/chairs/FtrCoolChairS_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/chairs/FtrCoolChairS_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "silla-aluminio",
+      "silla-antigua"
+    ]
+  },
+  {
+    "id": "silla-rustica",
+    "name": "Silla rústica",
+    "price": 2600,
+    "category": "mobiliario",
+    "subcategory": "silla",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Presenta proporciones acertadas para sentarse con comodidad y buena postura. Los acabados mejoran la sensación de confort en reuniones o comidas. Encaja en estudios, barras auxiliares y áreas sociales.",
+    "size": [
+      "1x1"
+    ],
+    "colors": [
+      {
+        "color": "Natural",
+        "code": "#c9a876",
+        "src": "assets/furniture/chairs/FtrCountryChairS_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/chairs/FtrCountryChairS_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Marrón oscuro",
+        "code": "#8b7355",
+        "src": "assets/furniture/chairs/FtrCountryChairS_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/chairs/FtrCountryChairS_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Blanco",
+        "code": "#e8e8e8",
+        "src": "assets/furniture/chairs/FtrCountryChairS_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/chairs/FtrCountryChairS_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "mesa-alargada-rustica",
+      "armario-rustico"
+    ]
+  },
+  {
+    "id": "silla-ranita",
+    "name": "Silla ranita",
+    "price": 1200,
+    "category": "mobiliario",
+    "subcategory": "silla",
+    "sale": 0,
+    "popular": true,
+    "new": false,
+    "description": "La construcción transmite firmeza y un estilo fácil de combinar. Contribuye a una atmósfera funcional sin perder estilo. Funciona en comedores, escritorios y rincones de lectura.",
+    "size": [
+      "1x1"
+    ],
+    "colors": [
+      {
+        "color": "Verde",
+        "code": "#228b22",
+        "src": "assets/furniture/chairs/FtrFrogchair_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/chairs/FtrFrogchair_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Rosa",
+        "code": "#ff69b4",
+        "src": "assets/furniture/chairs/FtrFrogchair_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/chairs/FtrFrogchair_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Celeste",
+        "code": "#87ceeb",
+        "src": "assets/furniture/chairs/FtrFrogchair_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/chairs/FtrFrogchair_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cama-retales",
+      "armario-cuqui",
+      "mesa-alargada-rustica"
+    ]
+  },
+  {
+    "id": "silla-natural",
+    "name": "Silla de madera natural",
+    "price": 2200,
+    "category": "mobiliario",
+    "subcategory": "silla",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La estructura mantiene buena estabilidad y un apoyo cómodo para uso continuado. Aporta comodidad visual y una presencia amable en zonas de uso frecuente. Encaja en estudios, barras auxiliares y áreas sociales.",
+    "size": [
+      "1x1"
+    ],
+    "colors": [
+      {
+        "color": "Pino",
+        "code": "#987654",
+        "src": "assets/furniture/chairs/FtrGardenChairNatural_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/chairs/FtrGardenChairNatural_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Roble",
+        "code": "#8b4513",
+        "src": "assets/furniture/chairs/FtrGardenChairNatural_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/chairs/FtrGardenChairNatural_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Madera desgastada",
+        "code": "#d2b48c",
+        "src": "assets/furniture/chairs/FtrGardenChairNatural_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/chairs/FtrGardenChairNatural_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "mesa-natural"
+    ]
+  },
+  {
+    "id": "silla-madera",
+    "name": "Silla de madera",
+    "price": 720,
+    "category": "mobiliario",
+    "subcategory": "silla",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Presenta proporciones acertadas para sentarse con comodidad y buena postura. Contribuye a una atmósfera funcional sin perder estilo. Se integra en comedores familiares, despachos y salas polivalentes.",
+    "size": [
+      "1x1"
+    ],
+    "colors": [
+      {
+        "color": "Madera clara",
+        "code": "#ff9966",
+        "src": "assets/furniture/chairs/FtrWoodenChairS_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/chairs/FtrWoodenChairS_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Blanco",
+        "code": "#e8e8e8",
+        "src": "assets/furniture/chairs/FtrWoodenChairS_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/chairs/FtrWoodenChairS_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Cereza",
+        "code": "#a85a6d",
+        "src": "assets/furniture/chairs/FtrWoodenChairS_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/chairs/FtrWoodenChairS_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cama-madera",
+      "mesa-madera",
+      "mesa-centro-madera",
+      "armario-madera"
+    ]
+  },
+  {
+    "id": "aparador-universidad",
+    "name": "Aparador universidad",
+    "price": 9780,
+    "category": "mobiliario",
+    "subcategory": "aparador",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Presenta una lectura visual clara, con enfoque funcional para el día a día. Refuerza una sensación de hogar organizado y funcional. Aporta orden en interiores donde se quiera combinar guardado y exposición.",
+    "size": [
+      "2x1"
+    ],
+    "colors": [
+      {
+        "color": "Abedul",
+        "code": "#f5deb3",
+        "src": "assets/furniture/shelves/FtrIronwoodCupboard_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/shelves/FtrIronwoodCupboard_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Teca",
+        "code": "#cd853f",
+        "src": "assets/furniture/shelves/FtrIronwoodCupboard_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/shelves/FtrIronwoodCupboard_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Nogal",
+        "code": "#8b6f47",
+        "src": "assets/furniture/shelves/FtrIronwoodCupboard_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/shelves/FtrIronwoodCupboard_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "silla-aluminio",
+      "mesa-aluminio"
+    ]
+  },
+  {
+    "id": "aparador-melamina",
+    "name": "Aparador de melamina",
+    "price": 12000,
+    "category": "mobiliario",
+    "subcategory": "aparador",
+    "sale": 0,
+    "popular": false,
+    "new": true,
+    "description": "El volumen está bien aprovechado para mejorar organización y estética. Los acabados transmiten calidad y mejoran la coherencia decorativa. Luce en recibidores decorativos y zonas de almacenamiento auxiliar.",
+    "size": [
+      "2x1"
+    ],
+    "colors": [
+      {
+        "color": "Madera clara",
+        "code": "#d4a574",
+        "src": "assets/furniture/shelves/FtrJapanesemodernCabinet_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/shelves/FtrJapanesemodernCabinet_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Madera naranja",
+        "code": "#cd8533",
+        "src": "assets/furniture/shelves/FtrJapanesemodernCabinet_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/shelves/FtrJapanesemodernCabinet_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Madera oscura",
+        "code": "#8b6f47",
+        "src": "assets/furniture/shelves/FtrJapanesemodernCabinet_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/shelves/FtrJapanesemodernCabinet_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cama-melamina",
+      "cama-cosmopolita",
+      "aparador-escandinavo"
+    ]
+  },
+  {
+    "id": "aparador-escandinavo",
+    "name": "Aparador escandinavo",
+    "price": 16000,
+    "category": "mobiliario",
+    "subcategory": "aparador",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La pieza ofrece gran capacidad de almacenaje con una silueta ordenada y limpia. Aporta orden visual y facilita tener todo a mano sin saturar la estancia. Queda perfecto en comedores, salones y recibidores amplios.",
+    "size": [
+      "2x1"
+    ],
+    "colors": [
+      {
+        "color": "Madera clara",
+        "code": "#d4a574",
+        "src": "assets/furniture/shelves/FtrNordicShelf_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/shelves/FtrNordicShelf_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Madera natural",
+        "code": "#cd853f",
+        "src": "assets/furniture/shelves/FtrNordicShelf_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/shelves/FtrNordicShelf_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Madera oscura",
+        "code": "#8b7355",
+        "src": "assets/furniture/shelves/FtrNordicShelf_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/shelves/FtrNordicShelf_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "aparador-melamina",
+      "cama-melamina",
+      "cama-cosmopolita"
+    ]
+  },
+  {
+    "id": "mesa-aluminio",
+    "name": "Mesa de aluminio",
+    "price": 1000,
+    "category": "mobiliario",
+    "subcategory": "mesa",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "El planteamiento formal permite integrarla en estilos muy distintos. Contribuye a un ambiente funcional para compartir, trabajar o comer. Se integra en comedores abiertos, estudios y habitaciones multifunción.",
+    "size": [
+      "1x1"
+    ],
+    "colors": [
+      {
+        "color": "Madera clara",
+        "code": "#d4a574",
+        "src": "assets/furniture/tables/FtrAlumiwoodtable_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/tables/FtrAlumiwoodtable_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Madera natural",
+        "code": "#cd853f",
+        "src": "assets/furniture/tables/FtrAlumiwoodtable_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/tables/FtrAlumiwoodtable_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Madera oscura",
+        "code": "#8b7355",
+        "src": "assets/furniture/tables/FtrAlumiwoodtable_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/tables/FtrAlumiwoodtable_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "silla-aluminio",
+      "armario-hierro"
+    ]
+  },
+  {
+    "id": "mesa-cafe",
+    "name": "Mesa café años 50",
+    "price": 6400,
+    "category": "mobiliario",
+    "subcategory": "mesa",
+    "sale": 25,
+    "popular": false,
+    "new": false,
+    "description": "La pieza combina funcionalidad y presencia decorativa con mucha naturalidad. Su presencia ordena el entorno y mejora la dinámica del espacio. Encaja en zonas de trabajo, rincones de manualidades y espacios comunes.",
+    "size": [
+      "2x2"
+    ],
+    "colors": [
+      {
+        "color": "Rojo",
+        "code": "#c41e3a",
+        "src": "assets/furniture/tables/FtrAmeretroTableM_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/tables/FtrAmeretroTableM_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Azul",
+        "code": "#0066cc",
+        "src": "assets/furniture/tables/FtrAmeretroTableM_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/tables/FtrAmeretroTableM_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Amarillo",
+        "code": "#ffd700",
+        "src": "assets/furniture/tables/FtrAmeretroTableM_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/tables/FtrAmeretroTableM_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "silla-cafe"
+    ]
+  },
+  {
+    "id": "mesa-antigua",
+    "name": "Mesa de comedor antigua",
+    "price": 25000,
+    "category": "mobiliario",
+    "subcategory": "mesa",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Su estructura firme facilita el uso diario sin perder armonía visual. Genera una sensación de estabilidad muy agradable en la estancia. Luce en estancias sociales donde se comparta comida o actividad.",
+    "size": [
+      "2x1"
+    ],
+    "colors": [
+      {
+        "color": "Marrón",
+        "code": "#ae5b2e",
+        "src": "assets/furniture/tables/FtrAntiqueTableL_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/tables/FtrAntiqueTableL_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Natural",
+        "code": "#d4a574",
+        "src": "assets/furniture/tables/FtrAntiqueTableL_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/tables/FtrAntiqueTableL_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Negro",
+        "code": "#1a1a1a",
+        "src": "assets/furniture/tables/FtrAntiqueTableL_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/tables/FtrAntiqueTableL_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cama-antigua",
+      "silla-antigua"
+    ]
+  },
+  {
+    "id": "mesa-alargada-rustica",
+    "name": "Mesa alargada rústica",
+    "price": 3300,
+    "category": "mobiliario",
+    "subcategory": "mesa",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Presenta una base sólida que transmite seguridad y equilibrio. Su presencia ordena el entorno y mejora la dinámica del espacio. Aporta utilidad en cualquier zona que necesite una superficie estable.",
+    "size": [
+      "2x1"
+    ],
+    "colors": [
+      {
+        "color": "Natural",
+        "code": "#d4a574",
+        "src": "assets/furniture/tables/FtrCountryTableM_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/tables/FtrCountryTableM_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Marrón oscuro",
+        "code": "#bb6a37",
+        "src": "assets/furniture/tables/FtrCountryTableM_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/tables/FtrCountryTableM_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Blanco",
+        "code": "#e8e8e8",
+        "src": "assets/furniture/tables/FtrCountryTableM_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/tables/FtrCountryTableM_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "silla-rustica",
+      "armario-rustico"
+    ]
+  },
+  {
+    "id": "mesa-natural",
+    "name": "Mesa de madera natural",
+    "price": 3300,
+    "category": "mobiliario",
+    "subcategory": "mesa",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "El planteamiento formal permite integrarla en estilos muy distintos. Aporta equilibrio visual y una base práctica para el día a día. Queda ideal en comedores, cocinas y salas de estar.",
+    "size": [
+      "2x2"
+    ],
+    "colors": [
+      {
+        "color": "Pino",
+        "code": "#e8d4b0",
+        "src": "assets/furniture/tables/FtrGardenTableNatural_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/tables/FtrGardenTableNatural_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Roble",
+        "code": "#d4a574",
+        "src": "assets/furniture/tables/FtrGardenTableNatural_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/tables/FtrGardenTableNatural_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Madera desgastada",
+        "code": "#a67c52",
+        "src": "assets/furniture/tables/FtrGardenTableNatural_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/tables/FtrGardenTableNatural_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "silla-natural"
+    ]
+  },
+  {
+    "id": "mesa-dinastia",
+    "name": "Mesa baja dinastía",
+    "price": 3700,
+    "category": "mobiliario",
+    "subcategory": "mesa",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Presenta una base sólida que transmite seguridad y equilibrio. Genera una sensación de estabilidad muy agradable en la estancia. Queda ideal en comedores, cocinas y salas de estar.",
+    "size": [
+      "2x1"
+    ],
+    "colors": [
+      {
+        "color": "Rojo",
+        "code": "#c41e3a",
+        "src": "assets/furniture/tables/FtrOrientalTableM_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/tables/FtrOrientalTableM_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Azul",
+        "code": "#0066cc",
+        "src": "assets/furniture/tables/FtrOrientalTableM_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/tables/FtrOrientalTableM_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Marrón",
+        "code": "#7a4839",
+        "src": "assets/furniture/tables/FtrOrientalTableM_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/tables/FtrOrientalTableM_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cama-dinastía",
+      "silla-cafe",
+      "mesa-cafe"
+    ]
+  },
+  {
+    "id": "mesa-madera",
+    "name": "Mesa de madera",
+    "price": 1800,
+    "category": "mobiliario",
+    "subcategory": "mesa",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "El diseño ofrece un tablero cómodo con proporciones bien medidas. Su presencia ordena el entorno y mejora la dinámica del espacio. Aporta utilidad en cualquier zona que necesite una superficie estable.",
+    "size": [
+      "2x2"
+    ],
+    "colors": [
+      {
+        "color": "Madera clara",
+        "code": "#d4a574",
+        "src": "assets/furniture/tables/FtrWoodenTableL_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/tables/FtrWoodenTableL_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Blanco",
+        "code": "#f5f5f5",
+        "src": "assets/furniture/tables/FtrWoodenTableL_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/tables/FtrWoodenTableL_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Cereza",
+        "code": "#a85a6d",
+        "src": "assets/furniture/tables/FtrWoodenTableL_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/tables/FtrWoodenTableL_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cama-madera",
+      "silla-madera",
+      "mesa-centro-madera",
+      "armario-madera"
+    ]
+  },
+  {
+    "id": "mesa-centro-madera",
+    "name": "Mesa de centro de madera",
+    "price": 1200,
+    "category": "mobiliario",
+    "subcategory": "mesa",
+    "sale": 10,
+    "popular": false,
+    "new": false,
+    "description": "La pieza combina funcionalidad y presencia decorativa con mucha naturalidad. Su presencia ordena el entorno y mejora la dinámica del espacio. Funciona en salones familiares, despachos y áreas de reunión.",
+    "size": [
+      "2x1"
+    ],
+    "colors": [
+      {
+        "color": "Madera clara",
+        "code": "#d4a574",
+        "src": "assets/furniture/tables/FtrWoodenTableM_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/tables/FtrWoodenTableM_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Blanco",
+        "code": "#efefef",
+        "src": "assets/furniture/tables/FtrWoodenTableM_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/tables/FtrWoodenTableM_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Cereza",
+        "code": "#a85a6d",
+        "src": "assets/furniture/tables/FtrWoodenTableM_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/tables/FtrWoodenTableM_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cama-madera",
+      "silla-madera",
+      "mesa-madera",
+      "armario-madera"
+    ]
+  },
+  {
+    "id": "armario-rustico",
+    "name": "Armario rústico",
+    "price": 5500,
+    "category": "mobiliario",
+    "subcategory": "armario",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La estructura de guardado está pensada para organizar prendas y objetos con facilidad. Su presencia ayuda a estructurar el dormitorio con naturalidad. Se integra en vestidores compactos, habitaciones amplias y áticos.",
+    "size": [
+      "1x1"
+    ],
+    "colors": [
+      {
+        "color": "Natural",
+        "code": "#c9a876",
+        "src": "assets/furniture/wardrobes/FtrCountryClosetLR_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/wardrobes/FtrCountryClosetLR_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Marrón oscuro",
+        "code": "#4a3728",
+        "src": "assets/furniture/wardrobes/FtrCountryClosetLR_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/wardrobes/FtrCountryClosetLR_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Blanco",
+        "code": "#f0f0f0",
+        "src": "assets/furniture/wardrobes/FtrCountryClosetLR_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/wardrobes/FtrCountryClosetLR_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "silla-rustica",
+      "mesa-alargada-rustica"
+    ]
+  },
+  {
+    "id": "armario-cuqui",
+    "name": "Armario cuqui",
+    "price": 7300,
+    "category": "mobiliario",
+    "subcategory": "armario",
+    "sale": 0,
+    "popular": false,
+    "new": true,
+    "description": "El conjunto transmite sensación de orden y aprovecha bien el espacio disponible. Mejora la sensación de amplitud al centralizar el almacenaje. Funciona en dormitorios familiares y estancias con necesidad de guardado.",
+    "size": [
+      "1x1"
+    ],
+    "colors": [
+      {
+        "color": "Blanco",
+        "code": "#fafafa",
+        "src": "assets/furniture/wardrobes/FtrCuteClosetLR_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/wardrobes/FtrCuteClosetLR_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Celeste",
+        "code": "#87ceeb",
+        "src": "assets/furniture/wardrobes/FtrCuteClosetLR_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/wardrobes/FtrCuteClosetLR_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Amarillo",
+        "code": "#ffd700",
+        "src": "assets/furniture/wardrobes/FtrCuteClosetLR_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/wardrobes/FtrCuteClosetLR_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cama-retales",
+      "silla-ranita",
+      "armario-pera"
+    ]
+  },
+  {
+    "id": "armario-tela",
+    "name": "Armario tela",
+    "price": 3100,
+    "category": "mobiliario",
+    "subcategory": "armario",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La pieza combina utilidad diaria con una presencia sobria y bien proporcionada. Su presencia ayuda a estructurar el dormitorio con naturalidad. Aporta organización en cualquier habitación destinada al almacenaje textil.",
+    "size": [
+      "1x1"
+    ],
+    "colors": [
+      {
+        "color": "Blanco",
+        "code": "#e8e8e8",
+        "src": "assets/furniture/wardrobes/FtrFashioncase_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/wardrobes/FtrFashioncase_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Negro",
+        "code": "#1a1a1a",
+        "src": "assets/furniture/wardrobes/FtrFashioncase_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/wardrobes/FtrFashioncase_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Naranja",
+        "code": "#ff8c00",
+        "src": "assets/furniture/wardrobes/FtrFashioncase_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/wardrobes/FtrFashioncase_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "armario-cuqui",
+      "cama-melamina",
+      "armario-pera"
+    ]
+  },
+  {
+    "id": "armario-pera",
+    "name": "Armario pera",
+    "price": 2600,
+    "category": "mobiliario",
+    "subcategory": "armario",
+    "sale": 20,
+    "popular": true,
+    "new": false,
+    "description": "El diseño aporta capacidad de almacenamiento sin sobrecargar visualmente la habitación. Los acabados transmiten orden y una estética doméstica cuidada. Encaja en cuartos de invitados, suites y zonas privadas de almacenaje.",
+    "size": [
+      "1x1"
+    ],
+    "colors": [
+      {
+        "color": "Pera verde",
+        "code": "#9acd32",
+        "src": "assets/furniture/wardrobes/FtrFruitsClosetLR_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/wardrobes/FtrFruitsClosetLR_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Pera marilla",
+        "code": "#daa520",
+        "src": "assets/furniture/wardrobes/FtrFruitsClosetLR_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/wardrobes/FtrFruitsClosetLR_Remake_1_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "silla-ranita"
+    ]
+  },
+  {
+    "id": "armario-hierro",
+    "name": "Armario de hierro",
+    "price": 9000,
+    "category": "mobiliario",
+    "subcategory": "armario",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Presenta una configuración práctica para ordenar textiles y accesorios. Refuerza un entorno práctico sin perder calidez. Aporta organización en cualquier habitación destinada al almacenaje textil.",
+    "size": [
+      "1x1"
+    ],
+    "colors": [
+      {
+        "color": "Negro",
+        "code": "#1a1a1a",
+        "src": "assets/furniture/wardrobes/FtrIronClosetLR_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/wardrobes/FtrIronClosetLR_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Blanco",
+        "code": "#e8e8e8",
+        "src": "assets/furniture/wardrobes/FtrIronClosetLR_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/wardrobes/FtrIronClosetLR_Remake_1_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "aparador-melamina",
+      "aparador-universidad"
+    ]
+  },
+  {
+    "id": "armario-ratan",
+    "name": "Armario de ratán",
+    "price": 6900,
+    "category": "mobiliario",
+    "subcategory": "armario",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La estructura de guardado está pensada para organizar prendas y objetos con facilidad. Refuerza un entorno práctico sin perder calidez. Encaja en cuartos de invitados, suites y zonas privadas de almacenaje.",
+    "size": [
+      "1x1"
+    ],
+    "colors": [
+      {
+        "color": "Marrón",
+        "code": "#795524",
+        "src": "assets/furniture/wardrobes/FtrRattanClosetLR_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/wardrobes/FtrRattanClosetLR_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Marrón rojizo",
+        "code": "#b6733a",
+        "src": "assets/furniture/wardrobes/FtrRattanClosetLR_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/wardrobes/FtrRattanClosetLR_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Marrón claro",
+        "code": "#c49a4b",
+        "src": "assets/furniture/wardrobes/FtrRattanClosetLR_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/wardrobes/FtrRattanClosetLR_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cama-ratan"
+    ]
+  },
+  {
+    "id": "armario-madera",
+    "name": "Armario de madera",
+    "price": 1440,
+    "category": "mobiliario",
+    "subcategory": "armario",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Su volumen vertical ayuda a mantener el espacio ordenado y despejado. Refuerza un entorno práctico sin perder calidez. Queda ideal en dormitorios, vestidores y habitaciones juveniles.",
+    "size": [
+      "1x1"
+    ],
+    "colors": [
+      {
+        "color": "Madera clara",
+        "code": "#d4a574",
+        "src": "assets/furniture/wardrobes/FtrWoodenCloset_Remake_0_0.webp",
+        "srcUpscaled": "assets/furniture/wardrobes/FtrWoodenCloset_Remake_0_0_upscaled.webp"
+      },
+      {
+        "color": "Blanco",
+        "code": "#e8e8e8",
+        "src": "assets/furniture/wardrobes/FtrWoodenCloset_Remake_1_0.webp",
+        "srcUpscaled": "assets/furniture/wardrobes/FtrWoodenCloset_Remake_1_0_upscaled.webp"
+      },
+      {
+        "color": "Cereza",
+        "code": "#a85a6d",
+        "src": "assets/furniture/wardrobes/FtrWoodenCloset_Remake_2_0.webp",
+        "srcUpscaled": "assets/furniture/wardrobes/FtrWoodenCloset_Remake_2_0_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cama-madera",
+      "silla-madera",
+      "mesa-madera",
+      "mesa-centro-madera"
+    ]
+  },
+  {
+    "id": "agente-totakeke",
+    "name": "Agente Totakeke",
+    "price": 3200,
+    "category": "musica",
+    "subcategory": "temita",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Tema de aire detectivesco con percusión contenida y giros melódicos que mantienen la intriga. Alterna tensión y descanso con mucha naturalidad, creando una atmósfera elegante y nocturna. Funciona muy bien en rincones secretos, despachos o salas urbanas.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/music/agente-totakeke.webp",
+        "srcUpscaled": "assets/music/agente-totakeke_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "sopesando",
+      "despedida"
+    ]
+  },
+  {
+    "id": "al-volante",
+    "name": "Al volante",
+    "price": 800,
+    "category": "musica",
+    "subcategory": "temita",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Canción de pulso constante y carácter optimista, como un trayecto largo a buen ritmo. La melodía avanza con acordes cálidos y un estribillo fácil de recordar. Encaja en garajes decorativos, cafeterías de carretera o zonas de paso dinámicas.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/music/al-volante.webp",
+        "srcUpscaled": "assets/music/al-volante_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "tota-camarada",
+      "tota-ragtime"
+    ]
+  },
+  {
+    "id": "anteayer",
+    "name": "Anteayer",
+    "price": 3200,
+    "category": "musica",
+    "subcategory": "temita",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Melodía nostálgica y suave, con frases largas que invitan a bajar el ritmo. El tempo moderado genera una sensación contemplativa sin volverse triste. Queda perfecta en bibliotecas, patios tranquilos o dormitorios serenos.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/music/anteayer.webp",
+        "srcUpscaled": "assets/music/anteayer_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "sopesando",
+      "pastelito-seco"
+    ]
+  },
+  {
+    "id": "cancion-minimalista",
+    "name": "Canción minimalista",
+    "price": 3200,
+    "category": "musica",
+    "subcategory": "temita",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Composición construida con pocos elementos y una repetición hipnótica muy limpia. El espacio entre notas aporta orden, silencio y una calma moderna. Ideal para interiores minimalistas, estudios creativos o salas de lectura.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/music/cancion-minimalista.webp",
+        "srcUpscaled": "assets/music/cancion-minimalista_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "ciudad-animal",
+      "al-volante"
+    ]
+  },
+  {
+    "id": "capullos-en-flor",
+    "name": "Capullos en flor",
+    "price": 3200,
+    "category": "musica",
+    "subcategory": "temita",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Pieza luminosa con cambios delicados que evocan una mañana de primavera. El ritmo amable transmite frescura y un optimismo tranquilo. Luce en terrazas, floristerías o zonas con abundante vegetación.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/music/capullos-en-flor.webp",
+        "srcUpscaled": "assets/music/capullos-en-flor_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "feliz-en-tu-dia",
+      "despedida"
+    ]
+  },
+  {
+    "id": "ciudad-animal",
+    "name": "Ciudad Animal",
+    "price": 800,
+    "category": "musica",
+    "subcategory": "temita",
+    "sale": 15,
+    "popular": false,
+    "new": false,
+    "description": "Ambiente urbano nocturno con acordes suaves y una línea melódica envolvente. Mantiene una calma elegante que llena el espacio sin saturarlo. Funciona de maravilla en plazas con farolas, cafeterías o paseos nocturnos.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/music/ciudad-animal.webp",
+        "srcUpscaled": "assets/music/ciudad-animal_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "colina-arriba",
+      "tota-gumbo"
+    ]
+  },
+  {
+    "id": "colina-arriba",
+    "name": "Colina arriba",
+    "price": 3200,
+    "category": "musica",
+    "subcategory": "temita",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Tema enérgico con una melodía ascendente que sugiere avance continuo. El ritmo tiene carácter aventurero y sensación de ruta abierta. Encaja en senderos, campamentos o áreas exteriores con desnivel.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/music/colina-arriba.webp",
+        "srcUpscaled": "assets/music/colina-arriba_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "ciudad-animal",
+      "tota-gumbo"
+    ]
+  },
+  {
+    "id": "despedida",
+    "name": "Despedida",
+    "price": 800,
+    "category": "musica",
+    "subcategory": "temita",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Composición lenta y emotiva, con pausas que dejan respirar cada frase musical. El tono melancólico resulta íntimo y muy expresivo. Queda ideal en muelles, estaciones o espacios de recuerdo.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/music/despedida.webp",
+        "srcUpscaled": "assets/music/despedida_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "agente-totakeke",
+      "pastelito-seco"
+    ]
+  },
+  {
+    "id": "feliz-en-tu-dia",
+    "name": "Feliz en tu día",
+    "price": 800,
+    "category": "musica",
+    "subcategory": "temita",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Canción festiva de ritmo saltarín y melodía brillante desde el inicio. Transmite celebración, cercanía y energía positiva de forma inmediata. Perfecta para comedores, fiestas y zonas de encuentro social.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/music/feliz-en-tu-dia.webp",
+        "srcUpscaled": "assets/music/feliz-en-tu-dia_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "capullos-en-flor",
+      "tota-camarada"
+    ]
+  },
+  {
+    "id": "pastelito-seco",
+    "name": "Pastelito seco",
+    "price": 3200,
+    "category": "musica",
+    "subcategory": "temita",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Tema juguetón con motivo melódico corto y muy pegadizo. El compás ligero aporta un punto divertido sin perder suavidad. Funciona muy bien en cocinas, cafeterías o ambientes desenfadados.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/music/pastelito-seco.webp",
+        "srcUpscaled": "assets/music/pastelito-seco_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "despedida",
+      "anteayer"
+    ]
+  },
+  {
+    "id": "sopesando",
+    "name": "Sopesando",
+    "price": 3200,
+    "category": "musica",
+    "subcategory": "temita",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Melodía reflexiva de tempo medio y cambios armónicos sutiles. El desarrollo sonoro invita a pensar con calma y observar los detalles. Ideal para despachos, talleres o rincones de estudio.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/music/sopesando.webp",
+        "srcUpscaled": "assets/music/sopesando_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "agente-totakeke",
+      "anteayer"
+    ]
+  },
+  {
+    "id": "tota-camarada",
+    "name": "Tota camarada",
+    "price": 3200,
+    "category": "musica",
+    "subcategory": "temita",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Composición cercana con acordes cálidos y ritmo conversacional. Genera una sensación acogedora, como una charla tranquila al atardecer. Encaja en plazas, salones compartidos o cocinas comunitarias.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/music/tota-camarada.webp",
+        "srcUpscaled": "assets/music/tota-camarada_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "al-volante",
+      "feliz-en-tu-dia"
+    ]
+  },
+  {
+    "id": "tota-gumbo",
+    "name": "Tota gumbo",
+    "price": 3200,
+    "category": "musica",
+    "subcategory": "temita",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Base rítmica terrenal y flexible, con una melodía de carácter social. El tema transmite movimiento relajado y buen ambiente. Funciona en mercados, restaurantes y espacios rústicos con vida.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/music/tota-gumbo.webp",
+        "srcUpscaled": "assets/music/tota-gumbo_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "ciudad-animal",
+      "colina-arriba"
+    ]
+  },
+  {
+    "id": "tota-ragtime",
+    "name": "Tota ragtime",
+    "price": 3200,
+    "category": "musica",
+    "subcategory": "temita",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Ritmo sincopado y melodía vivaz con sabor clásico. La energía del tema añade dinamismo y un toque juguetón al ambiente. Perfecta para salas recreativas, bares o rincones vintage.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/music/tota-ragtime.webp",
+        "srcUpscaled": "assets/music/tota-ragtime_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "al-volante",
+      "tota-gumbo"
+    ]
+  },
+  {
+    "id": "cuadro-detallado",
+    "name": "Cuadro detallado",
+    "price": 4980,
+    "category": "cuadros",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Retrato grupal de composición compleja, con personajes distribuidos en distintos planos y gran profundidad espacial. La luz dirige la mirada entre gestos, reflejos y detalles del fondo con mucha precisión. Encaja en galerías elegantes, bibliotecas amplias o salones clásicos.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/paintings/FtrArtAjisaisoukeizu.webp",
+        "srcUpscaled": "assets/paintings/FtrArtAjisaisoukeizu_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cuadro-alegorico",
+      "cuadro-vespertino",
+      "paisaje-frances"
+    ]
+  },
+  {
+    "id": "cuadro-dama",
+    "name": "Cuadro dama",
+    "price": 4980,
+    "category": "cuadros",
+    "subcategory": "museo",
+    "sale": 30,
+    "popular": false,
+    "new": false,
+    "description": "Retrato femenino de tres cuartos con gesto sereno y presencia contenida. El tratamiento de telas y manos aporta realismo táctil, mientras el fondo oscuro concentra la atención en el rostro. Queda ideal en pasillos sobrios, estudios privados o tocadores refinados.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/paintings/FtrArtBarFB.webp",
+        "srcUpscaled": "assets/paintings/FtrArtBarFB_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "retrato-heroico",
+      "cuadro-clasico",
+      "cuadro-espanol"
+    ]
+  },
+  {
+    "id": "cuadro-alegorico",
+    "name": "Cuadro alegórico",
+    "price": 4980,
+    "category": "cuadros",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Escena colectiva cargada de movimiento, con diagonales intensas y dramatismo visual. El contraste entre luces cálidas y sombras profundas refuerza su tono épico. Funciona muy bien en vestíbulos, salas de exposición o espacios de estética histórica.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/paintings/FtrArtBirthVenus.webp",
+        "srcUpscaled": "assets/paintings/FtrArtBirthVenus_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cuadro-detallado",
+      "cuadro-vespertino",
+      "paisaje-estrellado"
+    ]
+  },
+  {
+    "id": "retrato-heroico",
+    "name": "Retrato heroico",
+    "price": 4980,
+    "category": "cuadros",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": true,
+    "new": false,
+    "description": "Retrato de figura joven con porte firme y elegancia escénica. La paleta realza la indumentaria y equilibra refinamiento con naturalidad. Se integra en salones formales, estudios clásicos o rincones de retratos.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/paintings/FtrArtBlueBoy.webp",
+        "srcUpscaled": "assets/paintings/FtrArtBlueBoy_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "retrato-italiano",
+      "retrato-holandes",
+      "cuadro-dama"
+    ]
+  },
+  {
+    "id": "cuadro-clasico",
+    "name": "Cuadro clásico",
+    "price": 4980,
+    "category": "cuadros",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": true,
+    "new": false,
+    "description": "Retrato frontal de gran serenidad, construido con composición equilibrada y gesto contenido. Las transiciones suaves de luz y sombra modelan el rostro con mucha profundidad. Encaja en bibliotecas, salas de lectura y espacios de contemplación silenciosa.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/paintings/FtrArtClothedMaja.webp",
+        "srcUpscaled": "assets/paintings/FtrArtClothedMaja_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "retrato-italiano",
+      "retrato-perla",
+      "cuadro-dama"
+    ]
+  },
+  {
+    "id": "cuadro-vespertino",
+    "name": "Cuadro vespertino",
+    "price": 4980,
+    "category": "cuadros",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Escena nocturna con múltiples personajes y contraste lumínico muy marcado. Los focos de luz recortan texturas y expresiones, creando tensión narrativa. Queda excelente en pasillos de museo, salas oscuras o ambientes barrocos.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/paintings/FtrArtFightingTemeraire.webp",
+        "srcUpscaled": "assets/paintings/FtrArtFightingTemeraire_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cuadro-detallado",
+      "cuadro-alegorico",
+      "cuadro-ola"
+    ]
+  },
+  {
+    "id": "cuadro-naturaleza",
+    "name": "Cuadro naturaleza",
+    "price": 4980,
+    "category": "cuadros",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Bodegón de objetos cotidianos y frutos tratado con gran atención al volumen y la materia. La composición transmite equilibrio doméstico mediante tonos terrosos y reflejos suaves. Funciona en comedores, cocinas elegantes o interiores de inspiración tradicional.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/paintings/FtrArtFuujin.webp",
+        "srcUpscaled": "assets/paintings/FtrArtFuujin_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cuadro-organico",
+      "paisaje-frances",
+      "cuadro-segadoras"
+    ]
+  },
+  {
+    "id": "cuadro-segadoras",
+    "name": "Cuadro segadoras",
+    "price": 4980,
+    "category": "cuadros",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Escena rural con figuras trabajadoras en primer plano y paisaje abierto al fondo. La paleta sobria y las posturas transmiten esfuerzo cotidiano y dignidad. Aporta carácter en zonas de trabajo, bibliotecas o ambientes campestres.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/paintings/FtrArtGleaners.webp",
+        "srcUpscaled": "assets/paintings/FtrArtGleaners_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cuadro-naturaleza",
+      "paisaje-frances",
+      "cuadro-invernal"
+    ]
+  },
+  {
+    "id": "cuadro-invernal",
+    "name": "Cuadro invernal",
+    "price": 4980,
+    "category": "cuadros",
+    "subcategory": "museo",
+    "sale": 25,
+    "popular": false,
+    "new": false,
+    "description": "Paisaje nevado de gran amplitud con pequeñas figuras repartidas en profundidad. La atmósfera fría y el horizonte extenso generan distancia y calma estacional. Encaja en recibidores, salas amplias o espacios de aire nórdico.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/paintings/FtrArtHunterSnow.webp",
+        "srcUpscaled": "assets/paintings/FtrArtHunterSnow_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "paisaje-estrellado",
+      "cuadro-segadoras",
+      "paisaje-frances"
+    ]
+  },
+  {
+    "id": "cuadro-tenebroso",
+    "name": "Cuadro tenebroso",
+    "price": 4980,
+    "category": "cuadros",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": true,
+    "new": false,
+    "description": "Composición oscura con fuerte carga simbólica y contraste muy intenso. La materia pictórica resulta dramática y densa en cada plano. Funciona en galerías de arte, estudios creativos o rincones de estética gótica.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/paintings/FtrArtIsleOfDead.webp",
+        "srcUpscaled": "assets/paintings/FtrArtIsleOfDead_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "paisaje-estrellado",
+      "cuadro-espanol",
+      "cuadro-vespertino"
+    ]
+  },
+  {
+    "id": "cuadro-ola",
+    "name": "Cuadro ola",
+    "price": 4980,
+    "category": "cuadros",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Gran escena marina captada en pleno movimiento con curvas potentes y energía inmediata. La escala subraya la fuerza del mar frente a lo humano. Queda perfecta en salones modernos, zonas costeras o espacios de inspiración japonesa.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/paintings/FtrArtKanagawaOki.webp",
+        "srcUpscaled": "assets/paintings/FtrArtKanagawaOki_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "paisaje-estrellado",
+      "paisaje-frances",
+      "cuadro-vespertino"
+    ]
+  },
+  {
+    "id": "cuadro-espanol",
+    "name": "Cuadro español",
+    "price": 4980,
+    "category": "cuadros",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Figura femenina recostada con mirada directa y presencia teatral. El contraste entre piel iluminada y fondo oscuro genera una tensión visual muy marcada. Encaja en dormitorios elegantes, salones clásicos o galerías íntimas.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/paintings/FtrArtLasMeninas.webp",
+        "srcUpscaled": "assets/paintings/FtrArtLasMeninas_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cuadro-dama",
+      "cuadro-tenebroso",
+      "retrato-heroico"
+    ]
+  },
+  {
+    "id": "retrato-holandes",
+    "name": "Retrato holandés",
+    "price": 4980,
+    "category": "cuadros",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Retrato naturalista iluminado lateralmente, con gran precisión en rostro y expresión. Vestuario oscuro y fondo neutro centran toda la atención en la figura. Funciona en despachos, bibliotecas y estancias de tono sobrio.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/paintings/FtrArtMilkmaid.webp",
+        "srcUpscaled": "assets/paintings/FtrArtMilkmaid_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "retrato-heroico",
+      "cuadro-dama",
+      "retrato-perla"
+    ]
+  },
+  {
+    "id": "retrato-italiano",
+    "name": "Retrato italiano",
+    "price": 4980,
+    "category": "cuadros",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Retrato de una figura femenina de perfil idealizado, con líneas suaves y equilibrio renacentista. El paisaje de fondo aporta profundidad y un clima pausado. Queda muy bien en estudios de arte, pasillos luminosos o espacios clásicos.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/paintings/FtrArtMonaLisa.webp",
+        "srcUpscaled": "assets/paintings/FtrArtMonaLisa_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "retrato-heroico",
+      "retrato-perla",
+      "cuadro-clasico"
+    ]
+  },
+  {
+    "id": "cuadro-holandes",
+    "name": "Cuadro holandés",
+    "price": 4980,
+    "category": "cuadros",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Escena interior doméstica con gran detalle en objetos, telas y gestos cotidianos. La entrada de luz está medida para crear un ambiente íntimo y silencioso. Encaja en cocinas, comedores o rincones de lectura tranquila.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/paintings/FtrArtNightWatch.webp",
+        "srcUpscaled": "assets/paintings/FtrArtNightWatch_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "retrato-perla",
+      "retrato-holandes"
+    ]
+  },
+  {
+    "id": "retrato-perla",
+    "name": "Retrato perla",
+    "price": 4980,
+    "category": "cuadros",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Retrato joven de tres cuartos, realzado por un punto de brillo en la joya y una iluminación envolvente. El fondo oscuro elimina distracciones y potencia la expresión facial. Aporta elegancia en recibidores pequeños, galerías minimalistas o salones delicados.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/paintings/FtrArtPearlEarring.webp",
+        "srcUpscaled": "assets/paintings/FtrArtPearlEarring_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "retrato-italiano",
+      "retrato-holandes",
+      "cuadro-clasico"
+    ]
+  },
+  {
+    "id": "paisaje-estrellado",
+    "name": "Paisaje estrellado",
+    "price": 4980,
+    "category": "cuadros",
+    "subcategory": "museo",
+    "sale": 50,
+    "popular": true,
+    "new": false,
+    "description": "Cielo nocturno de pincelada enérgica, con remolinos y focos de luz de gran movimiento. El contraste entre azules profundos y destellos luminosos transmite emoción intensa. Funciona en dormitorios, salas creativas o espacios contemporáneos.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/paintings/FtrArtStarryNight.webp",
+        "srcUpscaled": "assets/paintings/FtrArtStarryNight_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cuadro-ola",
+      "paisaje-frances",
+      "cuadro-invernal"
+    ]
+  },
+  {
+    "id": "cuadro-organico",
+    "name": "Cuadro orgánico",
+    "price": 4980,
+    "category": "cuadros",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": true,
+    "new": false,
+    "description": "Retrato compuesto por elementos naturales integrados con precisión casi escultórica. La mezcla de botánica y figura humana crea una presencia sorprendente y muy singular. Queda excelente en invernaderos, talleres artísticos o salas de temática naturalista.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/paintings/FtrArtSummer.webp",
+        "srcUpscaled": "assets/paintings/FtrArtSummer_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cuadro-naturaleza",
+      "paisaje-frances",
+      "paisaje-estrellado"
+    ]
+  },
+  {
+    "id": "paisaje-frances",
+    "name": "Paisaje francés",
+    "price": 4980,
+    "category": "cuadros",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": true,
+    "description": "Escena campestre de gran formato, con figuras pequeñas y atmósfera extensa. La luz difusa y los tonos suaves evocan un paseo tranquilo al aire libre. Encaja en comedores amplios, salones luminosos o galerías de estilo clásico.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/paintings/FtrArtSundayOn.webp",
+        "srcUpscaled": "assets/paintings/FtrArtSundayOn_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "paisaje-estrellado",
+      "cuadro-ola",
+      "cuadro-segadoras"
+    ]
+  },
+  {
+    "id": "figura-materna",
+    "name": "Figura materna",
+    "price": 4980,
+    "category": "esculturas",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Escultura de formas redondeadas y postura estable, centrada en la idea de protección. Las superficies suaves transmiten calma y cercanía desde el primer vistazo. Queda muy bien en bibliotecas, patios interiores o zonas de descanso.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/sculptures/FtrSculptureCapitolini.webp",
+        "srcUpscaled": "assets/sculptures/FtrSculptureCapitolini_upscaled.webp"
+      }
+    ],
+    "collections": ["estatua-femenina", "estatua-pensativa", "busto-antiguo"]
+  },
+  {
+    "id": "estatua-majestuosa",
+    "name": "Estatua majestuosa",
+    "price": 4980,
+    "category": "esculturas",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": true,
+    "new": false,
+    "description": "Pieza de escala monumental con una silueta dominante y líneas firmes. La presencia visual genera solemnidad y un foco claro dentro de la estancia. Funciona en entradas amplias, plazas o salones de gran altura.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/sculptures/FtrSculptureDavid.webp",
+        "srcUpscaled": "assets/sculptures/FtrSculptureDavid_upscaled.webp"
+      }
+    ],
+    "collections": ["estatua-atletica", "estatua-femenina", "estatua-alada"]
+  },
+  {
+    "id": "estatua-atletica",
+    "name": "Estatua atlética",
+    "price": 4980,
+    "category": "esculturas",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Figura en tensión controlada, con musculatura definida y equilibrio dinámico. La composición sugiere movimiento contenido y energía clásica. Encaja en galerías históricas, estudios de arte o salas temáticas.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/sculptures/FtrSculptureDiskobolos.webp",
+        "srcUpscaled": "assets/sculptures/FtrSculptureDiskobolos_upscaled.webp"
+      }
+    ],
+    "collections": ["estatua-majestuosa", "escultura-guerrera", "estatua-triunfante"]
+  },
+  {
+    "id": "estatua-primitiva",
+    "name": "Estatua primitiva",
+    "price": 4980,
+    "category": "esculturas",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Volumen frontal de rasgos simplificados y textura rugosa de fuerte impacto simbólico. El lenguaje formal transmite antigüedad y misterio arqueológico. Luce en jardines de roca, museos didácticos o rincones históricos.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/sculptures/FtrSculptureDoguu.webp",
+        "srcUpscaled": "assets/sculptures/FtrSculptureDoguu_upscaled.webp"
+      }
+    ],
+    "collections": ["busto-antiguo", "cabeza-colosal", "piedra-poliglota"]
+  },
+  {
+    "id": "escultura-guerrera",
+    "name": "Escultura guerrera",
+    "price": 4980,
+    "category": "esculturas",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Figura robusta con gesto decidido y lectura claramente bélica. El conjunto proyecta determinación sin perder equilibrio formal. Se integra en recibidores, salas de colección o espacios con estética épica.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/sculptures/FtrSculptureHeibayo.webp",
+        "srcUpscaled": "assets/sculptures/FtrSculptureHeibayo_upscaled.webp"
+      }
+    ],
+    "collections": ["estatua-atletica", "estatua-triunfante", "estatua-primitiva"]
+  },
+  {
+    "id": "estatua-triunfante",
+    "name": "Estatua triunfante",
+    "price": 4980,
+    "category": "esculturas",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Composición vertical que representa victoria y apertura corporal. Los pliegues y el gesto elevan una sensación de celebración contenida. Funciona en halls principales, plazas o zonas expositivas destacadas.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/sculptures/FtrSculptureKamehameha.webp",
+        "srcUpscaled": "assets/sculptures/FtrSculptureKamehameha_upscaled.webp"
+      }
+    ],
+    "collections": ["estatua-atletica", "estatua-alada", "escultura-guerrera"]
+  },
+  {
+    "id": "estatua-femenina",
+    "name": "Estatua femenina",
+    "price": 4980,
+    "category": "esculturas",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Figura de líneas fluidas y caída natural, con ritmo visual continuo. La pieza combina delicadeza y estabilidad en una misma lectura. Queda preciosa en jardines clásicos, patios verdes o salones luminosos.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/sculptures/FtrSculptureMilo.webp",
+        "srcUpscaled": "assets/sculptures/FtrSculptureMilo_upscaled.webp"
+      }
+    ],
+    "collections": ["estatua-majestuosa", "estatua-alada", "figura-materna"]
+  },
+  {
+    "id": "busto-antiguo",
+    "name": "Busto antiguo",
+    "price": 4980,
+    "category": "esculturas",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Busto de modelado sobrio, centrado en rasgos faciales y carácter expresivo. El desgaste superficial añade autenticidad histórica al conjunto. Encaja en escritorios, bibliotecas o vitrinas arqueológicas.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/sculptures/FtrSculptureNefertiti.webp",
+        "srcUpscaled": "assets/sculptures/FtrSculptureNefertiti_upscaled.webp"
+      }
+    ],
+    "collections": ["cabeza-colosal", "piedra-poliglota", "estatua-primitiva"]
+  },
+  {
+    "id": "cabeza-colosal",
+    "name": "Cabeza colosal",
+    "price": 4980,
+    "category": "esculturas",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Escultura de proporciones monumentales y rasgos contundentes. La masa compacta y pétrea transmite permanencia ancestral. Ideal para exteriores, entradas de museo o jardines amplios.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/sculptures/FtrSculptureOlmecaHead.webp",
+        "srcUpscaled": "assets/sculptures/FtrSculptureOlmecaHead_upscaled.webp"
+      }
+    ],
+    "collections": ["busto-antiguo", "piedra-poliglota", "estatua-primitiva"]
+  },
+  {
+    "id": "piedra-poliglota",
+    "name": "Piedra políglota",
+    "price": 4980,
+    "category": "esculturas",
+    "subcategory": "museo",
+    "sale": 20,
+    "popular": true,
+    "new": false,
+    "description": "Bloque grabado con inscripciones y relieve de gran valor histórico. La superficie invita a una observación cercana y despierta curiosidad intelectual. Funciona en aulas temáticas, salas de estudio o espacios museísticos.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/sculptures/FtrSculptureRosettaStone.webp",
+        "srcUpscaled": "assets/sculptures/FtrSculptureRosettaStone_upscaled.webp"
+      }
+    ],
+    "collections": ["busto-antiguo", "cabeza-colosal", "estatua-primitiva"]
+  },
+  {
+    "id": "estatua-alada",
+    "name": "Estatua alada",
+    "price": 4980,
+    "category": "esculturas",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Figura de líneas ascendentes con volumen equilibrado y sensación de ligereza. La silueta sugiere elevación y esperanza sin perder solidez clásica. Encaja en plazas, patios abiertos o jardines formales.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/sculptures/FtrSculptureSamothrace.webp",
+        "srcUpscaled": "assets/sculptures/FtrSculptureSamothrace_upscaled.webp"
+      }
+    ],
+    "collections": ["estatua-majestuosa", "estatua-femenina", "estatua-triunfante"]
+  },
+  {
+    "id": "estatua-pensativa",
+    "name": "Estatua pensativa",
+    "price": 4980,
+    "category": "esculturas",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Composición introspectiva con tensión muscular y gesto concentrado. El silencio visual que genera invita a la reflexión prolongada. Queda ideal en despachos, bibliotecas o salas de lectura contemplativa.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/sculptures/FtrSculptureThinker.webp",
+        "srcUpscaled": "assets/sculptures/FtrSculptureThinker_upscaled.webp"
+      }
+    ],
+    "collections": ["figura-materna", "estatua-femenina", "estatua-alada"]
+  },
+  {
+    "id": "cola-archelon",
+    "name": "Cola de Archelon",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Se aprecia una conservación notable del material petrificado y un relieve anatómico muy claro. Aporta profundidad histórica y un punto didáctico muy valioso. Resulta ideal para itinerarios expositivos y salas de interpretación.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilArchelonB.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilArchelonB_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cuerpo-archelon"
+    ]
+  },
+  {
+    "id": "cuerpo-archelon",
+    "name": "Cuerpo de Arquelon",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La pieza exhibe una silueta robusta que transmite autenticidad histórica. Refuerza el interés por la paleontología de forma natural. Queda excelente en vitrinas centrales, galerías históricas y pasillos de museo.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilArchelonA.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilArchelonA_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cola-archelon"
+    ]
+  },
+  {
+    "id": "australopiteco",
+    "name": "Australopiteco",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "El estado de conservación permite observar rasgos anatómicos con bastante nitidez. Invita a comparar formas y evolución con una mirada atenta. Resulta ideal para itinerarios expositivos y salas de interpretación.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilAustralopithecus.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilAustralopithecus_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "dunkleosteo"
+    ]
+  },
+  {
+    "id": "cola-braquiosaurio",
+    "name": "Cola de Braquiosaurio",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La lectura visual del fósil es estable, precisa y muy atractiva. Introduce una dimensión histórica que enriquece la ambientación. Se luce en exposiciones con narrativa evolutiva.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilBrachiosaurusD.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilBrachiosaurusD_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "craneo-braquiosaurio",
+      "torax-braquiosaurio",
+      "pelvis-braquisaurio"
+    ]
+  },
+  {
+    "id": "craneo-braquiosaurio",
+    "name": "Cráneo de Braquiosaurio",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La forma general resulta reconocible y muy útil para exposición educativa. Combina interés académico y fuerza visual con buen equilibrio. Encaja en aulas temáticas, salas de ciencias y exposiciones educativas.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilBrachiosaurusA.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilBrachiosaurusA_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cola-braquiosaurio",
+      "torax-braquiosaurio",
+      "pelvis-braquisaurio"
+    ]
+  },
+  {
+    "id": "torax-braquiosaurio",
+    "name": "Tórax de Braquiosaurio",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La morfología fósil conserva volumen y textura con un nivel de detalle destacable. Combina interés académico y fuerza visual con buen equilibrio. Es una gran elección para áreas de observación comparativa.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilBrachiosaurusB.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilBrachiosaurusB_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cola-braquiosaurio",
+      "craneo-braquiosaurio",
+      "pelvis-braquisaurio"
+    ]
+  },
+  {
+    "id": "pelvis-braquisaurio",
+    "name": "Pelvis de Braquiosaurio",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "El relieve óseo está bien marcado y aporta información visual inmediata. Favorece una lectura expositiva clara y muy accesible. Queda excelente en vitrinas centrales, galerías históricas y pasillos de museo.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilBrachiosaurusC.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilBrachiosaurusC_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cola-braquiosaurio",
+      "craneo-braquiosaurio",
+      "torax-braquiosaurio"
+    ]
+  },
+  {
+    "id": "cola-deinonico",
+    "name": "Cola de Deinónico",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La morfología fósil conserva volumen y textura con un nivel de detalle destacable. Genera una atmósfera de descubrimiento científico en cualquier sala. Luce en entradas de museo, corredores culturales y zonas curatoriales.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilDeinonychusB.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilDeinonychusB_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "craneo-deinonico"
+    ]
+  },
+  {
+    "id": "craneo-deinonico",
+    "name": "Cráneo de Deinónico",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La pieza exhibe una silueta robusta que transmite autenticidad histórica. Invita a comparar formas y evolución con una mirada atenta. Queda muy bien en espacios donde se busca aprendizaje visual.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilDeinonychusA.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilDeinonychusA_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cola-deinonico"
+    ]
+  },
+  {
+    "id": "cola-tigre-sable",
+    "name": "Cola de Tigre dientes de sable",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La textura petrificada sugiere antigüedad y solidez en cada plano. Invita a comparar formas y evolución con una mirada atenta. Queda muy bien en espacios donde se busca aprendizaje visual.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilSmilodonB.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilSmilodonB_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cuerpo-tigre-sable"
+    ]
+  },
+  {
+    "id": "cuerpo-tigre-sable",
+    "name": "Cuerpo de Tigre dientes de sable",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La pieza mantiene proporciones claras y una presencia arqueológica potente. Favorece una lectura expositiva clara y muy accesible. Funciona en contextos expositivos de alta afluencia.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilSmilodonA.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilSmilodonA_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cola-tigre-sable"
+    ]
+  },
+  {
+    "id": "cola-dimetrodon",
+    "name": "Cola de Dimetrodón",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La lectura visual del fósil es estable, precisa y muy atractiva. Despierta curiosidad inmediata y conecta con el estudio del pasado remoto. Resulta ideal para itinerarios expositivos y salas de interpretación.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilDimetrodonB.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilDimetrodonB_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "craneo-dimetrodon"
+    ]
+  },
+  {
+    "id": "craneo-dimetrodon",
+    "name": "Cráneo de Dimetrodón",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": true,
+    "description": "El estado de conservación permite observar rasgos anatómicos con bastante nitidez. Refuerza el interés por la paleontología de forma natural. Queda muy bien en espacios donde se busca aprendizaje visual.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilDimetrodonA.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilDimetrodonA_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cola-dimetrodon"
+    ]
+  },
+  {
+    "id": "dunkleosteo",
+    "name": "Dunkleósteo",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 18,
+    "popular": false,
+    "new": false,
+    "description": "Se distinguen formas orgánicas claramente fossilizadas en una composición muy expresiva. Potencia la identidad del espacio con un enfoque divulgativo. Queda excelente en vitrinas centrales, galerías históricas y pasillos de museo.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilDunkleosteus.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilDunkleosteus_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "australopiteco"
+    ]
+  },
+  {
+    "id": "cola-plesiosaurio",
+    "name": "Cola de Plesiosaurio",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Se distinguen formas orgánicas claramente fossilizadas en una composición muy expresiva. Convierte el entorno en una experiencia de observación y aprendizaje. Queda muy bien en espacios donde se busca aprendizaje visual.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilElasmosaurusC.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilElasmosaurusC_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "craneo-plesiosaurio",
+      "torso-plesiosaurio"
+    ]
+  },
+  {
+    "id": "craneo-plesiosaurio",
+    "name": "Cráneo de Plesiosaurio",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "El fragmento presenta contornos bien definidos que facilitan su lectura científica. Potencia la identidad del espacio con un enfoque divulgativo. Funciona muy bien en colecciones permanentes y muestras temporales.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilElasmosaurusA.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilElasmosaurusA_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cola-plesiosaurio",
+      "torso-plesiosaurio"
+    ]
+  },
+  {
+    "id": "torso-plesiosaurio",
+    "name": "Torso de Plesiosaurio",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La estructura preservada ofrece una lectura anatómica convincente y didáctica. Suma valor educativo sin perder impacto decorativo. Se integra en ambientes pedagógicos con fuerte componente visual.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilElasmosaurusB.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilElasmosaurusB_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cola-plesiosaurio",
+      "craneo-plesiosaurio"
+    ]
+  },
+  {
+    "id": "cola-espinosaurio",
+    "name": "Cola de Espinosaurio",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Se observan señales de fosilización con gran valor expositivo. Aporta profundidad histórica y un punto didáctico muy valioso. Funciona muy bien en colecciones permanentes y muestras temporales.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilSpinosaurusC.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilSpinosaurusC_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "craneo-espinosaurio",
+      "cuerpo-espinosaurio"
+    ]
+  },
+  {
+    "id": "craneo-espinosaurio",
+    "name": "Cráneo de Espinosaurio",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La textura petrificada sugiere antigüedad y solidez en cada plano. Potencia la identidad del espacio con un enfoque divulgativo. Se adapta a salas de estudio con enfoque histórico naturalista.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilSpinosaurusA.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilSpinosaurusA_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cola-espinosaurio",
+      "cuerpo-espinosaurio"
+    ]
+  },
+  {
+    "id": "cuerpo-espinosaurio",
+    "name": "Cuerpo de Espinosaurio",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "El estado de conservación permite observar rasgos anatómicos con bastante nitidez. Introduce una dimensión histórica que enriquece la ambientación. Funciona muy bien en colecciones permanentes y muestras temporales.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilSpinosaurusB.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilSpinosaurusB_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cola-espinosaurio",
+      "craneo-espinosaurio"
+    ]
+  },
+  {
+    "id": "cola-estegosaurio",
+    "name": "Cola de Estegosaurio",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La morfología fósil conserva volumen y textura con un nivel de detalle destacable. Activa la curiosidad y la conversación alrededor de la historia natural. Es una gran elección para áreas de observación comparativa.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilStegosaurusC.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilStegosaurusC_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "craneo-estegosaurio",
+      "cuerpo-estegosaurio"
+    ]
+  },
+  {
+    "id": "craneo-estegosaurio",
+    "name": "Cráneo de Estegosaurio",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La pieza exhibe una silueta robusta que transmite autenticidad histórica. Combina interés académico y fuerza visual con buen equilibrio. Funciona en contextos expositivos de alta afluencia.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilStegosaurusA.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilStegosaurusA_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cola-estegosaurio",
+      "cuerpo-estegosaurio"
+    ]
+  },
+  {
+    "id": "cuerpo-estegosaurio",
+    "name": "Cuerpo de Estegosaurio",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "El volumen conservado refuerza la percepción de pieza museística. Aporta contexto científico con una presencia visual potente. Aporta mucho en bibliotecas temáticas y espacios de divulgación.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilStegosaurusB.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilStegosaurusB_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cola-estegosaurio",
+      "craneo-estegosaurio"
+    ]
+  },
+  {
+    "id": "cola-iguanodon",
+    "name": "Cola de Iguanodón",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "El relieve óseo está bien marcado y aporta información visual inmediata. Aporta profundidad histórica y un punto didáctico muy valioso. Rinde especialmente bien en vitrinas de colección ordenada.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilIguanodonC.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilIguanodonC_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "craneo-iguanodon",
+      "cuerpo-iguanodon"
+    ]
+  },
+  {
+    "id": "craneo-iguanodon",
+    "name": "Cráneo de Iguanodón",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La forma general resulta reconocible y muy útil para exposición educativa. Aporta profundidad histórica y un punto didáctico muy valioso. Encaja en montajes didácticos orientados a público general.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilIguanodonA.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilIguanodonA_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cola-iguanodon",
+      "cuerpo-iguanodon"
+    ]
+  },
+  {
+    "id": "cuerpo-iguanodon",
+    "name": "Cuerpo de Iguanodón",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "El relieve óseo está bien marcado y aporta información visual inmediata. Combina interés académico y fuerza visual con buen equilibrio. Rinde especialmente bien en vitrinas de colección ordenada.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilIguanodonB.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilIguanodonB_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cola-iguanodon",
+      "craneo-iguanodon"
+    ]
+  },
+  {
+    "id": "cuerpo-mamut",
+    "name": "Cuerpo de Mamut",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "El estado de conservación permite observar rasgos anatómicos con bastante nitidez. Convierte el entorno en una experiencia de observación y aprendizaje. Queda muy bien en espacios donde se busca aprendizaje visual.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilMammothB.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilMammothB_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "craneo-mamut"
+    ]
+  },
+  {
+    "id": "craneo-mamut",
+    "name": "Cráneo de Mamut",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "El volumen conservado refuerza la percepción de pieza museística. Aporta contexto científico con una presencia visual potente. Funciona muy bien en colecciones permanentes y muestras temporales.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilMammothA.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilMammothA_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cuerpo-mamut"
+    ]
+  },
+  {
+    "id": "derecha-megaloceros",
+    "name": "Mitad derecha de Megaloceros",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": true,
+    "description": "La forma general resulta reconocible y muy útil para exposición educativa. Transforma el espacio en un punto de referencia cultural. Queda excelente en vitrinas centrales, galerías históricas y pasillos de museo.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilMegalocerosA.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilMegalocerosA_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "izquierda-megaloceros"
+    ]
+  },
+  {
+    "id": "izquierda-megaloceros",
+    "name": "Mitad izquierda de Megaloceros",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 50,
+    "popular": false,
+    "new": false,
+    "description": "La pieza exhibe una silueta robusta que transmite autenticidad histórica. Invita a comparar formas y evolución con una mirada atenta. Se integra en ambientes pedagógicos con fuerte componente visual.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilMegalocerosB.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilMegalocerosB_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "derecha-megaloceros"
+    ]
+  },
+  {
+    "id": "craneo-oftalmosaurio",
+    "name": "Cráneo de Oftalmosaurio",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La superficie mineral mantiene señales estructurales de gran interés paleontológico. Suma valor educativo sin perder impacto decorativo. Es una gran elección para áreas de observación comparativa.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilOphthalmosaurusA.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilOphthalmosaurusA_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cuerpo-oftalmosaurio"
+    ]
+  },
+  {
+    "id": "cuerpo-oftalmosaurio",
+    "name": "Cuerpo de Oftalmosaurio",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": true,
+    "new": false,
+    "description": "Se observan señales de fosilización con gran valor expositivo. Suma valor educativo sin perder impacto decorativo. Encaja en montajes didácticos orientados a público general.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilOphthalmosaurusB.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilOphthalmosaurusB_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "craneo-oftalmosaurio"
+    ]
+  },
+  {
+    "id": "cuerpo-paquicefalosaurio",
+    "name": "Cuerpo de Paquicefalosaurio",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La lectura visual del fósil es estable, precisa y muy atractiva. Aporta contexto científico con una presencia visual potente. Aporta mucho en bibliotecas temáticas y espacios de divulgación.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilPachycephalosaurusA.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilPachycephalosaurusA_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cola-paquicefalosaurio"
+    ]
+  },
+  {
+    "id": "cola-paquicefalosaurio",
+    "name": "Cola de Paquicefalosaurio",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "El volumen conservado refuerza la percepción de pieza museística. Potencia la identidad del espacio con un enfoque divulgativo. Es una gran elección para áreas de observación comparativa.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilPachycephalosaurusB.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilPachycephalosaurusB_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cuerpo-paquicefalosaurio"
+    ]
+  },
+  {
+    "id": "cola-parasaurio",
+    "name": "Cola de Parasaurio",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La forma general resulta reconocible y muy útil para exposición educativa. Aporta profundidad histórica y un punto didáctico muy valioso. Encaja en aulas temáticas, salas de ciencias y exposiciones educativas.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilParasaurolophusC.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilParasaurolophusC_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "craneo-parasaurio",
+      "cuerpo-parasaurio"
+    ]
+  },
+  {
+    "id": "craneo-parasaurio",
+    "name": "Cráneo de Parasaurio",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "El relieve óseo está bien marcado y aporta información visual inmediata. Transforma el espacio en un punto de referencia cultural. Luce en entradas de museo, corredores culturales y zonas curatoriales.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilParasaurolophusA.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilParasaurolophusA_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cola-parasaurio",
+      "cuerpo-parasaurio"
+    ]
+  },
+  {
+    "id": "cuerpo-parasaurio",
+    "name": "Cuerpo de Parasaurolofo",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Se observan señales de fosilización con gran valor expositivo. Favorece una lectura expositiva clara y muy accesible. Queda excelente en vitrinas centrales, galerías históricas y pasillos de museo.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilParasaurolophusB.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilParasaurolophusB_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cola-parasaurio",
+      "craneo-parasaurio"
+    ]
+  },
+  {
+    "id": "ala-derecha-quetzalcoatlus",
+    "name": "Ala derecha de Quetzalcoatlus",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "El fragmento presenta contornos bien definidos que facilitan su lectura científica. Su presencia añade carácter museístico y riqueza narrativa. Rinde especialmente bien en vitrinas de colección ordenada.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilQuetzalcoatlusC.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilQuetzalcoatlusC_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "ala-izquierda-quetzalcoatlus",
+      "cuerpo-quetzalcoatlus"
+    ]
+  },
+  {
+    "id": "ala-izquierda-quetzalcoatlus",
+    "name": "Ala izquierda de Quetzalcoatlus",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La superficie mineral mantiene señales estructurales de gran interés paleontológico. Activa la curiosidad y la conversación alrededor de la historia natural. Funciona en museografía local y centros de actividades científicas.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilQuetzalcoatlusB.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilQuetzalcoatlusB_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "ala-derecha-quetzalcoatlus",
+      "cuerpo-quetzalcoatlus"
+    ]
+  },
+  {
+    "id": "cuerpo-quetzalcoatlus",
+    "name": "Cuerpo de Quetzalcoatlus",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Se distinguen formas orgánicas claramente fossilizadas en una composición muy expresiva. Aporta profundidad histórica y un punto didáctico muy valioso. Se integra en ambientes pedagógicos con fuerte componente visual.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilQuetzalcoatlusA.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilQuetzalcoatlusA_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "ala-derecha-quetzalcoatlus",
+      "ala-izquierda-quetzalcoatlus"
+    ]
+  },
+  {
+    "id": "cola-tiranosaurio",
+    "name": "Cola de Tiranosaurio",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La conservación superficial destaca por su definición y coherencia estructural. Refuerza el interés por la paleontología de forma natural. Aporta coherencia a recorridos de temática prehistórica.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilTRexC.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilTRexC_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "craneo-tiranosaurio",
+      "cuerpo-tiranosaurio"
+    ]
+  },
+  {
+    "id": "craneo-tiranosaurio",
+    "name": "Cráneo de Tiranosaurio",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "La estructura preservada ofrece una lectura anatómica convincente y didáctica. Mejora la narrativa del conjunto en montajes temáticos. Luce en entradas de museo, corredores culturales y zonas curatoriales.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilTRexA.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilTRexA_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cola-tiranosaurio",
+      "cuerpo-tiranosaurio"
+    ]
+  },
+  {
+    "id": "cuerpo-tiranosaurio",
+    "name": "Cuerpo de Tiranosaurio",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 80,
+    "popular": false,
+    "new": false,
+    "description": "El estado de conservación permite observar rasgos anatómicos con bastante nitidez. Mejora la narrativa del conjunto en montajes temáticos. Resulta ideal para itinerarios expositivos y salas de interpretación.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilTRexB.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilTRexB_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cola-tiranosaurio",
+      "craneo-tiranosaurio"
+    ]
+  },
+  {
+    "id": "cola-triceratops",
+    "name": "Cola de Tricerátops",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "El estado de conservación permite observar rasgos anatómicos con bastante nitidez. Despierta curiosidad inmediata y conecta con el estudio del pasado remoto. Se luce en exposiciones con narrativa evolutiva.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilTriceratopsC.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilTriceratopsC_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "craneo-triceratops",
+      "cuerpo-triceratops"
+    ]
+  },
+  {
+    "id": "craneo-triceratops",
+    "name": "Cráneo de Triceratops",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "Se aprecia una conservación notable del material petrificado y un relieve anatómico muy claro. Combina interés académico y fuerza visual con buen equilibrio. Resulta ideal para itinerarios expositivos y salas de interpretación.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilTriceratopsA.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilTriceratopsA_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cola-triceratops",
+      "cuerpo-triceratops"
+    ]
+  },
+  {
+    "id": "cuerpo-triceratops",
+    "name": "Cuerpo de Tricerátops",
+    "price": 5000,
+    "category": "fosiles",
+    "subcategory": "museo",
+    "sale": 0,
+    "popular": false,
+    "new": false,
+    "description": "El volumen conservado refuerza la percepción de pieza museística. Su presencia añade carácter museístico y riqueza narrativa. Se integra en ambientes pedagógicos con fuerte componente visual.",
+    "size": null,
+    "colors": [
+      {
+        "color": null,
+        "code": null,
+        "src": "assets/fossils/FtrFossilTriceratopsB.webp",
+        "srcUpscaled": "assets/fossils/FtrFossilTriceratopsB_upscaled.webp"
+      }
+    ],
+    "collections": [
+      "cola-triceratops",
+      "craneo-triceratops"
+    ]
+  }
+]

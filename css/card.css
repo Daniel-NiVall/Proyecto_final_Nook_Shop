@@ -1,0 +1,267 @@
+/*
+----------------------------------------
+card.css
+- card
+- info
+- price
+- cta
+-colors
+----------------------------------------
+*/
+
+/*-------- Card -------- */
+/* Descripcion: Estilos base de la card reutilizable para productos.
+ * Estructura:
+ *          - Card (contenedor principal)
+ *          - Card-article (capa interna para contenido y overlays)
+ *          - Card-a (enlace principal de la card)
+ *          - Card-img (imagen)
+ */
+.Card{
+    width: fit-content;
+    min-height: 100%;
+    padding: 2rem 2rem 0 2rem;
+
+    /* El layout flex en el contenedor y stretch en los hijos iguala la altura visual de todas las cards */
+    display: flex;
+}
+
+.Card-article{
+    display: flex;
+    flex: 1;
+
+    position: relative;
+}
+
+.Card-a{
+    width: clamp(9rem, 10vw, 11rem);
+    padding: .5rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: .8rem;
+    flex: 1;
+
+    position: relative;
+    z-index: 2;
+
+    background-color: var(--color-white);
+    border: 1px solid var(--color-grey);
+    border-radius: 1rem;
+}
+
+.Card-img{
+    width: 100%;
+    height: 100%;
+}
+/*-------- /Card -------- */
+
+/*-------- Info -------- */
+/* Descripcion: Bloque de informacion textual de la card.
+ * Estructura:
+ *          - Info (contenedor)
+ *          - Name (nombre del producto)
+ */
+.Info{
+    width: 100%;
+    padding: .5rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: start;
+    gap: 1rem;
+    flex: 1;
+}
+
+.Name{
+    font-size: clamp(var(--font-s-14), 1vw, var(--font-s-20));
+    font-weight: var(--font-w-500);
+    hyphens: none;
+}
+/*-------- /Info -------- */
+
+/*-------- Price -------- */
+/* Descripcion: Presentacion de precio original y rebajado.
+ * Estructura:
+ *          - Price (contenedor)
+ *          - Price-sale / Price-original / Price-img
+ *          - Price-original.hasSale (estado rebajado)
+ */
+
+.Price{
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+    align-items: center;
+    gap: .5rem;
+}
+
+.Price-sale{
+    font-size: clamp(var(--font-s-14), 1vw, var(--font-s-16));
+    font-weight: var(--font-w-700);
+    color: var(--color-green);
+}
+
+.Price-original{
+    font-size: clamp(var(--font-s-14), 1vw, var(--font-s-16));
+    font-weight: var(--font-w-700);
+    color: var(--color-black);
+}
+
+.Price-original.hasSale{
+    /* Modificador: reduce jerarquia visual cuando existe rebaja */
+    font-size: clamp(var(--font-s-12), 1vw, var(--font-s-14));
+    font-weight: var(--font-w-300);
+    color: var(--color-red);
+
+    text-decoration: line-through;
+}
+
+.Price-img{
+    width: clamp(1.2rem, 1vw, 1.5rem);
+    height: clamp(1.2rem, 1vw, 1.5rem);
+}
+/*-------- /Price -------- */
+
+/*-------- Card Actions -------- */
+/* Descripcion: Acciones flotantes de la card, como favoritos.
+ * Estructura:
+ *          - Card-ctas (contenedor de acciones)
+ *          - Card-cta (boton)
+ *          - Favourite-svg / Favourite-svg--fill
+ *          - Favourite-svg--fill.isFavourite (estado activo)
+ */
+.Card-ctas{
+    width: fit-content;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+
+    position: absolute;
+    top: 0;
+    right: 2.5rem;
+
+    transform: rotate(-90deg);
+    transform-origin: top right;
+    transition: transform .5s ease;
+}
+
+.Card-cta{
+    width: fit-content;
+    padding: .3rem;
+    overflow: hidden;
+
+    position: relative;
+
+    border-radius: .5rem;
+}
+
+.Card-cta:hover{
+    /* Feedback visual del boton de accion al pasar el cursor */
+    background-color: var(--color-primary);
+}
+
+.Favourite-svg{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.Favourite-svg--fill{
+    width: 1.25rem;
+
+    position: absolute;
+    top: .3rem;
+    left: .3rem;
+
+    fill: var(--color-red);
+
+    opacity: 0;
+
+    transform: scale(0);
+    transition: opacity .8s linear, transform .6s cubic-bezier(.49, -0.29, .58, 1.27);
+}
+
+.Favourite-svg--fill.isFavourite{
+    /* Estado activo: hace visible el icono relleno de favorito */
+    opacity: 1;
+    transform: scale(1);
+}
+
+/*-------- /Card Actions -------- */
+
+/*-------- Colors -------- */
+/* Descripcion: Selector visual de colores disponibles para la card.
+ * Estructura:
+ *          - Card-colors (contenedor)
+ *          - Color (muestra de color)
+ *          - Color:focus-visible (accesibilidad)
+ */
+.Card-colors{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+    gap: .5rem;
+
+    position: absolute;
+    top: .25rem;
+    right: .25rem;
+    z-index: 1;
+
+    transition: transform .5s ease;
+}
+
+.Color{
+    width: 1.5rem;
+    height: 1.5rem;
+    overflow: hidden;
+
+    border-radius: 100vh;
+}
+
+.Color:focus-visible{
+    /* Accesibilidad: indicador visible al navegar por teclado */
+    outline: 2px solid var(--color-black);
+    outline-offset: 2px;
+}
+/*-------- /Colors -------- */
+
+/*-------- Interactions -------- */
+/* Descripcion: Estados interactivos de la card y sus overlays.
+ * Estructura:
+ *          - :hover / :focus-within sobre Card
+ *          - .isVisible para apertura controlada por JS
+ */
+.Card:hover .Card-ctas,
+.Card:focus-within .Card-ctas{
+    /* Desplaza las acciones para hacerlas accesibles en hover o foco */
+    transform: rotate(0deg) translate(2rem, -2rem);
+}
+
+.Card:hover .Card-colors,
+.Card:focus-within .Card-colors{
+    /* Abre el bloque de colores en respuesta a interacción */
+    transform: translate(2rem, 2rem);
+}
+
+.Card-ctas.isVisible{
+    /* Estado visible controlado desde JS */
+    transform: rotate(0deg) translate(2rem, -2rem);
+}
+
+.Card-colors.isVisible{
+    /* Estado visible controlado desde JS */
+    transform: translate(2rem, 2rem);
+}
+
+/*-------- /Interactions -------- */
+
+

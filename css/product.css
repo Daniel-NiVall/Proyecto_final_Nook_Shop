@@ -1,0 +1,601 @@
+/*
+----------------------------------------
+product.css
+- breadcrumb
+- product layout
+    - sizes
+    - colors
+    - price
+    - buttons
+- suggestions
+----------------------------------------
+*/
+
+main {
+    margin: 0 3rem;
+}
+
+/*-------- Breadcrumb -------- */
+/* Descripcion: Ruta de navegacion del producto seleccionado.
+ * Estructura:
+ *          - Breadcrumb (contenedor principal)
+ *          - Breadcrumb-a / Breadcrumb-h1 (enlaces/titulos de la ruta)
+ *          - Initial (estado del primer enlace de la ruta)
+ */
+.Breadcrumb {
+    width: 100%;
+    margin: 0 0 3rem;
+    padding: 8.25rem 0 0;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    hyphens: none;
+}
+
+.Breadcrumb-a,
+.Breadcrumb-h1 {
+    display: flex;
+    gap: 1rem;
+
+    font-size: var(--font-s-14);
+    font-size: clamp(var(--font-s-14), 2vw, var(--font-s-18));
+    color: var(--color-black);
+}
+
+.Breadcrumb-a:hover {
+    /* Pseudoclase: refuerza que la ruta es navegable */
+    text-decoration: underline;
+}
+
+.Initial {
+    /* Capitaliza la primera seccion de la ruta de forma visual */
+    text-transform: capitalize;
+}
+
+/*-------- /Breadcrumb -------- */
+
+/*-------- Product Layout -------- */
+/* Descripcion: Distribucion principal del detalle del producto.
+ * Estructura:
+ *          - Product (grid general)
+ *          - Product-name (titulo)
+ *          - Product-col / Image / Info (columnas de contenido)
+ *          - Product-img (imagen principal)
+ *          - Product-p (descripcion)
+ *          - Product::after (separador final)
+ */
+.Product {
+    max-width: 62.5rem;
+    margin: 0 auto 4rem;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 5vw;
+    row-gap: 2rem;
+}
+
+.Product::after{
+    /* Pseudoelemento: separador visual al final del bloque de detalle */
+    content: "";
+
+    height: 1px;
+    grid-column: 1 / 3;
+    background-color: var(--color-grey);
+}
+
+.Product-name {
+    /* Se ubica en la columna de informacion para alinearse con la estructura de dos columnas */
+    height: fit-content;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+    font-size: clamp(var(--font-s-32), 3vw, var(--font-s-40));
+    text-align: center;
+    color: var(--color-black);
+}
+
+.Product-col {
+    height: fit-content;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Product-img {
+    min-width: 10rem;
+    max-width: 14rem;
+    height: auto;
+
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+}
+
+.Image {
+    grid-row: 1 / 3;
+
+    place-self: center;
+}
+
+.Info {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+    gap: 1.5rem;
+}
+
+.Product-p {
+    font-size: clamp(var(--font-s-16), 2vw, var(--font-s-18));
+    line-height: 1.5rem;
+    color: var(--color-dark-grey);
+    hyphens: none;
+}
+
+/*-------- /Product Layout -------- */
+
+/*-------- Sizes -------- */
+/* Descripcion: Selector de tallas o tamanos disponibles.
+ * Estructura:
+ *          - Sizes (contenedor)
+ *          - Sizes-span / Sizes-ul
+ *          - Size
+ *          - Size-button.isSelected (estado activo)
+ */
+.Sizes {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+
+    background-color: transparent;
+
+    font-size: clamp(var(--font-s-18), 2vw, var(--font-s-20));
+    hyphens: none;
+}
+
+.Sizes-span {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--color-black);
+}
+
+.Sizes-ul {
+    display: flex;
+    gap: .5rem;
+}
+
+.Size {
+    display: flex;
+    gap: .5rem;
+
+    color: var(--color-dark-grey);
+}
+
+.Size:not(:last-child)::after {
+    /* Pseudoselector: separador entre opciones sin añadir nodos extra */
+    content: "|";
+    color: var(--color-black);
+}
+
+.Size-button.isSelected {
+    /* Estado seleccionado: destaca la opcion activa */
+    font-weight: var(--font-w-700);
+    color: var(--color-black);
+}
+
+/*-------- /Sizes -------- */
+
+/*-------- Colors -------- */
+/* Descripcion: Selector de colores disponibles para el producto.
+ * Estructura:
+ *          - Product-colors (contenedor)
+ *          - Colors-span / Colors-ul
+ *          - Colors-li
+ *          - Color-button
+ *          - Color-button.isSelected / Color:focus-visible
+ */
+.Product-colors {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+
+    font-size: clamp(var(--font-s-18), 2vw, var(--font-s-20));
+    hyphens: none;
+}
+
+.Colors-span {
+    /* Corrige el texto del bloque de colores manteniendo la misma variable visual del proyecto */
+    columns: var(--color-black);
+}
+
+.Colors-ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: .5rem;
+}
+
+.Colors-li {
+    width: fit-content;
+    height: fit-content;
+    padding: .5rem;
+
+}
+
+.Color-button {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0;
+    overflow: hidden;
+
+    display: block;
+
+    border: none;
+    border-radius: 100vh;
+
+    cursor: pointer;
+}
+
+/* 
+    Se usa outline porque hace falta que este separado del color
+    Si se usa border en los colores oscuros no se ve el border
+*/
+.Color-button.isSelected {
+    /* Estado seleccionado: outline en lugar de border para no alterar el tamaño del swatch */
+    outline: 2px solid var(--color-black);
+    outline-offset: 2px;
+}
+
+.Color:focus-visible {
+    /* Accesibilidad: feedback visible al navegar por teclado */
+    outline: 2px solid var(--color-black);
+    outline-offset: 2px;
+}
+
+/*-------- /Colors -------- */
+
+/*-------- Price -------- */
+/* Descripcion: Presentacion del precio original, rebajado e icono de moneda.
+ * Estructura:
+ *          - Product-price
+ *          - productPrice-sale / productPrice-original / productPrice-img
+ *          - productPrice-original.hasSale (estado rebajado)
+ */
+.Product-price {
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.productPrice-sale {
+    font-size: var(--font-s-20);
+    font-weight: var(--font-w-700);
+    color: var(--color-green);
+}
+
+.productPrice-original {
+    font-size: clamp(var(--font-s-18), 2vw, var(--font-s-20));
+    font-weight: var(--font-w-600);
+    color: var(--color-black);
+}
+
+.productPrice-img {
+    width: 1.5rem;
+    height: 1.5rem;
+
+
+    width: clamp(1.5rem, 2vw, 1.8rem);
+    height: clamp(1.5rem, 2vw, 1.8rem);
+}
+
+.productPrice-original.hasSale {
+    /* Modificador: marca el precio original cuando hay descuento */
+    font-size: var(--font-s-12);
+    font-weight: var(--font-w-300);
+    color: var(--color-red);
+    text-decoration: line-through;
+
+    font-size: clamp(var(--font-s-14), 2vw, var(--font-s-16));
+}
+
+/*-------- /Price -------- */
+
+/*-------- Product Buttons -------- */
+/* Descripcion: Acciones principales del producto: favoritos, carrito y tramite.
+ * Estructura:
+ *          - Product-buttons (grid de acciones)
+ *          - Product-button / Button-fav / Button-transaction
+ *          - Icons / Icon-favourite / Cart-svg
+ *          - Icon-favourite--fill.isFavourite (estado activo)
+ *          - Product-alert.isVisible (aviso)
+ */
+.Product-buttons {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.Product-button {
+    width: 100%;
+    padding: .5rem 2rem;
+    min-width: 0;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    /* Sobreescribe el position relative del .Button del header para que el boton se comporte como bloque normal */
+    position: static;
+
+    background-color: var(--color-primary);
+    color: var(--color-black);
+    border: 2px solid transparent;
+    border-radius: 100vh;
+}
+
+.Button-fav {
+    background-color: transparent;
+    border: 2px solid var(--color-primary-hover);
+}
+
+.Button-fav.isFavourite:hover {
+    /* Mantiene el contraste cuando el boton de favoritos ya esta activo */
+    color: var(--color-white);
+}
+
+.Fav-span,
+.Cart-span {
+    text-wrap: nowrap;
+}
+
+.Icons {
+    position: relative;
+}
+
+.Icon-favourite,
+.Cart-svg {
+    width: 1.5rem;
+}
+
+.Icon-favourite--fill {
+    width: 1.5rem;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    fill: var(--color-red);
+
+    opacity: 0;
+
+    transform: scale(0);
+    transition: opacity .8s linear, transform .6s cubic-bezier(.49, -0.29, .58, 1.27);
+}
+
+.Icon-favourite--fill.isFavourite {
+    /* Estado favorito activo: hace visible el icono relleno */
+    opacity: 1;
+    transform: scale(1);
+}
+
+.Product-alert {
+    display: none;
+    grid-column: span 2;
+
+    text-align: center;
+    color: var(--color-red);
+    font-size: clamp(var(--font-s-14), 2vw, var(--font-s-16));
+}
+
+.Product-alert.isVisible {
+    /* Estado visible para mostrar el aviso de validacion */
+    display: block;
+}
+
+.Button-transaction {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 2;
+
+    border-radius: 100vh;
+    font-weight: var(--font-w-600);
+    color: var(--color-black);
+
+    transition: height .5s ease, padding .5s ease, border .5s ease, background-color .2s linear, color .2s linear;
+}
+
+.Button-transaction.isVisible {
+    /* Estado visible: despliega el CTA de tramitar pedido */
+    width: 100%;
+    height: 2.5rem;
+    padding: .5rem;
+}
+
+.Button-transaction:hover {
+    /* CTA principal con feedback de hover */
+    background-color: var(--color-primary-hover);
+    color: var(--color-white);
+
+}
+
+.Product-button:active {
+    /* Feedback tactil/raton para las acciones principales */
+    background-color: var(--color-primary-hover);
+    color: var(--color-white);
+}
+
+/* Los siguientes @media evitan que al pulsar el boton el mobile se quede en estado hover */
+@media (hover: none), (pointer: coarse) {
+    .Product-button:hover {
+        /* Neutraliza el hover en pantallas tactiles */
+        background-color: var(--color-primary);
+        color: var(--color-black);
+    }
+
+    .Button-fav:hover {
+        /* Evita cambios visuales engañosos en touch */
+        background-color: transparent;
+        color: var(--color-black);
+        border-color: var(--color-primary-hover);
+    }
+
+    .Button-fav.isFavourite:hover {
+        /* Conserva el estado activo sin aplicar el hover de escritorio */
+        color: var(--color-black);
+    }
+
+    .Button-transaction:hover {
+        /* Neutraliza el hover en dispositivos sin hover real */
+        background-color: transparent;
+        color: var(--color-black);
+    }
+}
+/* El siguiente @media aplica estilos solo en dispositivos con hover real y puntero preciso (desktop)
+       Esto evita que en mobile al pulsar el boton se quede en estado hover */
+@media (hover: hover) and (pointer: fine) {
+    .Product-button:hover {
+        /* Hover de escritorio para las acciones principales */
+        background-color: var(--color-primary-hover);
+        color: var(--color-white);
+    }
+}
+
+/*-------- /Product Buttons -------- */
+
+/*-------- Suggestions -------- */
+/* Descripcion: Bloque de productos sugeridos al final de la ficha.
+ * Estructura:
+ *          - Suggestions (contenedor)
+ *          - Suggestions-h3 / Suggestions-p
+ *          - Suggestions-container / Suggestions-ul
+ */
+
+.Suggestions {
+    width: 100%;
+    max-width: 62.5rem;
+    margin: 0 auto 3rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem;
+}
+
+.Suggestions-h3 {
+    font-family: var(--font-family-headers);
+    font-size: clamp(var(--font-s-20), 2vw, var(--font-s-24));
+    font-weight: var(--font-w-600);
+    hyphens: none;
+}
+
+.Suggestions-p {
+    hyphens: none;
+    font-size: clamp(var(--font-s-16), 2vw, var(--font-s-18));
+}
+
+.Suggestions-container {
+    width: 100%;
+    overflow: auto;
+}
+
+.Suggestions-ul {
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+/*-------- /Suggestions -------- */
+
+/*-------- Responsive -------- */
+/* Descripcion: Ajustes adaptativos para el layout del producto y las sugerencias.
+ * Estructura:
+ *          - @media (max-width: 850px): reduce margenes y mejora scroll de sugerencias
+ *          - @media (max-width: 800px): apila la ficha en una sola columna
+ *          - @media (max-width: 500px): compacta botones y avisos
+ */
+@media(max-width: 850px) {
+    main {
+        margin: 0 1.5rem
+    }
+
+    .Suggestions-ul {
+        justify-content: start;
+    }
+}
+
+@media(max-width: 800px) {
+    .Product {
+        grid-template-columns: 1fr;
+    }
+
+    .Product-name {
+        /* grid-column: span 1; */
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .Image {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    .Info {
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+
+
+}
+
+@media(max-width: 500px) {
+    .Product-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .Product-button {
+        grid-column: 1 / -1;
+    }
+
+    .Product-alert {
+        grid-column: span 2;
+    }
+
+    .Button-transaction {
+        grid-column: span 2;
+    }
+}
+
+/*-------- /Responsive -------- */

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- 
+    Descripción: este archivo HTML es incluye el sobre nosotros y la historia de Nook Shop
+    Estructura general:
+    - Header / menú: Logo, navegacion y enlaces a favoritos y carrito
+    - Section about: explicacion de que es Nook SHop
+    - Section story: historia de Nook Shop
+    - Section collabs: explicacion de las colaboraciones disponibles
+    - Footer: pie de pagina
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <link rel="stylesheet" href="css/about.css">
+
+    <script type="module" src="js/about.js"></script>
+
+    <link rel="shortcut icon" href="assets/iconos/Nook_shop_favicon.webp" type="image/x-icon">
+
+    <link rel="shortcut icon" href="assets/iconos/Nook_shop_favicon.webp" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+            rel="stylesheet">
+    </noscript>
+
+
+    <!-- META TAGS -->
+    <!-- Primary Meta Tags -->
+<title>Sobre nosotros | Nook Shop</title>
+<meta name="title" content="Sobre nosotros | Nook Shop" />
+<meta name="description" content="Descubre Nook Shop, tu tienda inspirada en Animal Crossing: muebles, ropa, fósiles, arte y música para diseñar tu isla con estilo único." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Meta Tags — Preview, Edit and Generate" />
+    <meta property="og:description"
+        content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, X and more!" />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- X (Twitter) -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="Meta Tags — Preview, Edit and Generate" />
+    <meta property="twitter:description"
+        content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, X and more!" />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+</head>
+
+
+
+<body>
+    <!-- 
+    HEADER 
+    - contiene el logo, la navegacion, los enlaces a favoritos y carrito y el boton del menu (oculto cuando la ventana es mayor de 850px)
+    - cuando la ventana es menor de 850px se oculta la navegacion y aparece el boton de menu
+    -->
+    <header class="Header isVisible">
+        <a href="./index.html" title="Nook Shop" class="Header-a Logo Logo-a">
+            <picture class="Logo-picture">
+                <img loading="lazy" src="assets/iconos/Nook_shop_logo.webp" alt="Nook shop logo" class="Logo-img">
+            </picture>
+        </a>
+
+        <!-- NAVEGACIÓN DEL HEADER -->
+        <nav class="Header-nav Nav">
+            <ul class="Nav-ul">
+
+                <li class="Nav-li">
+                    <a href="./category.html?id=mobiliario" title="Mobiliario" class="Nav-a">
+                        Mobiliario
+                    </a>
+                </li>
+
+                <li class="Nav-li">
+                    <a href="./category.html?id=ropa" title="Ropa" class="Nav-a">
+                        Ropa
+                    </a>
+                </li>
+
+                <li class="Nav-li">
+                    <a href="./category.html?id=fosiles" title="Fósiles" class="Nav-a">
+                        Fósiles
+                    </a>
+                </li>
+
+                <!-- HEADER dropdown -->
+                <li class="Nav-li Nav-li--dropdown">
+                    <button class="Nav-button" title="Desplegable menú arte">
+                        Arte
+                    </button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="Nav-svg"
+                        aria-hidden="true" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                    </svg>
+                    <ul class="Nav-subul">
+
+                        <li class="Nav-subli">
+                            <a href="./category.html?id=cuadros" title="Cuadros" class="Nav-a">
+                                Cuadros
+                            </a>
+                        </li>
+
+                        <li class="Nav-subli">
+                            <a href="./category.html?id=esculturas" title="Esculturas" class="Nav-a">
+                                Esculturas
+                            </a>
+                        </li>
+
+                        <li class="Nav-subli">
+                            <a href="./category.html?id=musica" title="Música" class="Nav-a">
+                                Música
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="Nav-li">
+                    <a href="./about.html" title="Sobre nosotros" class="Nav-a">
+                        Sobre nosotros
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- ENLACES DE CARRITO Y FAVORITOS -->
+        <div class="Header-buttons">
+            <a href="./favourites.html" title="Favoritos" class="Header-a Button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="Button-svg"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                </svg>
+                <span class="Button-span Button-span--fav"></span>
+            </a>
+
+            <a href="./cart.html" title="Carrito" class="Header-a Button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="Button-svg"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg>
+                <span class="Button-span Button-span--cart"></span>
+            </a>
+        </div>
+
+        <!-- BOTÓN MENU PARA MOBILE -->
+        <button class="Header-button Button Button-menu" title="Abrir menú" aria-label="Abrir menú">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="Button-svg"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+        </button>
+    </header>
+
+    <!-- 
+    MENU PARA MOBILE 
+    - contiene una navegacion simplificada y los enlaces de favoritos y carrito
+    -->
+    <div class="Menu">
+        <button class="Menu-button Button Button-close" title="Cerrar menú" aria-label="Cerrar menú">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="Button-svg"
+                viewBox="0 0 16 16">
+                <path
+                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+            </svg>
+        </button>
+
+        <nav class="Menu-nav MenuNav">
+            <ul class="MenuNav-ul">
+                <li class="MenuNav-li">
+                    <a href="./category.html?id=mobiliario" title="Mobiliario" class="MenuNav-a">
+                        Mobiliario
+                    </a>
+                </li>
+                <li class="MenuNav-li">
+                    <a href="./category.html?id=ropa" title="Ropa" class="MenuNav-a">
+                        Ropa
+                    </a>
+                </li>
+                <li class="MenuNav-li">
+                    <a href="./category.html?id=fosiles" title="Fósiles" class="MenuNav-a">
+                        Fósiles
+                    </a>
+                </li>
+                <li class="MenuNav-li">
+                    <a href="./category.html?id=cuadros" title="Cuadros" class="MenuNav-a">
+                        Cuadros
+                    </a>
+                </li>
+                <li class="MenuNav-li">
+                    <a href="./category.html?id=esculturas" title="Esculturas" class="MenuNav-a">
+                        Esculturas
+                    </a>
+                </li>
+                <li class="MenuNav-li">
+                    <a href="./category.html?id=musica" title="Música" class="MenuNav-a">
+                        Música
+                    </a>
+                </li>
+                <li class="MenuNav-li">
+                    <a href="./about.html" title="Sobre nosotros" class="MenuNav-a">
+                        Sobre nosotros
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="Menu-buttons">
+            <a href="./favourites.html" title="Favoritos" class="Menu-a Button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="Menu-svg Button-svg" viewBox="0 0 16 16">
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                </svg>
+                <span class="Button-span Button-span--fav"></span>
+            </a>
+
+            <a href="./cart.html" title="Carrito" class="Menu-a Button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="Button-svg"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg>
+                <span class="Button-span Button-span--cart">
+                </span>
+            </a>
+        </div>
+    </div>
+
+
+
+    <main class="Main">
+        <!-- 
+        SECTION ABOUT 
+        - ¿Que es Nook Shop?
+        -->
+        <section class="Section Section-about About">
+            <div class="About-wrapper">
+                <div class="About-content">
+                    <h1 class="Section-header About-h1 H1"> <span class="Section-span">S</span><span class="Section-span">o</span><span class="Section-span">b</span><span class="Section-span">r</span><span class="Section-span">e</span> <span class="Section-span">N</span><span class="Section-span">o</span><span class="Section-span">o</span><span class="Section-span">k</span> <span class="Section-span">S</span><span class="Section-span">h</span><span class="Section-span">o</span><span class="Section-span">p</span></h1>
+                    <p class="About-p">
+                        Nook Shop es una tienda online ficticia inspirada en los comercios del juego Animal Crossing: New Horizons. Busca simular como sería un e-commerce en el que se juntaran las distintas tiendas del juego (La tienda de Tom Nook, Las Hermanas Manitas y el Museo). Desde Nook Shop se puede comprar mobiliario, ropa, arte y fósiles.
+                    </p>
+                </div>
+
+                <picture class="About-picture">
+                    <img loading="lazy" src="assets/images/villager_4.webp" alt="Personaje de Animal Crossing" class="About-img">
+                </picture>
+            </div>
+        </section>
+
+        <!-- 
+        SECTION STORY 
+        - responde a como nace Nook Shop
+        -->
+        <section class="Section Section-story Story">
+            <h2 class="Section-header Story-h2"><span class="Section-span">N</span><span class="Section-span">u</span><span class="Section-span">e</span><span class="Section-span">s</span><span class="Section-span">t</span><span class="Section-span">r</span><span class="Section-span">a</span> <span class="Section-span">h</span><span class="Section-span">i</span><span class="Section-span">s</span><span class="Section-span">t</span><span class="Section-span">o</span><span class="Section-span">r</span><span class="Section-span">i</span><span class="Section-span">a</span></h2>
+
+            <div class="Story-content">
+                <p class="Story-p">
+                    Nook Shop nace como una pregunta: ¿y si la plaza de la isla tuviera su propio escaparate online? En lugar de saltar de un puesto a otro, aquí lo encuentras todo reunido, ordenado y pensado para comparar con calma. La experiencia busca ser cálida y cercana, con una estética suave que acompañe sin distraer, y con una navegación que te haga sentir que estás paseando por la isla, descubriendo cosas poco a poco.
+                </p>
+                <picture class="Story-picture">
+                    <img loading="lazy" src="assets/backgrounds/NH_Nooks_Cranny.webp" alt="Tienda de Tom Nook" class="Story-img">
+                </picture>
+                <p class="Story-p">
+                    La idea es una colaboración: Tom Nook aporta el catálogo de mobiliario y lo esencial para tu casa; las Hermanas Manitas ponen moda, patrones y detalles para expresarte; y el Museo se suma con selecciones especiales para coleccionistas. A parte, también se incluye la música del aclamado cantautor Totakeke. Así conviven cuatro mundos distintos en un mismo mercado, con secciones claras para que sepas dónde estás en todo momento. 
+                </p>
+                <picture class="Story-picture">
+                    <img loading="lazy" src="assets/images/Present-balloon.webp" alt="Globo con regalo" class="Story-img Story-img--small">
+                </picture>
+                <p class="Story-p">
+                    En la ficha de producto puedes elegir variantes (como color o talla) y ver cómo cambian los detalles antes de añadirlo al carrito. El carrito guarda exactamente lo que has seleccionado, incluso si se repite un mismo artículo con variantes distintas, para que tu pedido sea coherente. 
+                </p>
+            </div>
+        </section>
+
+        <!-- 
+        SECTION COLLABS 
+        - explicacion de las colaboraciones que se pueden encontrar en Nook Shop
+        -->
+        <section class="Section Section-collabs Collabs">
+            <h2 class="Section-header Collabs-h2"><span class="Section-span">T</span><span class="Section-span">r</span><span class="Section-span">e</span><span class="Section-span">s</span> <span class="Section-span">c</span><span class="Section-span">o</span><span class="Section-span">m</span><span class="Section-span">e</span><span class="Section-span">r</span><span class="Section-span">c</span><span class="Section-span">i</span><span class="Section-span">o</span><span class="Section-span">s</span><span class="Section-span">,</span> <span class="Section-span">u</span><span class="Section-span">n</span> <span class="Section-span">s</span><span class="Section-span">o</span><span class="Section-span">l</span><span class="Section-span">o</span> <span class="Section-span">m</span><span class="Section-span">e</span><span class="Section-span">r</span><span class="Section-span">c</span><span class="Section-span">a</span><span class="Section-span">d</span><span class="Section-span">o</span></h2>
+            <p class="Collabs-p">
+                Cada zona del catálogo está “patrocinada” por un comercio distinto: la parte de hogar y muebles, la parte de moda y la parte de fósiles y arte.
+            </p>
+
+            <div class="Collabs-grid">
+                <article class="Collabs-article Collab Collab--nook">
+                    <header class="Collab-header">
+                        <h3 class="Collab-h3">Tom Nook</h3>
+                        <picture class="Collab-picture">
+                            <img loading="lazy" src="assets/images/120px-Timmy_&_Tommy_NH.webp"
+                                alt="Colaboracion Tom Nook" class="Collab-img">
+                        </picture>
+                        
+                    </header>
+                    <p class="Collab-p">
+                        Mobiliario y suministros: piezas para montar tu casa, decorar estancias y darle personalidad a tu isla con objetos que encajan en distintos estilos.
+                    </p>
+                </article>
+
+                <article class="Collabs-article Collab Collab--sisters">
+                    <header class="Collab-header">
+                        <h3 class="Collab-h3">Hermanas Manitas</h3>
+                        <picture class="Collab-picture">
+                            <img loading="lazy" src="assets/images/150px-Mabel_NH.webp"
+                                alt="Colaboración Hermanas Manitas" class="Collab-img">
+                        </picture>
+                        
+                    </header>
+                    <p class="Collab-p">
+                        Moda: prendas, combinaciones y detalles para que cada personaje tenga su propio aire, con opciones pensadas para mirar y elegir sin prisas.
+                    </p>
+                </article>
+
+                <article class="Collabs-article Collab Collab--museum">
+                    <header class="Collab-header">
+                        <h3 class="Collab-h3">Museo</h3>
+                        <picture class="Collab-picture">
+                            <img loading="lazy" src="assets/images/150px-Blathers_NH_2.webp"
+                                alt="Colaboración Museo" class="Collab-img">
+                        </picture>
+                        
+                    </header>
+                    <p class="Collab-p">
+                        Colecciones y curiosidades: selecciones especiales y piezas con historia para quien disfruta de los detalles, lo raro y lo “de vitrina”.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+    <!-- 
+    FOOTER 
+    - contiene navegación, imagenes + copyright, enlaces externos (LinkedIn y Github)
+    -->
+    <footer class="Footer">
+        <nav class="Footer-nav">
+            <span class="Footer-span">¿Qué estas buscando?</span>
+            <ul class="Footer-ul">
+                <li class="Footer-li">
+                    <a title="Mobiliario" href="./category.html?id=mobiliario" class="Footer-a">
+                        Mobiliario
+                    </a>
+                </li>
+                <li class="Footer-li">
+                    <a title="Ropa" href="./category.html?id=ropa" class="Footer-a">
+                        Ropa
+                    </a>
+                </li>
+                <li class="Footer-li">
+                    <a title="Fósiles" href="./category.html?id=fosiles" class="Footer-a">
+                        Fósiles
+                    </a>
+                </li>
+                <li class="Footer-li">
+                    <a title="Cuadros" href="./category.html?id=cuadros" class="Footer-a">
+                        Cuadros
+                    </a>
+                </li>
+                <li class="Footer-li">
+                    <a title="Esculturas" href="./category.html?id=esculturas" class="Footer-a">
+                        Esculturas
+                    </a>
+                </li>
+                <li class="Footer-li">
+                    <a title="Música" href="./category.html?id=musica" class="Footer-a">
+                        Música
+                    </a>
+                </li>
+                <li class="Footer-li">
+                    <a title="Sobre nosotros" href="./about.html" class="Footer-a">
+                        Sobre nosotros
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="Footer-images">
+            <div class="Footer-villagers">
+                <img loading="lazy" decoding="async" src="assets/images/villager_4.webp"
+                    alt="Personaje de Animal Crossing" class="Footer-img Villager">
+                <img loading="lazy" decoding="async" src="assets/images/88px-Mabel_aF_2.webp"
+                    alt="Personaje de Animal Crossing" class="Footer-img Villager">
+            </div>
+            <div class="Footer-copyright">
+                <a href="./index.html" title="Nook Shop" class="Footer-logo Logo">
+                    <img loading="lazy" decoding="async" src="assets/iconos/Nook_shop_logo.webp" alt="Logo Nook Shop"
+                        class="Logo-img">
+                </a>
+                <span class="Footer-span">
+                    © 2026 Nook Shop · All rights reserved | Nook Shop
+                </span>
+            </div>
+        </div>
+        <div class="Footer-socials">
+            <span class="Footer-span">Dónde puedes encontrarnos</span>
+            <ul class="Footer-ul">
+                <li class="Footer-li">
+                    <div class="Social-wrapper Social">
+                        <a href="https://github.com/Daniel-NiVall" title="GitHub" rel="noreferrer noopener"
+                            target="_blank" class="Social-a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="Footer-icon" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </li>
+                <li class="Footer-li">
+                    <div class="Social-wrapper Social">
+                        <a href="https://www.linkedin.com/in/daniel-niceto-98340b158" title="LinkedIn"
+                            rel="noreferrer noopener" target="_blank" class="Social-a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="Footer-icon" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                            </svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
