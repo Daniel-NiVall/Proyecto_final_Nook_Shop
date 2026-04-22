@@ -25,15 +25,15 @@ cart.js
 (() => {
 
     // Variables
-        // Se selecciona el wrapper de los productos y la seccion del estado vacio
+    // Se selecciona el wrapper de los productos y la seccion del estado vacio
     const wrapper = document.querySelector(`.Cart`)
     const empty = document.querySelector(`.Empty`)
 
-        // Variables para el calculo del precio total
+    // Variables para el calculo del precio total
     let subtotal = 0
     const subtotalSpan = wrapper.querySelector(`.Quantity-span`)
 
-        // Variables para el formulario de pago
+    // Variables para el formulario de pago
     const form = document.querySelector('.Payment-form')
     const paymentCtas = wrapper.querySelector(`.Payment-ctas`)
     const paymentButton = wrapper.querySelector(`.Payment-button`)
@@ -45,11 +45,11 @@ cart.js
     const formInput = form.querySelectorAll(`.Form-input`)
     const formSubmit = form.querySelector(`.Form-submit`)
 
-        // Variables para el modal
+    // Variables para el modal
     const modal = document.querySelector(`.Modal`)
     const modalButtonClose = document.querySelector(`.Transaction-button`)
 
-        // Variables para mostrar / ocultar el header
+    // Variables para mostrar / ocultar el header
     const header = document.querySelector(`.Header`)
     let scroll = window.scrollY
 
@@ -629,10 +629,10 @@ cart.js
         const newScroll = window.scrollY
 
         // Se compara el scroll nuevo con el scroll obtenido inicialmente
-            // Si el scroll nuevo es mayor que el inicial se esta desplazando hacia abajo por lo que se oculta el header
+        // Si el scroll nuevo es mayor que el inicial se esta desplazando hacia abajo por lo que se oculta el header
         if (newScroll > scroll) {
             header.classList.remove(`isVisible`)
-        } 
+        }
         // Si el scroll nuevo es menor que el inicial se esta desplazando hacia arriba por lo que se muestra el header
         else if (newScroll < scroll) {
             header.classList.add(`isVisible`)

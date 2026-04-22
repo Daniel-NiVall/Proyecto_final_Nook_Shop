@@ -52,6 +52,7 @@ cart.css
     font-size: clamp(var(--font-s-16), 3vw, var(--font-s-18));
     hyphens: none;
 }
+
 /*-------- /Intro -------- */
 
 /*-------- Empty -------- */
@@ -151,6 +152,7 @@ cart.css
         transform: translateX(0);
     }
 }
+
 /*-------- /Empty -------- */
 
 /*-------- Cart List -------- */
@@ -194,6 +196,7 @@ cart.css
     height: 0;
     overflow: hidden;
 }
+
 /*-------- /Cart List -------- */
 
 /*-------- Cart Product -------- */
@@ -261,6 +264,7 @@ cart.css
     font-size: clamp(var(--font-s-16), 2vw, var(--font-s-20));
     font-weight: var(--font-w-600);
 }
+
 /*-------- /Cart Product -------- */
 
 /*-------- Sizes -------- */
@@ -311,6 +315,7 @@ cart.css
     color: var(--color-black);
     font-weight: var(--font-w-700);
 }
+
 /*-------- /Sizes -------- */
 
 /*-------- Colors -------- */
@@ -368,6 +373,7 @@ cart.css
     outline: 2px solid var(--color-black);
     outline-offset: 2px;
 }
+
 /*-------- /Colors -------- */
 
 /*-------- Price -------- */
@@ -410,6 +416,7 @@ cart.css
 
     color: var(--color-red);
 }
+
 /*-------- /Price -------- */
 
 /*-------- Units -------- */
@@ -451,6 +458,7 @@ cart.css
 .Remove-icon {
     width: 1.5rem;
 }
+
 /*-------- /Units -------- */
 
 /*-------- Delete Button -------- */
@@ -541,6 +549,7 @@ cart.css
 .Product:hover .Product-units {
     margin: 0;
 }
+
 /*-------- /Delete Button -------- */
 
 /*-------- Payment -------- */
@@ -664,6 +673,7 @@ cart.css
         color: var(--color-white);
     }
 }
+
 /*-------- /Payment -------- */
 
 
@@ -718,7 +728,7 @@ cart.css
     border-radius: 2rem;
 }
 
-.Transaction-span{
+.Transaction-span {
     text-align: center;
     font-family: var(--font-family-content);
     font-weight: var(--font-w-500);
@@ -745,7 +755,7 @@ cart.css
     width: 1.5rem;
 }
 
-.Transaction-button:hover{
+.Transaction-button:hover {
     background-color: var(--color-primary-hover);
     color: var(--color-white)
 }
@@ -755,6 +765,7 @@ cart.css
     opacity: 1;
     pointer-events: auto;
 }
+
 /*-------- /Modal -------- */
 
 /*-------- Responsive -------- */
@@ -881,9 +892,10 @@ cart.css
         justify-content: center;
     }
 
-    .Transaction{
+    .Transaction {
         width: 100%;
         border-radius: 0;
     }
 }
+
 /*-------- /Responsive -------- */

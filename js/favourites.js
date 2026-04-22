@@ -24,11 +24,11 @@ favourites.js
 (() => {
 
     // Variables
-        // Variables para mostrar / ocultar el ehader
+    // Variables para mostrar / ocultar el ehader
     const header = document.querySelector(`.Header`)
     let scroll = window.scrollY
 
-        // Se selecciona el wrapper de los productos y la seccion del estado vacio
+    // Se selecciona el wrapper de los productos y la seccion del estado vacio
     const wrapper = document.querySelector(`.Favourites`)
     const empty = document.querySelector(`.Empty`)
 
@@ -330,10 +330,10 @@ favourites.js
         const newScroll = window.scrollY
 
         // Se compara el scroll nuevo con el scroll obtenido inicialmente
-            // Si el scroll nuevo es mayor que el inicial se esta desplazando hacia abajo por lo que se oculta el header
+        // Si el scroll nuevo es mayor que el inicial se esta desplazando hacia abajo por lo que se oculta el header
         if (newScroll > scroll) {
             header.classList.remove(`isVisible`)
-        } 
+        }
         // Si el scroll nuevo es menor que el inicial se esta desplazando hacia arriba por lo que se muestra el header
         else if (newScroll < scroll) {
             header.classList.add(`isVisible`)
@@ -362,7 +362,7 @@ favourites.js
     fetch(`./productos/productos.json`, options)
         .then(response => response.json())
         .then(data => {
-            
+
             data.forEach(product => {
                 if (favourites.find(favourite => favourite.id === product.id)) {
                     createProductCard(product)

@@ -16,27 +16,27 @@ Son funciones exportables para importarlas en cada pagina de la web
 */
 
 // Variables
-    // Se inicializan los arrays para cart y favoritos
+// Se inicializan los arrays para cart y favoritos
 export let favourites = []
 export let cart = []
 
-    // Se lee el almacenamiento local del navegador para preparar el estado inicial de favoritos y carrito
-        // Hecho con ayuda de la IA
+// Se lee el almacenamiento local del navegador para preparar el estado inicial de favoritos y carrito
+// Hecho con ayuda de la IA
 const storedFavourites = localStorage.getItem(`favourites`)
 const storedCart = localStorage.getItem(`cart`)
 
-    // Se seleccionan los elementos de la pagina que van a ser los contadores de favoritos y carrito
-        // Se usa querySelectorAll porque hay dos botones de cada (el del header y el del menu)
+// Se seleccionan los elementos de la pagina que van a ser los contadores de favoritos y carrito
+// Se usa querySelectorAll porque hay dos botones de cada (el del header y el del menu)
 const favouritesCount = document.querySelectorAll(`.Button-span--fav`)
 const cartsCount = document.querySelectorAll(`.Button-span--cart`)
 
 
 // Comprobaciones
-    // Si existe storedFavourites y storedCart, se convierten a JSON
-if(storedFavourites){
+// Si existe storedFavourites y storedCart, se convierten a JSON
+if (storedFavourites) {
     favourites = JSON.parse(storedFavourites)
 }
-if(storedCart){
+if (storedCart) {
     cart = JSON.parse(storedCart)
 }
 
@@ -55,11 +55,11 @@ if(storedCart){
  * @param       {Object}  porductInfo   Informacion del producto
  * @return      {void} No devuelve ningun valor
  */
-export const manageFavourites = (productInfo)=>{
-    if(favourites.find(favourite => favourite.id === productInfo.id)){
-        const index = favourites.findIndex( fav => fav.id === productInfo.id)
-        favourites.splice( index, 1 )
-    }else{
+export const manageFavourites = (productInfo) => {
+    if (favourites.find(favourite => favourite.id === productInfo.id)) {
+        const index = favourites.findIndex(fav => fav.id === productInfo.id)
+        favourites.splice(index, 1)
+    } else {
         let favourite = {
             id: productInfo.id
         }
@@ -82,9 +82,9 @@ export const manageFavourites = (productInfo)=>{
  * @param     {Number}  selectedColor   Indice del color seleccionado
  * @param     {Number | null}  selectedSize    Indice de la talla seleccionada
  */
-export const manageCart = (productInfo, selectedColor, selectedSize) =>{
-    for(const product of cart){
-        if(product.id === productInfo.id && product.color === selectedColor && product.size === selectedSize){
+export const manageCart = (productInfo, selectedColor, selectedSize) => {
+    for (const product of cart) {
+        if (product.id === productInfo.id && product.color === selectedColor && product.size === selectedSize) {
             product.units++
             localStorage.setItem(`cart`, JSON.stringify(cart))
             return
@@ -115,10 +115,10 @@ export const manageCart = (productInfo, selectedColor, selectedSize) =>{
  * @param       {Number}  favouriteIcon   Elemento del DOM que representa el icono de favoritos del producto
  * @return      {void} No devuelve ningun valor
  */
-export const manageFavIcon = (productInfo, favouriteIcon) =>{
-    if(favourites.find(favourite => favourite.id === productInfo.id)){
+export const manageFavIcon = (productInfo, favouriteIcon) => {
+    if (favourites.find(favourite => favourite.id === productInfo.id)) {
         favouriteIcon.classList.add(`isFavourite`)
-    }else{
+    } else {
         favouriteIcon.classList.remove(`isFavourite`)
     }
 }
@@ -135,12 +135,12 @@ export const manageFavIcon = (productInfo, favouriteIcon) =>{
  * @author      DanielNiceto
  * @return      {void} No devuelve ningun valor
  */
-export const updateFavouriteCount = () =>{
-    favouritesCount.forEach((_,i)=>{
-        if(favourites.length < 1){
+export const updateFavouriteCount = () => {
+    favouritesCount.forEach((_, i) => {
+        if (favourites.length < 1) {
             favouritesCount[i].innerHTML = ""
             favouritesCount[i].classList.remove(`hasItems`)
-        }else{
+        } else {
             favouritesCount[i].innerHTML = favourites.length
             favouritesCount[i].classList.add(`hasItems`)
         }
@@ -161,16 +161,16 @@ export const updateFavouriteCount = () =>{
  * @author      DanielNiceto
  * @return      {void} No devuelve ningun valor
  */
-export const updateCartCount = ()=>{
+export const updateCartCount = () => {
     let cartUnits = 0
-    for(const product of cart){
+    for (const product of cart) {
         cartUnits = cartUnits + product.units
     }
-    cartsCount.forEach((_,i)=>{
-        if(cart.length < 1){
+    cartsCount.forEach((_, i) => {
+        if (cart.length < 1) {
             cartsCount[i].innerHTML = ""
             cartsCount[i].classList.remove(`hasItems`)
-        }else{
+        } else {
             cartsCount[i].innerHTML = cartUnits
             cartsCount[i].classList.add(`hasItems`)
         }

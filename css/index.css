@@ -16,12 +16,12 @@ index.css
  *          - Icon-arrow (icono animado)
  */
 
-.Intro{
+.Intro {
     margin: 0 0 2rem 0;
     position: relative;
 }
 
-.Intro-a{
+.Intro-a {
     width: clamp(14rem, 15vw, 25rem);
     padding: .5rem 1rem;
 
@@ -43,30 +43,38 @@ index.css
     color: var(--color-black);
     font-family: var(--font-family-content);
     font-size: var(--font-s-18);
-    font-size: clamp(var(--font-s-18), 1vw , var(--font-s-24));
+    font-size: clamp(var(--font-s-18), 1vw, var(--font-s-24));
     font-weight: var(--font-w-400);
 }
 
-.Icon-arrow{
+.Icon-arrow {
     width: 1.5rem;
     width: clamp(2rem, 1vw, 1.5rem);
     fill: var(--color-black);
 }
 
-.Intro-a:hover{
+.Intro-a:hover {
     background-color: var(--color-secondary-hover);
 }
 
-.Intro-a:hover .Icon-arrow{
+.Intro-a:hover .Icon-arrow {
     /* Pseudoselector combinado: anima la flecha al interactuar con el CTA */
     animation: rebound .5s linear both;
 }
 
 
 @keyframes rebound {
-    0% {transform: translateY(0);}
-    50% {transform: translateY(.5rem); }
-    100% {transform: translateY(0); }
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(.5rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 /*-------- /Intro -------- */
@@ -81,11 +89,11 @@ index.css
  *          - Gallery-span (texto descriptivo)
  */
 
-.Gallery{
+.Gallery {
     width: 100%;
     margin: 0;
     padding: 0;
-    
+
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -94,7 +102,8 @@ index.css
     isolation: isolate;
     overflow: visible;
 }
-.Gallery-bg{
+
+.Gallery-bg {
     width: 100%;
     min-height: 100vh;
 
@@ -102,39 +111,48 @@ index.css
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 /* Variantes de fondo para los bloques de decoracion de la home */
-.Bg-furniture1{
+.Bg-furniture1 {
     background-image: url(../assets/ideas_home/home_decoration_1.webp);
 }
-.Bg-furniture2{
+
+.Bg-furniture2 {
     background-image: url(../assets/ideas_home/home_decoration_2.webp);
 }
-.Bg-furniture3{
+
+.Bg-furniture3 {
     background-image: url(../assets/ideas_home/home_decoration_3.webp);
 }
-.Bg-furniture4{
+
+.Bg-furniture4 {
     background-image: url(../assets/ideas_home/home_decoration_4.webp);
 }
-.Bg-clothes1{
+
+.Bg-clothes1 {
     background-image: url(../assets/ideas_clothes/clothes_bg_2.webp);
 }
-.Bg-clothes2{
+
+.Bg-clothes2 {
     background-image: url(../assets/ideas_clothes/clothes_bg_7.webp);
 }
-.Bg-clothes3{
+
+.Bg-clothes3 {
     background-image: url(../assets/ideas_clothes/clothes_bg_3.webp);
 }
-.Bg-clothes4{
+
+.Bg-clothes4 {
     background-image: url(../assets/ideas_clothes/clothes_bg_6.webp);
 }
-.Gallery-images{
+
+.Gallery-images {
     position: relative;
     z-index: 1;
 
     grid-area: 1 / 1;
 }
 
-.Gallery-p{
+.Gallery-p {
     width: 40%;
     min-height: 20rem;
     height: fit-content;
@@ -159,13 +177,13 @@ index.css
     color: var(--color-black);
 }
 
-.Gallery-p--furniture{
+.Gallery-p--furniture {
     /* Modificador: posiciona el rótulo del bloque furniture de forma lateral */
     transform: translateX(-100%) rotate(90deg);
     transition: transform .5s ease;
 }
 
-.Gallery-span{
+.Gallery-span {
     width: 80%;
     height: 0;
     overflow: hidden;
@@ -174,10 +192,10 @@ index.css
 
     font-family: var(--font-family-content);
     font-size: var(--font-s-24);
-    font-size: clamp( var(--font-s-24), 1vw, var(--font-s-40));
+    font-size: clamp(var(--font-s-24), 1vw, var(--font-s-40));
     line-height: clamp(2rem, 2vw, 3rem);
     hyphens: none;
-    
+
     transition: height .5s ease;
 
     /* Evita un falso positivo de Lighthouse/NO_LCP cuando el elemento arranca con opacity 0 */
@@ -185,7 +203,7 @@ index.css
     pointer-events: none;
 }
 
-.Gallery-span.isMarked{
+.Gallery-span.isMarked {
     /* Estado marcado: muestra el texto descriptivo completo */
     height: 100%;
     max-height: 100rem;
@@ -200,7 +218,7 @@ index.css
     pointer-events: auto;
 }
 
-.Gallery-p--clothes{
+.Gallery-p--clothes {
     /* Modificador: sitúa el rótulo de clothes en el lado derecho con rotacion inversa */
     align-self: start;
     justify-self: end;
@@ -213,7 +231,7 @@ index.css
     transition: transform .5s ease;
 }
 
-.Gallery-p.isVisible{
+.Gallery-p.isVisible {
     /* Estado visible: el rótulo vuelve a su posicion normal */
     transform: translateX(0%) rotate(0deg)
 }
@@ -232,7 +250,7 @@ index.css
  *          - Modificadores: Collab--nook, Collab--sisters, Collab--museum
  */
 
-.Collabs{
+.Collabs {
     width: 100%;
     margin: 0 0 6rem;
     padding: 0 3rem;
@@ -244,7 +262,7 @@ index.css
     gap: 1.5rem;
 }
 
-.Collabs-h2{
+.Collabs-h2 {
     padding: 2rem;
 
     font-family: var(--font-family-headers);
@@ -256,7 +274,7 @@ index.css
     hyphens: none;
 }
 
-.Collabs-wrapper{
+.Collabs-wrapper {
     width: 100%;
     overflow: hidden;
 
@@ -267,7 +285,7 @@ index.css
     border-radius: 1rem;
 }
 
-.Collab{
+.Collab {
     padding: 2vw;
 
     display: flex;
@@ -279,12 +297,12 @@ index.css
     transition: background-color 1s ease, color 1s ease;
 }
 
-.Collab:not(:last-child){
+.Collab:not(:last-child) {
     /* Pseudoselector: separa las cards internas sin añadir markup extra */
     border-right: 1px solid var(--color-grey);
 }
 
-.Collab-gallery{
+.Collab-gallery {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -292,12 +310,12 @@ index.css
     gap: min(5vw, 6rem);
 }
 
-.Collab-gallery--individual{
+.Collab-gallery--individual {
     /* Variante: centra una sola imagen dentro del grupo */
     justify-content: center;
 }
 
-.Collab-img{
+.Collab-img {
     height: 4rem;
     width: 4rem;
 
@@ -305,7 +323,7 @@ index.css
     height: clamp(4rem, 5vw, 6rem);
 }
 
-.Collab-span{
+.Collab-span {
     display: block;
 
     font-family: var(--font-family-headers);
@@ -315,46 +333,57 @@ index.css
     text-transform: capitalize;
 }
 
-.Collab:hover .Collab-img{
+.Collab:hover .Collab-img {
     /* Interaccion visual en hover para dinamizar las colaboraciones */
     animation: agitate .4s linear both;
 }
 
-.Collab--nook:hover{
+.Collab--nook:hover {
     /* Modificador de color: usa el token de Nook al interactuar */
     background-color: var(--color-collaboration-nook-bg);
 }
 
-.Collab--nook:hover .Collab-span{
+.Collab--nook:hover .Collab-span {
     /* Ajusta el texto al color de la colaboracion activa */
     color: var(--color-collaboration-nook-text);
 }
 
-.Collab--sisters:hover{
+.Collab--sisters:hover {
     /* Modificador de color: usa el token de Sisters al interactuar */
     background-color: var(--color-collaboration-sister-bg);
 }
 
-.Collab--sisters:hover .Collab-span{
+.Collab--sisters:hover .Collab-span {
     /* Ajusta el texto al color de la colaboracion activa */
     color: var(--color-collaboration-sister-text);
 }
 
-.Collab--museum:hover{
+.Collab--museum:hover {
     /* Modificador de color: usa el token de Museum al interactuar */
     background-color: var(--color-collaboration-museum-bg);
 }
 
-.Collab--museum:hover .Collab-span{
+.Collab--museum:hover .Collab-span {
     /* Ajusta el texto al color de la colaboracion activa */
     color: var(--color-collaboration-museum-text);
 }
 
 @keyframes agitate {
-    0% {transform: rotate(0deg) scale(1);}
-    30% {transform: rotate(-20deg) scale(1.1); }
-    60% {transform: rotate(20deg) scale(1.2); }
-    100% {transform: rotate(0deg) scale(1.2); }
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    30% {
+        transform: rotate(-20deg) scale(1.1);
+    }
+
+    60% {
+        transform: rotate(20deg) scale(1.2);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1.2);
+    }
 }
 
 /*-------- /Collabs -------- */
@@ -369,7 +398,7 @@ index.css
  *          - Section-svg
  */
 
-.Section{
+.Section {
     width: 100%;
     padding: 0 3rem;
     margin: 0 0 8rem;
@@ -383,7 +412,7 @@ index.css
     border-radius: 1.25rem;
 }
 
-.Section-h2{
+.Section-h2 {
     width: fit-content;
 
     font-family: var(--font-family-headers);
@@ -392,19 +421,19 @@ index.css
     font-weight: var(--font-w-600);
 }
 
-.Section-carrousel{
+.Section-carrousel {
     padding: 0 3rem;
     width: 100%;
 
     position: relative;
 }
 
-.Section-outer{
+.Section-outer {
     width: 100%;
     overflow: hidden;
 }
 
-.Section-inner{
+.Section-inner {
     width: fit-content;
 
     display: flex;
@@ -418,30 +447,30 @@ index.css
     transition: transform .3s linear;
 }
 
-.Section-button{
+.Section-button {
     width: 2rem;
     height: 2rem;
-    
+
     position: absolute;
     top: calc((100% - 2rem) / 2);
 }
 
-.Section-button--next{
+.Section-button--next {
     /* Modificador: posiciona el boton de avance a la derecha */
     right: 0;
 }
 
-.Section-button--prev{
+.Section-button--prev {
     /* Modificador: posiciona el boton de retroceso a la izquierda */
     left: 0;
 }
 
-.Section-svg{
+.Section-svg {
     fill: var(--color-grey);
     transition: fill .3s ease;
 }
 
-.Section-button:hover .Section-svg{
+.Section-button:hover .Section-svg {
     /* Pseudoselector combinado: resalta el icono cuando el boton se activa */
     fill: var(--color-black);
 }
@@ -455,67 +484,69 @@ index.css
  *          - @media (max-width: 460px)
  */
 
-@media(max-width:850px){
+@media(max-width:850px) {
+
     /* INTRO */
-    .Gallery{
+    .Gallery {
         overflow: visible;
     }
 
-    .Gallery-p{
+    .Gallery-p {
         width: 100%;
         max-width: none;
         border-radius: 0;
         top: 20vh;
     }
-    .Gallery-span{
+
+    .Gallery-span {
         text-align: center;
     }
 
     /* COLLABS */
-    .Collabs-wrapper{
-        grid-template-columns: repeat(2,1fr);
+    .Collabs-wrapper {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .Collab:nth-child(2){
+    .Collab:nth-child(2) {
         border-right: 0;
     }
 
-    .Collab--sisters{
+    .Collab--sisters {
         border-bottom: 1px solid var(--color-grey);
         grid-column: span 2;
         order: -1;
     }
 
     /* CARROUSEL */
-    .Section{
+    .Section {
         overflow: hidden;
     }
 
-    .Section-carrousel{
+    .Section-carrousel {
         padding: 0;
     }
 
-    .Section-outer{
+    .Section-outer {
         overflow: auto;
     }
 
-    .Section-button{
+    .Section-button {
         display: none;
     }
 }
 
-@media(max-width:460px){
-    .Collabs-wrapper{
+@media(max-width:460px) {
+    .Collabs-wrapper {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(3,1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 
-    .Collab:not(:last-child){
+    .Collab:not(:last-child) {
         border-bottom: 1px solid var(--color-grey);
         border-right: 0;
     }
 
-    .Collab--sisters{
+    .Collab--sisters {
         grid-column: span 1;
         order: 0;
     }

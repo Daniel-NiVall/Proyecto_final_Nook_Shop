@@ -5,7 +5,7 @@ card.css
 - info
 - price
 - cta
--colors
+- colors
 ----------------------------------------
 */
 
@@ -17,7 +17,7 @@ card.css
  *          - Card-a (enlace principal de la card)
  *          - Card-img (imagen)
  */
-.Card{
+.Card {
     width: fit-content;
     min-height: 100%;
     padding: 2rem 2rem 0 2rem;
@@ -26,14 +26,14 @@ card.css
     display: flex;
 }
 
-.Card-article{
+.Card-article {
     display: flex;
     flex: 1;
 
     position: relative;
 }
 
-.Card-a{
+.Card-a {
     width: clamp(9rem, 10vw, 11rem);
     padding: .5rem;
 
@@ -52,10 +52,11 @@ card.css
     border-radius: 1rem;
 }
 
-.Card-img{
+.Card-img {
     width: 100%;
     height: 100%;
 }
+
 /*-------- /Card -------- */
 
 /*-------- Info -------- */
@@ -64,7 +65,7 @@ card.css
  *          - Info (contenedor)
  *          - Name (nombre del producto)
  */
-.Info{
+.Info {
     width: 100%;
     padding: .5rem;
 
@@ -76,11 +77,12 @@ card.css
     flex: 1;
 }
 
-.Name{
+.Name {
     font-size: clamp(var(--font-s-14), 1vw, var(--font-s-20));
     font-weight: var(--font-w-500);
     hyphens: none;
 }
+
 /*-------- /Info -------- */
 
 /*-------- Price -------- */
@@ -91,7 +93,7 @@ card.css
  *          - Price-original.hasSale (estado rebajado)
  */
 
-.Price{
+.Price {
     width: 100%;
 
     display: flex;
@@ -101,19 +103,19 @@ card.css
     gap: .5rem;
 }
 
-.Price-sale{
+.Price-sale {
     font-size: clamp(var(--font-s-14), 1vw, var(--font-s-16));
     font-weight: var(--font-w-700);
     color: var(--color-green);
 }
 
-.Price-original{
+.Price-original {
     font-size: clamp(var(--font-s-14), 1vw, var(--font-s-16));
     font-weight: var(--font-w-700);
     color: var(--color-black);
 }
 
-.Price-original.hasSale{
+.Price-original.hasSale {
     /* Modificador: reduce jerarquia visual cuando existe rebaja */
     font-size: clamp(var(--font-s-12), 1vw, var(--font-s-14));
     font-weight: var(--font-w-300);
@@ -122,10 +124,11 @@ card.css
     text-decoration: line-through;
 }
 
-.Price-img{
+.Price-img {
     width: clamp(1.2rem, 1vw, 1.5rem);
     height: clamp(1.2rem, 1vw, 1.5rem);
 }
+
 /*-------- /Price -------- */
 
 /*-------- Card Actions -------- */
@@ -136,7 +139,7 @@ card.css
  *          - Favourite-svg / Favourite-svg--fill
  *          - Favourite-svg--fill.isFavourite (estado activo)
  */
-.Card-ctas{
+.Card-ctas {
     width: fit-content;
 
     display: flex;
@@ -154,7 +157,7 @@ card.css
     transition: transform .5s ease;
 }
 
-.Card-cta{
+.Card-cta {
     width: fit-content;
     padding: .3rem;
     overflow: hidden;
@@ -164,17 +167,17 @@ card.css
     border-radius: .5rem;
 }
 
-.Card-cta:hover{
+.Card-cta:hover {
     /* Feedback visual del boton de accion al pasar el cursor */
     background-color: var(--color-primary);
 }
 
-.Favourite-svg{
+.Favourite-svg {
     width: 1.25rem;
     height: 1.25rem;
 }
 
-.Favourite-svg--fill{
+.Favourite-svg--fill {
     width: 1.25rem;
 
     position: absolute;
@@ -189,7 +192,7 @@ card.css
     transition: opacity .8s linear, transform .6s cubic-bezier(.49, -0.29, .58, 1.27);
 }
 
-.Favourite-svg--fill.isFavourite{
+.Favourite-svg--fill.isFavourite {
     /* Estado activo: hace visible el icono relleno de favorito */
     opacity: 1;
     transform: scale(1);
@@ -204,7 +207,7 @@ card.css
  *          - Color (muestra de color)
  *          - Color:focus-visible (accesibilidad)
  */
-.Card-colors{
+.Card-colors {
     display: flex;
     flex-flow: column nowrap;
     justify-content: start;
@@ -219,7 +222,7 @@ card.css
     transition: transform .5s ease;
 }
 
-.Color{
+.Color {
     width: 1.5rem;
     height: 1.5rem;
     overflow: hidden;
@@ -227,11 +230,12 @@ card.css
     border-radius: 100vh;
 }
 
-.Color:focus-visible{
+.Color:focus-visible {
     /* Accesibilidad: indicador visible al navegar por teclado */
     outline: 2px solid var(--color-black);
     outline-offset: 2px;
 }
+
 /*-------- /Colors -------- */
 
 /*-------- Interactions -------- */
@@ -241,27 +245,25 @@ card.css
  *          - .isVisible para apertura controlada por JS
  */
 .Card:hover .Card-ctas,
-.Card:focus-within .Card-ctas{
+.Card:focus-within .Card-ctas {
     /* Desplaza las acciones para hacerlas accesibles en hover o foco */
     transform: rotate(0deg) translate(2rem, -2rem);
 }
 
 .Card:hover .Card-colors,
-.Card:focus-within .Card-colors{
+.Card:focus-within .Card-colors {
     /* Abre el bloque de colores en respuesta a interacción */
     transform: translate(2rem, 2rem);
 }
 
-.Card-ctas.isVisible{
+.Card-ctas.isVisible {
     /* Estado visible controlado desde JS */
     transform: rotate(0deg) translate(2rem, -2rem);
 }
 
-.Card-colors.isVisible{
+.Card-colors.isVisible {
     /* Estado visible controlado desde JS */
     transform: translate(2rem, 2rem);
 }
 
 /*-------- /Interactions -------- */
-
-

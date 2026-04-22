@@ -1,11 +1,13 @@
 :root {
-  font-size : 100%;
-  scroll-behavior : smooth;
+  font-size: 100%;
+  scroll-behavior: smooth;
   font-family: "Nunito", Arial, system-ui, sans-serif;
 
   /* Tipografías */
-  --font-family-content: "Nunito", Arial, system-ui, sans-serif;      /* Tipografía sans-serif para contenido principal de las paginas */
-  --font-family-headers: "Source Serif 4", system-ui, serif;          /* Tipografía serif para encabezados y titulos */
+  --font-family-content: "Nunito", Arial, system-ui, sans-serif;
+  /* Tipografía sans-serif para contenido principal de las paginas */
+  --font-family-headers: "Source Serif 4", system-ui, serif;
+  /* Tipografía serif para encabezados y titulos */
 
   /* Tamaños de las tipografías */
   --font-s-12: .75rem;
@@ -30,116 +32,195 @@
 
   /* Colores */
   /* Colores seccion colaboracion */
-  --color-collaboration-nook-bg: #dbf1fd;         /* Color de fondo para la colaboracion de la tienda de Tom Nook */
-  --color-collaboration-nook-text: #095b87;       /* Color de los textos para la colaboracion de la tienda de Tom Nook */
-  --color-collaboration-sister-bg: #eac7ee;       /* Color de fondo para la colaboracion de la tienda de las Hermanas Manitas */
-  --color-collaboration-sister-text: #37123c;     /* Color de los textos para la colaboracion la tienda de las Hermanas Manitas */
-  --color-collaboration-museum-bg: #fef8c4;       /* Color de fondo para la colaboracion del museo */
-  --color-collaboration-museum-text: #6d6101;     /* Color de los textos para la colaboracion del museo */
+  --color-collaboration-nook-bg: #dbf1fd;
+  /* Color de fondo para la colaboracion de la tienda de Tom Nook */
+  --color-collaboration-nook-text: #095b87;
+  /* Color de los textos para la colaboracion de la tienda de Tom Nook */
+  --color-collaboration-sister-bg: #eac7ee;
+  /* Color de fondo para la colaboracion de la tienda de las Hermanas Manitas */
+  --color-collaboration-sister-text: #37123c;
+  /* Color de los textos para la colaboracion la tienda de las Hermanas Manitas */
+  --color-collaboration-museum-bg: #fef8c4;
+  /* Color de fondo para la colaboracion del museo */
+  --color-collaboration-museum-text: #6d6101;
+  /* Color de los textos para la colaboracion del museo */
 
   /* Colores principales */
-  --color-white: #F8F8F8;                         /* Color blanco */
-  --color-black: #412722;                         /* Color negro */ 
-  --color-black-alpha: #1d1c1b8f;                 /* Color negro semi transparente */
-  --color-grey: #b4b5b0;                          /* Color gris claro */
-  --color-dark-grey: #82837c;                     /* Color gris oscuro */
-  --color-red: #c94f4f;                           /* Color rojo (corazon favoritos, rebajas, boton eliminar...) */
-  --color-green: #215a2c;                         /* Color verde (precio rebajado) */
+  --color-white: #F8F8F8;
+  /* Color blanco */
+  --color-black: #412722;
+  /* Color negro */
+  --color-black-alpha: #1d1c1b8f;
+  /* Color negro semi transparente */
+  --color-grey: #b4b5b0;
+  /* Color gris claro */
+  --color-dark-grey: #82837c;
+  /* Color gris oscuro */
+  --color-red: #c94f4f;
+  /* Color rojo (corazon favoritos, rebajas, boton eliminar...) */
+  --color-green: #215a2c;
+  /* Color verde (precio rebajado) */
 
-  --color-primary: #cbfaed;                       /* Color primario */
-  --color-primary-hover: #125441;                 /* Color primario hover */
+  --color-primary: #cbfaed;
+  /* Color primario */
+  --color-primary-hover: #125441;
+  /* Color primario hover */
 
-  --color-secondary: #f5ee88;                     /* Color secundario */
-  --color-secondary-hover: #dbc81d;               /* Color secundario hover */
-  --color-secondary-alpha: #f5ee8ae7;             /* Color secundario semi transparente */
+  --color-secondary: #f5ee88;
+  /* Color secundario */
+  --color-secondary-hover: #dbc81d;
+  /* Color secundario hover */
+  --color-secondary-alpha: #f5ee8ae7;
+  /* Color secundario semi transparente */
 
-  --color-tertiary: #9cddf1;                    /* Color terciario */
+  --color-tertiary: #9cddf1;
+  /* Color terciario */
 
 }
-* , *::before , *::after {
-  margin : 0;
-  padding : 0;
-  border : 0;
-  box-sizing : border-box;
-  vertical-align : baseline;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
 }
-*::before , *::after {
-  display : block;
+
+*::before,
+*::after {
+  display: block;
 }
-img , picture , video , iframe , figure , canvas {
-  max-width : 100%;
-  display : block;
-  width : 100%;
-  height : initial;
-  object-fit : cover;
-  object-position : center center;
+
+img,
+picture,
+video,
+iframe,
+figure,
+canvas {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+  height: initial;
+  object-fit: cover;
+  object-position: center center;
 }
+
 a {
-  display : block;
-  text-decoration : none;
-  color : inherit;
-  font :  inherit;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font: inherit;
 }
+
 p a {
-  display : inline;
+  display: inline;
 }
-li , menu, summary {
-  list-style-type : none;
+
+li,
+menu,
+summary {
+  list-style-type: none;
 }
+
 ol {
-  counter-reset : revert;
+  counter-reset: revert;
 }
-h1 , h2 , h3 , h4 , h5 , h6 , p , span , a , strong , blockquote , i , b , u , em , pre , code , mark , del {
-  font :  inherit;
-  line-height :  1em;
-  text-decoration :  none;
-  color : inherit;
-  overflow-wrap : break-word;
-  text-wrap : pretty;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em,
+pre,
+code,
+mark,
+del {
+  font: inherit;
+  line-height: 1em;
+  text-decoration: none;
+  color: inherit;
+  overflow-wrap: break-word;
+  text-wrap: pretty;
 }
+
 mark {
-  background-color : transparent;
+  background-color: transparent;
 }
-blockquote::before , blockquote::after , q::before , q::after {
-  content : none;
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: none;
 }
-form , input , textarea , select , button , label {
-  font :  inherit;
-  hyphens : auto;
-  background-color : transparent;
-  color : inherit;
-  display : block;
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
   /* appearance : none; */
 }
+
 fieldset {
-  border : none;
+  border: none;
 }
+
 ::placeholder {
-  color : unset;
+  color: unset;
 }
-button , label {
-  cursor : pointer;
+
+button,
+label {
+  cursor: pointer;
 }
-table , tr , td , th , tbody , thead , tfoot {
-  border-collapse : collapse;
-  border-spacing : 0;
-  font : inherit;
+
+table,
+tr,
+td,
+th,
+tbody,
+thead,
+tfoot {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font: inherit;
 }
+
 svg {
-  width : 100%;
-  height : initial;
-  display : block;
-  fill : currentColor;
+  width: 100%;
+  height: initial;
+  display: block;
+  fill: currentColor;
 }
+
 body {
-  min-height : 100vh;
+  min-height: 100vh;
   overflow-x: clip;
-  line-height : 1.5em;
-  color : var(--color-black);
+  line-height: 1.5em;
+  color: var(--color-black);
   background-color: var(--color-white);
-  hyphens : auto;
-  -webkit-font-smoothing : antialiased;
-  -moz-osx-font-smoothing : grayscale;
+  hyphens: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {

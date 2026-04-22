@@ -21,25 +21,25 @@ about.js
 (() => {
 
     // Variables
-        // Se selecciona el elemento a mostrar / ocultar (header)
+    // Se selecciona el elemento a mostrar / ocultar (header)
     const header = document.querySelector(`.Header`)
-        // Se selecciona el scroll inicial de la ventana
+    // Se selecciona el scroll inicial de la ventana
     let scroll = window.scrollY
 
-        // Se seleccionan los encabezados de cada seccion
+    // Se seleccionan los encabezados de cada seccion
     const headers = document.querySelectorAll(`.Section-header`)
 
 
     // Funciones
 
-        /**
-         * Funcion que hace aparecer las letras de los titulos con una animacion vertical con rebote
-         * Las letras aparecen con delay una despues de otra
-         * 
-         * @function    setIntersectionObserverLetters
-         * @author      DanielNiceto
-         * @return      {void} No devuelve ningun valor
-         */
+    /**
+     * Funcion que hace aparecer las letras de los titulos con una animacion vertical con rebote
+     * Las letras aparecen con delay una despues de otra
+     * 
+     * @function    setIntersectionObserverLetters
+     * @author      DanielNiceto
+     * @return      {void} No devuelve ningun valor
+     */
     const setIntersectionObserverLetters = () => {
         // se crean las opciones del observador. Las letras aparecen cuando la etiqueta header es completamente visible
         const observerOptions = {
@@ -60,7 +60,7 @@ about.js
                 if (entry.isIntersecting) {
                     // Se guardan en un array cada caracter del encabezado
                     const letters = entry.target.childNodes
-                    
+
                     // Por cada caracter, si no esta vacio, se añade la clase isVisible y se establece un tiempo de espera
                     letters.forEach(letter => {
                         if (letter.childNodes.length > 0) {   /* Esto ignora el contenido vacio (espacios) */
@@ -98,7 +98,7 @@ about.js
         const newScroll = window.scrollY
 
         // Se compara el scroll nuevo con el scroll obtenido inicialmente
-            // Si el scroll nuevo es mayor que el inicial se esta desplazando hacia abajo por lo que se oculta el header
+        // Si el scroll nuevo es mayor que el inicial se esta desplazando hacia abajo por lo que se oculta el header
         if (newScroll > scroll) {
             header.classList.remove(`isVisible`)
         }

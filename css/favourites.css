@@ -50,6 +50,7 @@ favourites.css
     font-size: clamp(var(--font-s-16), 3vw, var(--font-s-18));
     hyphens: none;
 }
+
 /*-------- /Intro -------- */
 
 /*-------- Empty -------- */
@@ -138,10 +139,19 @@ favourites.css
 }
 
 @keyframes rebound {
-    0% { transform: translateX(0); }
-    50% { transform: translateX(.5rem); }
-    100% { transform: translateX(0); }
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(.5rem);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
+
 /*-------- /Empty -------- */
 
 /*-------- Favourites List -------- */
@@ -152,7 +162,7 @@ favourites.css
  *          - Favourite (item)
  *          - Favourite.isDeleted (estado de ocultacion)
  */
-.Favourites{
+.Favourites {
     margin: 0 0 2rem;
 }
 
@@ -178,6 +188,7 @@ favourites.css
     height: 0;
     overflow: hidden;
 }
+
 /*-------- /Favourites List -------- */
 
 /*-------- Favourite Product -------- */
@@ -244,10 +255,11 @@ favourites.css
     gap: 1rem;
 }
 
-.Favourite-name{
+.Favourite-name {
     font-size: clamp(var(--font-s-16), 2vw, var(--font-s-20));
     font-weight: var(--font-w-600);
 }
+
 /*-------- /Favourite Product -------- */
 
 /*-------- Sizes -------- */
@@ -291,6 +303,7 @@ favourites.css
     /* Pseudoselector: añade separador visual entre tallas */
     content: "|";
 }
+
 /*-------- /Sizes -------- */
 
 /*-------- Colors -------- */
@@ -330,6 +343,7 @@ favourites.css
     border-radius: 100vh;
     cursor: pointer;
 }
+
 /*-------- /Colors -------- */
 
 
@@ -361,7 +375,7 @@ favourites.css
     height: 1.5rem;
 }
 
-.Price-original{
+.Price-original {
     font-size: var(--font-s-16);
     font-weight: var(--font-w-700);
 }
@@ -373,6 +387,7 @@ favourites.css
 
     color: var(--color-red);
 }
+
 /*-------- /Price -------- */
 
 /*-------- Delete Button -------- */
@@ -443,6 +458,7 @@ favourites.css
     max-width: 1.5rem;
     min-width: 1.5rem;
 }
+
 /*-------- /Delete Button -------- */
 
 /*-------- Responsive -------- */
@@ -480,6 +496,7 @@ favourites.css
     .Favourite-button {
         padding: .5rem;
     }
+
     /* El siguiente @media aplica estilos solo en dispositivos con hover real y puntero preciso (desktop)
        Esto evita que en mobile al pulsar el boton se quede en estado hover */
     @media (hover: hover) and (pointer: fine) {
@@ -498,7 +515,7 @@ favourites.css
         max-width: 100%;
     }
 
-    .Favourite-a{
+    .Favourite-a {
         padding: .5rem 2rem;
         flex-flow: column nowrap;
         justify-content: center;
@@ -520,8 +537,9 @@ favourites.css
         /* flex-flow: column nowrap; */
     }
 
-    .Price{
+    .Price {
         justify-content: center;
     }
 }
+
 /*-------- /Responsive -------- */

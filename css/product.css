@@ -77,7 +77,7 @@ main {
     row-gap: 2rem;
 }
 
-.Product::after{
+.Product::after {
     /* Pseudoelemento: separador visual al final del bloque de detalle */
     content: "";
 
@@ -453,7 +453,8 @@ main {
 
 /* Los siguientes @media evitan que al pulsar el boton el mobile se quede en estado hover */
 /* Con ayuda de la IA */
-@media (hover: none), (pointer: coarse) {
+@media (hover: none),
+(pointer: coarse) {
     .Product-button:hover {
         /* Neutraliza el hover en pantallas tactiles */
         background-color: var(--color-primary);
@@ -478,6 +479,7 @@ main {
         color: var(--color-black);
     }
 }
+
 /* El siguiente @media aplica estilos solo en dispositivos con hover real y puntero preciso (desktop)
        Esto evita que en mobile al pulsar el boton se quede en estado hover */
 /* Con ayuda de la IA */

@@ -16,7 +16,7 @@ footer.css
  *          - Footer-images (bloque visual)
  *          - Footer-socials (bloque de redes)
  */
-.Footer{
+.Footer {
     width: 100%;
     min-height: 300px;
     padding: 5rem 3rem;
@@ -44,11 +44,11 @@ footer.css
  */
 
 .Footer-nav,
-.Footer-socials{
+.Footer-socials {
     order: 0;
 }
 
-.Footer-span{
+.Footer-span {
     margin: 0 0 1rem;
 
     display: flex;
@@ -63,7 +63,7 @@ footer.css
     text-align: center;
 }
 
-.Footer-span:not(:last-child)::after{
+.Footer-span:not(:last-child)::after {
     /* Pseudoelemento: separador visual bajo cada titulo de columna */
     content: "";
     width: 100%;
@@ -71,7 +71,7 @@ footer.css
     background-color: var(--color-black);
 }
 
-.Footer-ul{
+.Footer-ul {
     margin: 0;
     padding: 0;
 
@@ -82,7 +82,8 @@ footer.css
 
     gap: 1rem;
 }
-.Footer-li{
+
+.Footer-li {
     width: 100%;
 
     display: flex;
@@ -90,7 +91,8 @@ footer.css
     justify-content: center;
     align-items: center;
 }
-.Footer-a{
+
+.Footer-a {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -104,7 +106,7 @@ footer.css
     transition: color .5s ease;
 }
 
-.Footer-a::after{
+.Footer-a::after {
     /* Pseudoelemento: subrayado animado para enlaces del footer */
     content: "";
     height: 1px;
@@ -114,19 +116,19 @@ footer.css
     transform: scaleX(0);
     transform-origin: left;
 
-    background-color: var(--color-black); 
+    background-color: var(--color-black);
 }
 
-.Footer-a:hover{
+.Footer-a:hover {
     color: var(--color-black);
 }
 
-.Footer-a:hover::after{
+.Footer-a:hover::after {
     /* Reutiliza la animacion para reforzar el hover del enlace */
     animation: underline .7s linear both;
 }
 
-.Footer-a:focus::after{
+.Footer-a:focus::after {
     /* Estado accesible para teclado */
     transform: scaleX(1);
 }
@@ -134,11 +136,30 @@ footer.css
 
 
 @keyframes underline {
-    0% { transform: scaleX(0); transform-origin: left; }
-    45% { transform: scaleX(1); transform-origin: left; }
-    50% { transform: scaleX(1); transform-origin: right; }
-    65% { transform: scaleX(0); transform-origin: right; }
-    100% { transform: scaleX(1); transform-origin: right; }
+    0% {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+
+    45% {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    50% {
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+
+    65% {
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+
+    100% {
+        transform: scaleX(1);
+        transform-origin: right;
+    }
 }
 
 /*-------- /Footer Nav -------- */
@@ -156,7 +177,7 @@ footer.css
 
 
 
-.Footer-images{
+.Footer-images {
     order: 0;
 
     display: flex;
@@ -165,7 +186,7 @@ footer.css
     align-items: center;
 }
 
-.Footer-villagers{
+.Footer-villagers {
     width: fit-content;
     min-width: fit-content;
 
@@ -177,12 +198,12 @@ footer.css
 }
 
 .Footer-img,
-.Villager{
+.Villager {
     width: clamp(4rem, 15vw, 6rem);
     height: auto;
 }
 
-.Footer-copyright{
+.Footer-copyright {
     width: 100%;
 
     display: flex;
@@ -193,11 +214,11 @@ footer.css
 }
 
 .Footer-logo,
-.Logo{
+.Logo {
     text-align: center;
 }
 
-.Logo-img{
+.Logo-img {
     /* Se deja el ancho controlado por el contenedor para mantener proporciones del logo */
     height: auto;
 }
@@ -213,7 +234,7 @@ footer.css
  */
 
 .Social,
-.Social-wrapper{
+.Social-wrapper {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -221,7 +242,7 @@ footer.css
     gap: .5rem;
 }
 
-.Social-wrapper::after{
+.Social-wrapper::after {
     /* Pseudoelemento: linea animada debajo del enlace social */
     content: "";
     height: 1px;
@@ -233,7 +254,8 @@ footer.css
 
     background-color: var(--color-black);
 }
-.Social-a{
+
+.Social-a {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
@@ -244,22 +266,22 @@ footer.css
     font-size: clamp(var(--font-s-16), 1vw, var(--font-s-20));
 }
 
-.Footer-icon{
+.Footer-icon {
     width: 1.5rem;
     width: clamp(1.5rem, 2vw, 2rem);
 }
 
-.Social-a:hover{
+.Social-a:hover {
     /* Cambio de color en hover para destacar el enlace externo */
     color: var(--color-black);
 }
 
-.Social-wrapper:hover::after{
+.Social-wrapper:hover::after {
     /* Reutiliza la misma animacion que la navegacion del footer */
     animation: underline .7s linear both;
 }
 
-.Social-wrapper:focus::after{
+.Social-wrapper:focus::after {
     /* Estado accesible para teclado */
     transform: scaleX(1);
 }
@@ -272,8 +294,8 @@ footer.css
  *          - @media (max-width: 1030px): reordena la columna de imagenes
  */
 
-@media(max-width: 1030px){
-    .Footer-images{
+@media(max-width: 1030px) {
+    .Footer-images {
         order: 1;
     }
 }

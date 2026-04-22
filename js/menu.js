@@ -14,7 +14,7 @@ Es una funcion exportable para importarlo en cada pagina de la web
 */
 
 // Constantes
-    // Se selecciona el menu y los botones para abrir y cerrar el menu
+// Se selecciona el menu y los botones para abrir y cerrar el menu
 const menu = document.querySelector(`.Menu`)
 const menuOpen = document.querySelector(`.Button-menu`)
 const menuClose = menu.querySelector(`.Button-close`)
@@ -33,18 +33,18 @@ const menuClose = menu.querySelector(`.Button-close`)
  * @return {void} No devuelve ningún valor.
  */
 
-export const manageMenu = () =>{
+export const manageMenu = () => {
     // Click: abrir el menú
-    menuOpen.addEventListener(`click`, ()=>{
+    menuOpen.addEventListener(`click`, () => {
         menu.classList.add(`isVisible`)
     })
     // Click: cerrar el menú
-    menuClose.addEventListener(`click`, ()=>{
+    menuClose.addEventListener(`click`, () => {
         menu.classList.remove(`isVisible`)
     })
     // Resize: al pasar a desktop se cierra
-    window.addEventListener(`resize`,(e)=>{
-        if(window.innerWidth > 850){
+    window.addEventListener(`resize`, (e) => {
+        if (window.innerWidth > 850) {
             menu.classList.remove(`isVisible`)
         }
     })

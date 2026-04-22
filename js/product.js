@@ -24,21 +24,21 @@ product.js
 (() => {
 
     // Variables
-        // Se obtiene la informacion del producto seleccionado
-        // Con ayuda de la IA
+    // Se obtiene la informacion del producto seleccionado
+    // Con ayuda de la IA
     const params = new URLSearchParams(location.search)
     const id = params.get(`id`)
 
-        // Variables para la modificacion del head del DOM
+    // Variables para la modificacion del head del DOM
     const meta = document.querySelector(`meta[name=title]`)
 
-        // Se seleccionan las breadcrumbs y el espacio donde ira el producto seleccionado
+    // Se seleccionan las breadcrumbs y el espacio donde ira el producto seleccionado
     const initialBreadcrumb = document.querySelector(`.Initial`)
     const endBreadcrumb = document.querySelector(`.Breadcrumb-h1`)
     const productPage = document.querySelector(`.Product`)
 
 
-        // Variables para mostrar / ocultar el header
+    // Variables para mostrar / ocultar el header
     const header = document.querySelector(`.Header`)
     let scroll = window.scrollY
 
@@ -189,7 +189,7 @@ product.js
                 }
 
                 const sizeAlert = document.createElement(`p`)
-                sizeAlert.classList.add( `Product-alert`)
+                sizeAlert.classList.add(`Product-alert`)
                 sizeAlert.innerHTML = `Por favor selecciona primero una talla`
 
                 productSizes.appendChild(sizeAlert)
@@ -363,10 +363,10 @@ product.js
         const cartButton = document.querySelector(`.Button-cart`)
 
         // Detecta si el producto esta en el array Favourites
-            // Si no esta
-                // Icono outlined + texto "Añadir a favoritos"
+        // Si no esta
+        // Icono outlined + texto "Añadir a favoritos"
         // Si esta
-            // Icono filled color rojo + texto "Eliminar de favoritos"
+        // Icono filled color rojo + texto "Eliminar de favoritos"
         const detectFavourite = () => {
             if (favourites.find(favourite => favourite.id === productInfo.id)) {
                 favSpan.innerText = `Eliminar de favoritos`
@@ -647,7 +647,7 @@ product.js
         // Actualiza la imagen visualizada segun el color
         const updateImage = (index) => {
             const windowWidth = window.innerWidth
-            
+
             const pictureMedia = Number(picture.media.substring("12", "15"))
             if (windowWidth > pictureMedia) {
                 image.src = productInfo.colors[index].srcUpscaled
@@ -796,10 +796,10 @@ product.js
         const newScroll = window.scrollY
 
         // Se compara el scroll nuevo con el scroll obtenido inicialmente
-            // Si el scroll nuevo es mayor que el inicial se esta desplazando hacia abajo por lo que se oculta el header
+        // Si el scroll nuevo es mayor que el inicial se esta desplazando hacia abajo por lo que se oculta el header
         if (newScroll > scroll) {
             header.classList.remove(`isVisible`)
-        } 
+        }
         // Si el scroll nuevo es menor que el inicial se esta desplazando hacia arriba por lo que se muestra el header
         else if (newScroll < scroll) {
             header.classList.add(`isVisible`)

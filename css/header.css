@@ -20,7 +20,7 @@ header.css
  *          - Button-menu (menu mobile)
  */
 
-.Header{
+.Header {
     width: 100%;
     height: 6.25rem;
     margin: 0;
@@ -42,7 +42,8 @@ header.css
     transform: translateY(-6.25rem);
     transition: transform .5s ease;
 }
-.Header.isVisible{
+
+.Header.isVisible {
     /* Modificador de estado: devuelve el header a la posicion visible */
     transform: translateY(0);
 }
@@ -57,14 +58,15 @@ header.css
  *          - Logo-img (imagen del logo)
  */
 .Header-h1,
-.Header-a{
+.Header-a {
     max-width: 12.5rem;
 }
-.Logo{
+
+.Logo {
     margin: 0 2rem 0 0;
 }
 
-.Logo-img{
+.Logo-img {
     width: clamp(9.375rem, 40vw, 12.5rem);
     min-width: 9rem;
     height: auto;
@@ -81,7 +83,7 @@ header.css
  *          - Nav-subul (submenu desplegable)
  *          - Nav-svg (icono de desplegable)
  */
-.Nav{
+.Nav {
     width: 100%;
     max-width: 50rem;
     height: 100%;
@@ -92,7 +94,7 @@ header.css
     align-items: center;
 }
 
-.Nav-ul{
+.Nav-ul {
     width: 100%;
     height: 100%;
 
@@ -103,7 +105,7 @@ header.css
     /* gap: 2.5rem; */
 }
 
-.Nav-li{
+.Nav-li {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -114,7 +116,7 @@ header.css
 }
 
 .Nav-li--dropdown:hover .Nav-subul,
-.Nav-li--dropdown:focus-within .Nav-subul{
+.Nav-li--dropdown:focus-within .Nav-subul {
     /* Pseudoclases combinadas: muestran el submenu en hover o con foco por teclado */
     height: 8.5rem;
     padding: 1rem 2rem;
@@ -126,7 +128,7 @@ header.css
 
 .Nav-a,
 .Nav-span,
-.Nav-button{
+.Nav-button {
     width: max-content;
 
     display: flex;
@@ -142,13 +144,13 @@ header.css
 }
 
 .Nav-a,
-.Nav-button{
+.Nav-button {
     /* Reutiliza fondo transparente para mantener la apariencia de enlace/boton limpio */
     background-color: transparent;
 }
 
 .Nav-a::after,
-.Nav-button::after{
+.Nav-button::after {
     /* Pseudoelemento: subrayado animado para enlaces y botones de navegacion */
     content: "";
 
@@ -162,34 +164,53 @@ header.css
     transform-origin: left;
 }
 
-.Nav-a:hover.Nav-a::after{
+.Nav-a:hover.Nav-a::after {
     /* Pseudoselector combinado: activa la animacion del subrayado en hover */
     animation: underline .7s linear both;
 }
 
-.Nav-a:focus.Nav-a::after{
+.Nav-a:focus.Nav-a::after {
     /* Estado de foco visible mediante subrayado permanente */
     transform: scaleX(1);
 }
 
 .Nav-a:focus-visible,
 .Nav-button:focus-visible,
-.Button:focus-visible{
+.Button:focus-visible {
     /* Accesibilidad: contorno visible para navegacion por teclado */
     outline: 2px solid var(--color-black);
     outline-offset: 3px;
 }
 
-.Nav-svg{
+.Nav-svg {
     width: 1rem;
 }
 
 @keyframes underline {
-    0% { transform: scaleX(0); transform-origin: left; }
-    45% { transform: scaleX(1); transform-origin: left; }
-    50% { transform: scaleX(1); transform-origin: right; }
-    65% { transform: scaleX(0); transform-origin: right; }
-    100% { transform: scaleX(1); transform-origin: right; }
+    0% {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+
+    45% {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    50% {
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+
+    65% {
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+
+    100% {
+        transform: scaleX(1);
+        transform-origin: right;
+    }
 }
 
 /*-------- /Navigation -------- */
@@ -199,7 +220,7 @@ header.css
  * Estructura:
  *          - Nav-subul (lista desplegable)
  */
-.Nav-subul{
+.Nav-subul {
     width: max-content;
     height: 0;
     padding: 0 2rem;
@@ -233,7 +254,7 @@ header.css
  *          - Button-svg / Button-span / Button-span.hasItems
  *          - Button-menu
  */
-.Header-buttons{
+.Header-buttons {
     margin: 0 0 0 2rem;
 
     display: flex;
@@ -243,7 +264,7 @@ header.css
     gap: 1rem;
 }
 
-.Button{
+.Button {
     padding: .5rem;
 
     position: relative;
@@ -253,29 +274,30 @@ header.css
     transition: background-color .2s linear, color .2s linear;
 }
 
-.Button:hover{
+.Button:hover {
     /* Estado hover comun para botones del header */
     background-color: var(--color-primary-hover);
 }
-.Button:hover .Button-svg{
+
+.Button:hover .Button-svg {
     /* Cambia el icono al color de contraste al pasar el cursor */
     fill: var(--color-white);
 }
 
-.Button-svg{
+.Button-svg {
     width: 1.5rem;
     height: 1.5rem;
 
     transition: .2s linear;
 }
 
-.Button-span{
+.Button-span {
     font-family: var(--font-family-content);
     font-size: var(--font-s-16);
     font-weight: var(--font-w-600);
 }
 
-.Button-span.hasItems{
+.Button-span.hasItems {
     /* Modificador: burbuja de conteo cuando existen elementos en favoritos/carrito */
     padding: .2rem .4rem;
 
@@ -290,7 +312,7 @@ header.css
     text-align: center;
 }
 
-.Button-menu{
+.Button-menu {
     /* Boton de menu oculto en desktop y usado solo en mobile */
     display: none;
 
@@ -305,20 +327,20 @@ header.css
  * Estructura:
  *          - @media (max-width: 850px): centra header y oculta navegacion/acciones
  */
-@media(max-width:850px){
-    .Header{
+@media(max-width:850px) {
+    .Header {
         justify-content: center;
     }
 
-    .Nav{
+    .Nav {
         display: none;
     }
 
-    .Header-buttons{
+    .Header-buttons {
         display: none;
     }
 
-    .Button-menu{
+    .Button-menu {
         display: block;
     }
 }

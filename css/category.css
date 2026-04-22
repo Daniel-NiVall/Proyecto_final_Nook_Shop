@@ -7,7 +7,7 @@ category.css
 ----------------------------------------
 */
 
-main{
+main {
     margin: 0 3rem;
 }
 
@@ -17,7 +17,7 @@ main{
  *          - Breadcrumb (contenedor principal)
  *          - Breadcrumb-h1 (enlace/titulo de la categoria actual)
  */
-.Breadcrumb{
+.Breadcrumb {
     width: 100%;
     margin: 0 0 3rem;
     padding: 8.25rem 0 0;
@@ -30,7 +30,7 @@ main{
     hyphens: none;
 }
 
-.Breadcrumb-h1{
+.Breadcrumb-h1 {
     display: flex;
     gap: 1rem;
 
@@ -39,10 +39,11 @@ main{
     color: var(--color-black);
 }
 
-.Breadcrumb-h1:hover{
+.Breadcrumb-h1:hover {
     /* Pseudoclase: refuerza que el breadcrumb es interactivo */
     text-decoration: underline;
 }
+
 /*-------- /Breadcrumb -------- */
 
 /*-------- Intro -------- */
@@ -56,7 +57,7 @@ main{
  *          - Intro-a / Icon-arrow (boton de volver/reintentar)
  */
 
-.Intro{
+.Intro {
     width: 100%;
     max-width: 100rem;
     min-height: 10rem;
@@ -70,13 +71,14 @@ main{
 }
 
 
-.Intro-img{
+.Intro-img {
     width: auto;
     height: clamp(6rem, 15vw, 8rem);
 
     object-fit: contain;
 }
-.Intro-p{
+
+.Intro-p {
     text-align: center;
 
     font-family: var(--font-family-headers);
@@ -86,7 +88,7 @@ main{
     hyphens: none;
 }
 
-.Default{
+.Default {
     /* Modificador de estado: centra el contenido cuando la categoria no tiene resultados */
     height: 40vh;
 
@@ -94,7 +96,7 @@ main{
     justify-content: center;
 }
 
-.Intro-alert{
+.Intro-alert {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -102,7 +104,7 @@ main{
     gap: 5vw;
 }
 
-.Intro-a{
+.Intro-a {
     width: fit-content;
     padding: .5rem 1rem;
 
@@ -121,28 +123,37 @@ main{
     transition: background-color .2s linear, color .2s linear;
 }
 
-.Icon-arrow{
+.Icon-arrow {
     width: 1.5rem;
 
     /* Transicion ligera para acompanar el movimiento de la flecha */
     transition: .2s linear
 }
 
-.Intro-a:hover{
+.Intro-a:hover {
     background-color: var(--color-primary-hover);
     color: var(--color-white);
 }
 
-.Intro-a:hover .Icon-arrow{
+.Intro-a:hover .Icon-arrow {
     /* Pseudoselector combinado: anima la flecha solo al interactuar con el enlace */
     animation: rebound .5s linear both;
 }
 
 @keyframes rebound {
-    0% { transform: translateX(0); }
-    50% { transform: translateX(.5rem); }
-    100% { transform: translateX(0); }
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(.5rem);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
+
 /*-------- /Intro -------- */
 
 
@@ -152,7 +163,7 @@ main{
  *          - Grid-ul (contenedor de lista)
  */
 
-.Grid-ul{
+.Grid-ul {
     width: fit-content;
     max-width: 100rem;
     margin: 0 auto 5rem;
@@ -163,6 +174,7 @@ main{
     row-gap: 2rem;
     column-gap: 1rem;
 }
+
 /*-------- /Grid -------- */
 
 /*-------- Responsive -------- */
@@ -171,15 +183,18 @@ main{
  *          - @media (max-width: 750px): reduce margenes y apila el intro
  */
 
-@media(max-width: 750px){
-    main{
+@media(max-width: 750px) {
+    main {
         margin: 0 1rem;
     }
-    .Grid-ul{
+
+    .Grid-ul {
         margin: 0 0 2rem;
     }
-    .Intro{
+
+    .Intro {
         flex-flow: column nowrap;
     }
 }
+
 /*-------- /Responsive -------- */

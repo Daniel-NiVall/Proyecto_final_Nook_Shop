@@ -20,7 +20,7 @@ about.css
 
 .About,
 .Story,
-.Collabs{
+.Collabs {
   width: 90%;
   max-width: 56rem;
   margin: 0 auto 2rem;
@@ -28,24 +28,24 @@ about.css
   hyphens: none;
 }
 
-.About{
+.About {
   padding: 10.25rem 0 1.5rem;
 }
 
-.About-wrapper{
+.About-wrapper {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   gap: 1.5rem;
   align-items: center;
 }
 
-.About-content{
+.About-content {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
 }
 
-.About-h1{
+.About-h1 {
   margin: 0 0 .8rem;
 
   font-family: var(--font-family-headers);
@@ -53,29 +53,30 @@ about.css
   font-weight: var(--font-w-700);
 }
 
-.Section-header{
+.Section-header {
   line-height: 1.2em;
   padding-bottom: .2em;
   overflow: hidden;
 }
 
 
-.Section-span{
+.Section-span {
   position: relative;
   bottom: -3rem;
   line-height: 1.2em;
 
   /* Estado base: el titulo arranca desplazado hacia abajo para animarse al mostrarse */
-  transition: bottom .5s cubic-bezier(.82,1.86,.73,.65);
+  transition: bottom .5s cubic-bezier(.82, 1.86, .73, .65);
 
 }
-.Section-span.isVisible{
+
+.Section-span.isVisible {
   /* Modificador de estado: cuando se activa, recoloca el texto en su posicion final */
   bottom: 0;
 }
 
 
-.About-p{
+.About-p {
   margin: 0 0 1.25rem;
 
   line-height: 1.6;
@@ -83,20 +84,21 @@ about.css
   font-size: clamp(var(--font-s-16), 2vw, var(--font-s-18));
 }
 
-.About-picture{
+.About-picture {
   width: 100%;
 
   display: flex;
   justify-content: center;
 }
 
-.About-img{
+.About-img {
   max-width: 20rem;
   aspect-ratio: 4 / 3;
   object-fit: contain;
 
   border-radius: 1rem;
 }
+
 /*-------- /About -------- */
 
 
@@ -111,47 +113,48 @@ about.css
  */
 
 .Story-h2,
-.Collabs-h2{
+.Collabs-h2 {
   font-family: var(--font-family-headers);
   font-size: clamp(var(--font-s-20), 3vw, var(--font-s-24));
   font-weight: var(--font-w-700);
   margin: 0 0 1rem;
 }
 
-.Story-content{
+.Story-content {
   display: flex;
   flex-flow: column nowrap;
   gap: 1rem;
 }
 
-.Story-p{
+.Story-p {
   color: var(--color-black);
   line-height: 1.7;
   font-size: clamp(var(--font-s-16), 2vw, var(--font-s-18));
 }
 
-.Story{
+.Story {
   background-color: var(--color-white);
 }
 
-.Story-picture{
+.Story-picture {
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
 }
 
-.Story-img{
+.Story-img {
   width: 100%;
   max-height: 20rem;
   object-fit: contain;
 }
 
-.Story-img--small{
+.Story-img--small {
   width: 5rem;
   object-fit: contain;
   background-color: var(--color-white);
 }
+
 /*-------- /Story -------- */
 
 /*-------- Collabs -------- */
@@ -165,7 +168,7 @@ about.css
  *          - Collab--nook / Collab--sisters / Collab--museum (variantes visuales)
  */
 
-.Collabs-p{
+.Collabs-p {
   margin: 0 0 1.25rem;
 
   line-height: 1.6;
@@ -173,13 +176,13 @@ about.css
   font-size: clamp(var(--font-s-16), 2vw, var(--font-s-18));
 }
 
-.Collabs-grid{
+.Collabs-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
-.Collab{
+.Collab {
   display: flex;
   flex-flow: column nowrap;
   gap: .75rem;
@@ -190,56 +193,60 @@ about.css
   background-color: var(--color-white);
 }
 
-.Collab-header{
+.Collab-header {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
 }
 
-.Collab-picture{
+.Collab-picture {
   width: 4.5rem;
   flex: 0 0 auto;
 }
 
-.Collab-img{
+.Collab-img {
   width: 4rem;
   height: 4rem;
   object-fit: contain;
 }
 
-.Collab-h3{
+.Collab-h3 {
   font-family: var(--font-family-headers);
   font-weight: var(--font-w-700);
   font-size: var(--font-s-20);
 }
 
-.Collab-p{
+.Collab-p {
   color: var(--color-black);
   line-height: 1.65;
 }
 
 /* Modificadores por colaboracion: reutilizan la card base y solo cambian tokens de color */
-.Collab--nook{
+.Collab--nook {
   background-color: var(--color-collaboration-nook-bg);
   color: var(--color-collaboration-nook-text);
 }
-.Collab--sisters{
+
+.Collab--sisters {
   background-color: var(--color-collaboration-sister-bg);
   color: var(--color-collaboration-sister-text);
 }
-.Collab--museum{
+
+.Collab--museum {
   background-color: var(--color-collaboration-museum-bg);
   color: var(--color-collaboration-museum-text);
 }
+
 /*-------- /Collabs -------- */
 
 /* Ajustes responsive: simplifica layout a una sola columna en tablet/mobile */
-@media (max-width: 850px){
-  .About-wrapper{
+@media (max-width: 850px) {
+  .About-wrapper {
     grid-template-columns: 1fr;
   }
-  .Collabs-grid{
+
+  .Collabs-grid {
     grid-template-columns: 1fr;
   }
 }

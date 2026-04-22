@@ -28,34 +28,34 @@ index.js
 (() => {
 
     // Variables
-        // Selecciones de contenedores de los carruseles
+    // Selecciones de contenedores de los carruseles
     const sectionPopular = document.querySelector(`.Popular`)
     const sectionNew = document.querySelector(`.New`)
 
     const wrapperInnerPopular = sectionPopular.querySelector(`.Section-inner--popular`)
     const wrapperInnerNew = sectionNew.querySelector(`.Section-inner--new`)
-            
+
     const outerWrapper = sectionPopular.querySelector(`.Section-outer`) // Ambas tienen el mismo tamaño en el Section-outer por lo que solo hace falta seleccionar una instancia
 
-        // Seleccion de botones para el movimiento de los carruseles
+    // Seleccion de botones para el movimiento de los carruseles
     const popularButtonNext = sectionPopular.querySelector(`.Popular-next`)
     const popularButtonPrev = sectionPopular.querySelector(`.Popular-prev`)
     const newButtonNext = sectionNew.querySelector(`.New-next`)
     const newButtonPrev = sectionNew.querySelector(`.New-prev`)
-        // Inicializacion de las posiciones de los carruseles
+    // Inicializacion de las posiciones de los carruseles
     let positionPopular = 0
     let positionNew = 0
 
-        // Variables para el responsive de los carruseles
-        // Con ayuda de la IA
+    // Variables para el responsive de los carruseles
+    // Con ayuda de la IA
     const mobileQuery = window.matchMedia(`(max-width: 850px)`)
     let wasMobile = mobileQuery.matches
 
-        // Variables para visualizar / ocultar el header
+    // Variables para visualizar / ocultar el header
     const header = document.querySelector(`.Header`)
     let scroll = window.scrollY
 
-        // Variables para la animacion de la introduccion
+    // Variables para la animacion de la introduccion
     const gallery = document.querySelectorAll(`.Gallery`)
     const galleryBackground = document.querySelectorAll(`.Gallery-bg`)
 
@@ -182,7 +182,7 @@ index.js
         }
     }
 
-    
+
 
 
 
@@ -265,7 +265,7 @@ index.js
         }
     }
 
-    
+
 
 
 
@@ -294,19 +294,19 @@ index.js
         // Funciones
         // Obtiene el espacio entre cards del carrusel
         const getCarrouselGap = () => {
-            
+
             const card = document.querySelector(`.Card`)
             cardWidth = Number(window.getComputedStyle(card).width.replace(`px`, ``))                           // Se obtiene el ancho de la card
             const outerWrapperWidth = Number(window.getComputedStyle(outerWrapper).width.replace(`px`, ``))     // Se obtiene el ancho del wrapper
-            
+
             visibleCards = Math.floor(outerWrapperWidth / cardWidth)        // Calcula el numero de cards (redondeado hacia abajo) que se pueden mostrar
 
             // Para tamaños mayores de 850px (desktop)
-                // Si hay mas de una carta visible
-                    // El gap es el ancho del contenedor - (el numero de cards visibles por el ancho de la card) todo dividido entre las cards visibles - 1
-                    // Se resta 1 a visible cards porque siempre hay un espacio menos que cards visibles
-                    // En un ancho de pantalla en el que quepan 5 cards habran 4 espacios separandolas
-                // Si no hay mas de una carta el gap es 0
+            // Si hay mas de una carta visible
+            // El gap es el ancho del contenedor - (el numero de cards visibles por el ancho de la card) todo dividido entre las cards visibles - 1
+            // Se resta 1 a visible cards porque siempre hay un espacio menos que cards visibles
+            // En un ancho de pantalla en el que quepan 5 cards habran 4 espacios separandolas
+            // Si no hay mas de una carta el gap es 0
             // Para tamaños menores de 850px el gap es 16px fijo
             if (window.innerWidth > 850) {
                 if (visibleCards > 1) {
@@ -362,7 +362,7 @@ index.js
             wrapper.style.transform = `translateX(-${(cardWidth + gap) * position}px)`
             return position
         }
-        
+
         // Si la posicion es menor o igual que cero
         // La posicion se actualiza para ser igual al numero de cards totales menos las visibles (esto hace que si esta en la primera posicion y se clica el boton vaya a la ultima posicion)
         // Si no resta una posicion
@@ -413,7 +413,7 @@ index.js
 
 
 
-    
+
 
     /**
      * IntersectionObserver para mostrar u ocultar el parrafo de cada galeria al cambiar entre la de mobiliario y la de ropa
@@ -453,7 +453,7 @@ index.js
         });
     }
 
-    
+
 
 
 
@@ -504,7 +504,7 @@ index.js
         });
     }
 
-    
+
 
 
 
@@ -611,10 +611,10 @@ index.js
         const newScroll = window.scrollY
 
         // Se compara el scroll nuevo con el scroll obtenido inicialmente
-            // Si el scroll nuevo es mayor que el inicial se esta desplazando hacia abajo por lo que se oculta el header
+        // Si el scroll nuevo es mayor que el inicial se esta desplazando hacia abajo por lo que se oculta el header
         if (newScroll > scroll) {
             header.classList.remove(`isVisible`)
-        } 
+        }
         // Si el scroll nuevo es menor que el inicial se esta desplazando hacia arriba por lo que se muestra el header
         else if (newScroll < scroll) {
             header.classList.add(`isVisible`)
@@ -627,7 +627,7 @@ index.js
 
 
 
-    
+
     let controller = new AbortController()
     let options = {
         method: `get`,
@@ -673,7 +673,7 @@ index.js
             controller.abort()
         })
 
-    
+
     // Se invocan las funciones importadas de menu.js y storage.js
     manageMenu()
     updateFavouriteCount()

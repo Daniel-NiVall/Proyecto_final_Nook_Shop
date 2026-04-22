@@ -27,20 +27,20 @@ category.js
 (() => {
 
     // Variables
-        // Variables para la obtencion de la categoria seleccionada
-        // Con ayuda de la IA
+    // Variables para la obtencion de la categoria seleccionada
+    // Con ayuda de la IA
     const params = new URLSearchParams(location.search)
     const id = params.get(`id`)
 
-        // Variables para la modificacion del head del DOM
+    // Variables para la modificacion del head del DOM
     const meta = document.querySelector(`meta[name=title]`)
 
-        // Se seleccionan las breadcrumbs y el espacio donde iran los productos
+    // Se seleccionan las breadcrumbs y el espacio donde iran los productos
     const initialBreadcrumb = document.querySelector(`.Breadcrumb-h1`)
     const intro = document.querySelector(`.Intro`)
     const grid = document.querySelector(`.Grid-ul`)
 
-        // Variables para mostrar / ocultar el header
+    // Variables para mostrar / ocultar el header
     const header = document.querySelector(`.Header`)
     let scroll = window.scrollY
 
@@ -392,7 +392,7 @@ category.js
                     <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
                 </svg>
             </a>`
-            intro.classList.add(`Default`)
+                intro.classList.add(`Default`)
                 break;
 
         }
@@ -437,10 +437,10 @@ category.js
         const newScroll = window.scrollY
 
         // Se compara el scroll nuevo con el scroll obtenido inicialmente
-            // Si el scroll nuevo es mayor que el inicial se esta desplazando hacia abajo por lo que se oculta el header
+        // Si el scroll nuevo es mayor que el inicial se esta desplazando hacia abajo por lo que se oculta el header
         if (newScroll > scroll) {
             header.classList.remove(`isVisible`)
-        } 
+        }
         // Si el scroll nuevo es menor que el inicial se esta desplazando hacia arriba por lo que se muestra el header
         else if (newScroll < scroll) {
             header.classList.add(`isVisible`)
@@ -457,7 +457,7 @@ category.js
         signal: controller.signal
     }
 
-    
+
     /**
      * Obtiene los productos del JSON y crea el grid de la categoria seleccionada
      *      - Recorre cada producto para comprobar si coincide con la categoria o subcategoria elegida
